@@ -24,11 +24,14 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {!site.launched && <meta name="robots" content="noindex, nofollow" />}
-  <link rel="icon" type="image/png" href="/img/site/favicon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/site/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/site/favicon.png" />
+  <link rel="apple-touch-icon" href="/img/site/apple-touch-icon.png" />
   <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content="/img/site/logo.png" />
+  <meta property="og:image" content="https://www.ilrog.org/img/site/icon-512.png" />
   {!preview && (
     <script is:inline define:vars={{ subdomain: site.memberspaceSubdomain }}>
       // MemberSpace install code (same as the current Squarespace site). Powers member login,
