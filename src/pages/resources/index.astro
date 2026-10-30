@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import ijrobp from '../../data/ijrobp.json';
+import guidelines from '../../data/guidelines.json';
+import pubs from '../../data/publications.json';
+import site from '../../data/site.json';
+const glCount = guidelines.reduce((a, g) => a + g.items.length, 0);
+const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
+---
+<Base title="Resources" current="resources" description="ILROG guidelines, publications, resources for trainees, the resident elective and the IJROBP 2015 special edition.">
+  <PageHead title="Resources" />
+
+  <section class="section">
+    <div class="wrap edu-grid">
+      <a class="edu-item" href="/guidelines/">
+        <h2>Guidelines</h2>
+        <p>{glCount} ILROG guidelines, grouped by disease site.</p>
+      </a>
+      <a class="edu-item" href="/publications/">
+        <h2>Publications</h2>
+        <p>{pubCount} key papers in lymphoma radiation oncology, grouped by disease and topic.</p>
+      </a>
+      <a class="edu-item" href="#trainees">
+        <h2>Resources for Trainees</h2>
+        <p>The ILROG Trainee Reading List and Lymphoma Mini-Atlas.</p>
+      </a>
+      <a class="edu-item" href="#resident-elective">
+        <h2>Resident Elective</h2>
+        <p>A one-month away rotation at ILROG member sites in the United States.</p>
+      </a>
+      <a class="edu-item" href="#ijrobp-2015">
+        <h2>IJROBP 2015 Special Edition</h2>
+        <p>Radiation Therapy in the Modern Management of the Lymphomas.</p>
+      </a>
+      <a class="edu-item" href={site.youtube}>
+        <h2>YouTube</h2>
+        <p>For more resources, see the ILROG YouTube channel.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section mist" id="trainees">
+    <div class="wrap">
+      <h2>Resources for Trainees</h2>
+      <ul class="downloads">
+        <li><span>ILROG Trainee Reading List</span><a href="https://www.ilrog.org/s/ILROG-Trainee-Reading-List.docx">Download (.docx)</a></li>
+        <li><span>ILROG Lymphoma Mini-Atlas</span><a href="https://www.ilrog.org/s/ILROG-Lymphoma-Mini-Atlas">Download</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="resident-elective">
+    <div class="wrap two">
+      <div>
+        <h2>Resident Elective</h2>
+        <p>The treatment of hematologic malignancies has evolved, including RT principles and techniques. However, many radiation oncology trainees report inadequate experience in management of hematologic malignancies. ILROG is offering a one-month away elective rotation at various ILROG member sites in the United States for interested radiation oncology residents.</p>
+        <p>Interested radiation oncology residents are eligible if they are a current resident with good standing at an ACGME-accredited radiation oncology program. To participate in the away rotation, contact Ms. Denise De La Cruz (<a href="mailto:ddlcruz@mdanderson.org">ddlcruz@mdanderson.org</a>).</p>
+        <p><a href="https://www.ilrog.org/s/ILROG-heme-rotation-goals-and-expectations.docx">ILROG Rotation Goals and Expectations (.docx)</a></p>
+      </div>
+      <div>
+        <h3>The goals of this rotation are to provide</h3>
+        <ul class="ticks">
+          <li>Clinical experience with evaluating and managing patients with lymphoma and other hematologic malignancies</li>
+          <li>Technical experience with modern radiotherapy techniques and, when available, more specialized techniques (total skin electron beam therapy, TBI, proton therapy)</li>
+          <li>A formal didactic curriculum</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mist" id="ijrobp-2015">
+    <div class="wrap special">
+      <img src="/img/site/ijrobp-cover.jpg" alt="Cover of the IJROBP 2015 special edition on lymphoma" width="768" height="1016" loading="lazy" />
+      <div>
+        <h2>IJROBP 2015 Special Edition</h2>
+        <p class="muted">Radiation Therapy in the Modern Management of the Lymphomas. International Journal of Radiation Oncology, Biology, Physics, 2015.</p>
+        <h3>Selected Articles</h3>
+        <ul class="refs">
+          {ijrobp.map((a) => <li class="ref one"><a class="t" href={a.url}>{a.title}</a></li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .edu-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 3rem; border-top: 2px solid var(--ink); }
+  .edu-item { display: block; padding: 1.6rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+  .edu-item h2 { font-size: 1.2rem; margin-bottom: .4rem; }
+  .edu-item p { color: var(--steel); margin: 0; font-size: .95rem; }
+  .edu-item:hover h2 { text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 2px; }
+  @media (max-width: 900px) { .edu-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .edu-grid { grid-template-columns: 1fr; } }
+  .downloads { list-style: none; margin: 0; padding: 0; max-width: 760px; border-top: 2px solid var(--ink); }
+  .downloads li { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); font-weight: 500; }
+  .downloads a { font-weight: 600; white-space: nowrap; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+  .ticks { list-style: none; padding: 0; margin: 0; }
+  .ticks li { padding: .8rem 0 .8rem 1.6rem; border-bottom: 1px solid var(--line); position: relative; }
+  .ticks li::before { content: ""; position: absolute; left: 0; top: 1.45rem; width: .7rem; height: 3px; background: var(--gold); }
+  .special { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+  .special img { border-radius: 4px; box-shadow: 0 12px 30px -14px rgba(20,35,45,.45); }
+  .ref.one { grid-template-columns: 1fr; }
+  @media (max-width: 640px) { .special { grid-template-columns: 1fr; } .special img { max-width: 180px; } }
+</style>

@@ -1,0 +1,19 @@
+{
+  "launched": false,
+  "name": "International Lymphoma Radiation Oncology Group",
+  "short": "ILROG",
+  "mission": "ILROG works to improve outcomes for patients with hematologic malignancies by integrating high-quality radiation therapy into their care.",
+  "founded": 2010,
+  "members": 1523,
+  "countries": 73,
+  "address": ["1275 York Avenue", "New York, NY 10065", "USA"],
+  "contactName": "Beatrice Fregonese",
+  "email": "fregoneseb@ilrog.com",
+  "phone": "860.205.6188",
+  "phoneHref": "+18602056188",
+  "memberspaceSubdomain": "ilrog",
+  "loginUrl": "https://ilrog.memberspace.com/member/sign_in",
+  "joinUrl": "https://ilrog.memberspace.com/member/plans/d92ce7e669",
+  "twitter": "https://twitter.com/ILROGTeam/",
+  "youtube": "https://www.youtube.com/channel/UCkbnWiu19N-XiKdaX0wVJCQ"
+}

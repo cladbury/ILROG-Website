@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import SearchBox from '../components/SearchBox.astro';
+import Filter from '../components/Filter.astro';
+import team from '../data/team.json';
+import { slugify, initials } from '../lib/util';
+const leadership = team.find((s) => s.name === 'Leadership')!;
+const rest = team.filter((s) => s.name !== 'Leadership');
+// Steering Committee members who hold a director role are flagged.
+const total = team.reduce((a, s) => a + s.people.length, 0);
+---
+<Base title="Team" current="about" description="ILROG leadership, Steering Committee, Council and Honorary Members.">
+  <PageHead title="Team" intro={`${total} radiation oncologists, physicists and hematologists from around the world lead ILROG's guidelines, research and education.`} crumb={{ href: '/about/', label: 'About' }} />
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="visually-hidden">Leadership</h2>
+      <div class="leaders">
+        {leadership.people.map((p) => (
+          <article class="leader">
+            {p.photo ? <img src={`/img/team/${p.photo}`} alt="" width="160" height="160" /> : <div class="avatar big">{initials(p.name)}</div>}
+            <div>
+              <p class="role">{p.role}</p>
+              <h3>{p.name}{p.credentials && <span class="cred">, {p.credentials}</span>}</h3>
+              <p class="aff">{p.affiliation.join(', ')}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section mist">
+    <div class="wrap" id="tm">
+      <div class="team-tools">
+        <SearchBox id="tm-q" label="Search the team" placeholder="Search by name, institution or country" />
+        <nav class="jump" aria-label="Team groups">
+          {rest.map((s) => <a href={`#${slugify(s.name)}`}>{s.name} <span>{s.people.length}</span></a>)}
+        </nav>
+      </div>
+      {rest.map((s) => (
+        <section class="group" id={slugify(s.name)} data-group>
+          <h2>{s.name}</h2>
+          <ul class="people">
+            {s.people.map((p) => (
+              <li class="person" data-item data-text={`${p.name} ${p.credentials} ${p.role || ''} ${p.affiliation.join(' ')}`}>
+                {p.photo
+                  ? <img class="avatar" src={`/img/team/${p.photo}`} alt="" width="64" height="64" loading="lazy" />
+                  : <span class="avatar" aria-hidden="true">{initials(p.name)}</span>}
+                <div>
+                  <h3>{p.name}{p.credentials && <span class="cred">, {p.credentials}</span>}</h3>
+                  {p.role && <p class="role">{p.role}</p>}
+                  <p class="aff">{p.affiliation.slice(-3).join(', ')}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p class="empty-note">Nobody on the team matches that search. Check the spelling, or search by institution or country.</p>
+    </div>
+  </section>
+  <Filter input="tm-q" scope="tm" />
+</Base>
+
+<style>
+  .leaders { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; }
+  .leader { display: grid; grid-template-columns: 160px 1fr; gap: 1.5rem; align-items: center; }
+  .leader img, .avatar.big { width: 160px; height: 160px; border-radius: var(--radius); object-fit: cover; }
+  .leader h3 { font-size: 1.4rem; margin-bottom: .3rem; }
+  .leader .role { color: var(--gold-ink); font-weight: 600; margin: 0 0 .3rem; }
+  .leader .aff { color: var(--steel); margin: 0; }
+  @media (max-width: 860px) { .leaders { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .leader { grid-template-columns: 96px 1fr; } .leader img, .avatar.big { width: 96px; height: 96px; } }
+
+  .team-tools { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+  .team-tools :global(.search) { margin: 0; flex: 1 0 360px; max-width: 480px; }
+  .jump { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .jump a { font-size: .9rem; font-weight: 600; text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: var(--paper); border-radius: 99px; padding: .4rem .9rem; }
+  .jump a:hover { border-color: var(--ink); }
+  .jump span { color: var(--steel); font-weight: 500; margin-left: .2rem; }
+
+  .group { margin-top: 3rem; }
+  .group > h2 { font-size: 1.35rem; padding-bottom: .7rem; border-bottom: 2px solid var(--ink); }
+  .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); column-gap: 2.5rem; }
+  .person { display: flex; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
+  .person h3 { font-size: 1rem; margin: .15rem 0 .25rem; letter-spacing: 0; }
+  .cred { font-weight: 500; color: var(--steel); }
+  .person .role { font-size: .85rem; font-weight: 600; color: var(--gold-ink); margin: 0 0 .2rem; }
+  .person .aff { font-size: .875rem; line-height: 1.45; color: var(--steel); margin: 0; }
+  .person .avatar { background: var(--paper); }
+</style>

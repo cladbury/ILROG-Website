@@ -1,0 +1,115 @@
+---
+import '../styles/global.css';
+import site from '../data/site.json';
+interface Props { title?: string; description?: string; current?: string }
+const { title, description = site.mission, current = '' } = Astro.props;
+const fullTitle = title ? `${title} | ILROG` : `ILROG | ${site.name}`;
+const nav = [
+  { href: '/about/', label: 'About', key: 'about' },
+  { href: '/meetings/', label: 'Meetings', key: 'meetings' },
+  { href: '/research/', label: 'Research', key: 'research' },
+  { href: '/resources/', label: 'Resources', key: 'resources' },
+  { href: '/blog/', label: 'Blog', key: 'blog' },
+  { href: '/membership/', label: 'Membership', key: 'membership' },
+  { href: '/contact/', label: 'Contact', key: 'contact' },
+];
+const year = new Date().getFullYear();
+const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  {!site.launched && <meta name="robots" content="noindex, nofollow" />}
+  <link rel="icon" type="image/png" href="/img/site/favicon.png" />
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="/img/site/logo.png" />
+  {!preview && (
+    <script is:inline define:vars={{ subdomain: site.memberspaceSubdomain }}>
+      // MemberSpace install code (same as the current Squarespace site). Powers member login,
+      // the floating Members button, plan signup and any members-only pages set in the MemberSpace dashboard.
+      window.MemberSpace = window.MemberSpace || { subdomain: subdomain };
+      (function (d) {
+        var s = d.createElement('script');
+        s.src = 'https://cdn.memberspace.com/scripts/widgets.js';
+        var e = d.getElementsByTagName('script')[0];
+        e.parentNode.insertBefore(s, e);
+      })(document);
+    </script>
+  )}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="ILROG home"><img src="/img/site/logo.png" alt="ILROG, International Lymphoma Radiation Oncology Group" width="148" height="51" /></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="2" /></svg>
+        Menu
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        {nav.map((n) => <a href={n.href} aria-current={current === n.key ? 'page' : undefined}>{n.label}</a>)}
+        <a class="login" href={site.loginUrl}>Member login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main"><slot /></main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <img class="foot-logo" src="/img/site/logo-light.png" alt="ILROG" width="150" height="52" loading="lazy" />
+          <p>The International Lymphoma Radiation Oncology Group, founded in {site.founded}.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <address>
+            {site.address.map((l) => <>{l}<br /></>)}
+          </address>
+          <p style="margin-top:.8rem"><a href={`mailto:${site.email}`}>{site.email}</a><br /><a href={`tel:${site.phoneHref}`}>{site.phone}</a></p>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/guidelines/">Guidelines</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/resources/#trainees">Resources for Trainees</a></li>
+            <li><a href="/resources/#resident-elective">Resident Elective</a></li>
+            <li><a href="/meetings/#archive">Past Meetings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Organization</h3>
+          <ul>
+            <li><a href="/team/">Team</a></li>
+            <li><a href="/membership/">Membership</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href={site.twitter}>Twitter</a></li>
+            <li><a href={site.youtube}>YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© {year} International Lymphoma Radiation Oncology Group</span>
+        <a href={site.loginUrl}>Member login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.getElementById('site-nav');
+    btn?.addEventListener('click', () => {
+      const open = nav!.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>

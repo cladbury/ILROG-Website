@@ -1,0 +1,589 @@
+[
+ {
+  "name": "Hot off the presses!",
+  "items": [
+   {
+    "title": "Bridging radiotherapy before chimeric antigen receptor T cells for B-cell lymphomas: an ILROG multicenter study (Yegya-Raman N, et al. Blood Adv 2025)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40203192/",
+    "year": 2025,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Clinical Outcomes Confirm Conjecture: Modern Radiation Therapy Reduces the Risk of Late Toxicity in Survivors of Hodgkin Lymphoma (Milgrom SA, Bakst RL, Campbell BA. IJROBP Nov 2021.",
+    "url": "https://www.redjournal.org/article/S0360-3016(21)00756-2/fulltext",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Hodgkin Lymphoma",
+  "items": [
+   {
+    "title": "German Hodgkin Study Group HD10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20818855/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "German Hodgkin Study Group HD11",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20713848/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "EORTC-LYSA-FIL H10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25901426/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "UK RAPID Trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25901426/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "RATHL Trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27332902/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "German Hodgkin Study Group HD13",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25539730/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "German Hodgkin Study Group Experience in Stage I LP-HL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26240235/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "German Hodgkin Study Group Long-Term Follow-Up of HD7, HD8, HD10, HD11",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28418763/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "Reduced Mortality Risk in the Recent Era in ES-HL Patients Treated with RT with or without Chemo",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29153331/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "IFRT for Patients in PR after Chemo for Advanced HL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17097834/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "New Definition of Bulk in HL in CT Era",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Definition+of+bulky+disease+in+early+stage+Hodgkin+lymphoma+in+computed+tomography+era%3A+prognostic+significance+of+measurements+in+the+coronal+and+transverse+planes",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "Reduced Mortality Risk in ES-HL Patients Treated with RT",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29153331/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "Brentuximab vedotin combined with ABVD or AVD for patients with newly diagnosed HL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24239220/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   },
+   {
+    "title": "Brentuximab Vedotin with Chemotherapy for Stage III or IV HL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29224502/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Non-Hodgkin Lymphoma",
+  "items": [
+   {
+    "title": "Reduced Dose RT for Local Control in NHL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21664710/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "FORT Trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24572077/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "RICOVER-60 NoRTh",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24493716/",
+    "year": null,
+    "tier": "Critical Reading",
+    "subtype": null
+   },
+   {
+    "title": "DLBCL ACR Appropriateness Criteria",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26583344/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "Re-examining the Role of RT for DLBCL in the Modern Era",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26903576/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "SWOG 8516: CHOP vs. Other Intensive Chemotherapy Regimens",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7515652/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "SWOG S8736 CHOP3 + RT vs. CHOP8",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27382104/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "LNH-98.5: CHOP vs R-CHOP",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20548096/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "MInT: CHOP vs. R-CHOP",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16648042/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "IFRT vs INRT as Consolidation for DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22252721/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "LYSA trial: R-CHOP +/- RT",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29061568/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "Consolidative RT after R-CHOP: MDACC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20713859/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "Skeletal DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24062391/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "NCDB: Use of RT for DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26261253/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "SEER: Use of RT for DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27373911/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "PARMA: +/- ASCT for Relapsed NHL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7477169/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "RT for Relapsed/Refractory DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25835625/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "DLBCL Subtypes by Gene Expression Profiling",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10676951/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "Hans Algorithm: Classification of DLBCL Subtypes by Immunohistochemistry",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14504078/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "Reduction of the treated volume to INRT as part of CMT for early stage aggressive NHL",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Reduction+of+the+Treated+Volume+to+Involved+Node+Radiation+Therapy+as+Part+of+Combined+Modality+Treatment+for+Early+Stage+Aggressive+Non-Hodgkin’s+Lymphoma",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "DLBCL"
+   },
+   {
+    "title": "NCI Phase 2 Trial: Dose-Adjusted R-EPOCH for PMBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23574119/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "PMBCL"
+   },
+   {
+    "title": "IELSG26: Response Assessment by PET in PMBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24799481/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "PMBCL"
+   },
+   {
+    "title": "Improved Survival with Combined Modality for PMBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26852276/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "PMBCL"
+   },
+   {
+    "title": "PET Guided Therapy for PMBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32603413/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "PMBCL"
+   },
+   {
+    "title": "IELSG32 Phase 2 Trial: Consolidative WBRT vs. ASCT",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29054815/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Primary CNS Lymphoma"
+   },
+   {
+    "title": "R-MPV + reduced dose WBRT: MSKCC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24101038/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Primary CNS Lymphoma"
+   },
+   {
+    "title": "LymphoCare: Patterns of Care for FL in the USA",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19204203/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Follicular Lymphoma"
+   },
+   {
+    "title": "TROG 99.03: IFRT +/- R-CVP for FL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29975623/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Follicular Lymphoma"
+   },
+   {
+    "title": "Salvage Treatment and Survival for Relapsed FL Following Primary RT: Collaborative ILROG Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30858143/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Follicular Lymphoma"
+   },
+   {
+    "title": "Definitive RT for localized FL staged by 18F-FDG PET-CT: Collaborative ILROG Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30446493/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Follicular Lymphoma"
+   },
+   {
+    "title": "Gastric MALT Treated with RT Alone: MSKCC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9586910/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Marginal Zone Lymphoma"
+   },
+   {
+    "title": "Orbital MALT treated with low-dose RT: Stanford Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23726002/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Marginal Zone Lymphoma"
+   },
+   {
+    "title": "Long-term outcome of early-stage extranodal marginal zone lymphoma: MSKCC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28327924/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Marginal Zone Lymphoma"
+   },
+   {
+    "title": "Long-term outcome of early-stage extranodal marginal zone lymphoma after RT: MSKCC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25863760/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Marginal Zone Lymphoma"
+   },
+   {
+    "title": "Early-stage MCL: A Retrospective Analysis from ILROG",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28911068/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Mantle Cell Lymphoma"
+   },
+   {
+    "title": "RT as an Effective Modality for MCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25108680/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Mantle Cell Lymphoma"
+   },
+   {
+    "title": "4Gy as an Effective Treatment of MCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26763352/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Mantle Cell Lymphoma"
+   },
+   {
+    "title": "Efficacy of 12 Gy TSEB",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28843374/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Cutaneous Lymphoma"
+   },
+   {
+    "title": "RT for Low-grade Cutaneous B-cell Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25860237/",
+    "year": null,
+    "tier": "Supplemental Reading",
+    "subtype": "Cutaneous Lymphoma"
+   }
+  ]
+ },
+ {
+  "name": "Solitary Plasmacytoma",
+  "items": [
+   {
+    "title": "Rare Cancer Network Study: Solitary Plasmacytoma of Bone",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16677383/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Solitary Plasmacytoma: MDACC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9586910/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Leukemia",
+  "items": [
+   {
+    "title": "Chloroma: MSKCC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21962486/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Cranial RT for CNS+ AML: University of Washington Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20584584/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Craniospinal Irradiation for CNS+ Leukemia: MDACC Experience",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25539370/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "TBI Review",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21113184/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "RT Techniques",
+  "items": [
+   {
+    "title": "IMRT Butterfly Technique for Mediastinal Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24735767/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Cardiac Atlas",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20421148/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Long-Term Toxicity",
+  "items": [
+   {
+    "title": "Dose-response Relationship for Coronary Heart Disease in HL Survivors",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26573075/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Secondary Breast Cancer Risk by RT Volume in HL Survivors",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27979454/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Prospective study of the efficacy of breast MRI and mammographic screening in survivors of HL",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Prospective+Study+of+the+Efficacy+of+Breast+Magnetic+Resonance+Imaging+and+Mammographic+Screening+in+Survivors+of+Hodgkin+Lymphoma",
+    "year": 2013,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Imaging",
+  "items": [
+   {
+    "title": "Lugano Classification",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25113753/",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Prospective Study of PET with CT Co-registration for RT Planning",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=A+Prospective+Study+of+18+FDG-PET+with+CT+Coregistration+for+Radiation+Treatment+Planning+of+Lymphomas+and+Other+Hematologic+Malignancies",
+    "year": null,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Health Policy",
+  "items": [
+   {
+    "title": "Are Advanced RT Techniques Necessary for HL?",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Are+Advanced+Radiation+Therapy+Technologies+Required+for+Treating+Patients+with+Hodgkin+Lymphoma%3F",
+    "year": 2016,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Editorials",
+  "items": [
+   {
+    "title": "Early-Stage FL: What Is the Preferred Treatment Strategy?",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30153098/",
+    "year": 2018,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Progress in the Treatment of Hodgkin's Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29224505/",
+    "year": 2018,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Balancing Risk and Benefit in Early-Stage cHL",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Balancing+Risk+and+Benefit+In+Early-Stage+Classical+Hodgkin+Lymphoma",
+    "year": 2018,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Re-examining the Role of RT for DLBCL in the Modern Era",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26903576/",
+    "year": 2016,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "Limited-Stage Hodgkin Lymphoma: Managing Uncertainty",
+    "url": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Limited-Stage+Hodgkin+Lymphoma%3A+Managing+Uncertainty",
+    "year": 2014,
+    "tier": null,
+    "subtype": null
+   },
+   {
+    "title": "RT for Indolent Lymphomas: How Much is Enough?",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24572076/",
+    "year": 2014,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ },
+ {
+  "name": "Reviews",
+  "items": [
+   {
+    "title": "Hematologic Malignancies (Y Tseng, A Ng)",
+    "url": "https://www.hemonc.theclinics.com/article/S0889-8588(19)30113-3/abstract",
+    "year": 2020,
+    "tier": null,
+    "subtype": null
+   }
+  ]
+ }
+]

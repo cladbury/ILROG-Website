@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import site from '../data/site.json';
+---
+<Base title="Membership" current="membership" description="Join ILROG as a general member or apply to the ILROG Council.">
+  <PageHead title="Membership" intro={`Join ${site.members.toLocaleString('en-US')} lymphoma radiation oncologists in ${site.countries} countries who are working to harmonize the use of radiation therapy for hematologic malignancies.`} />
+  <section class="section">
+    <div class="wrap tiers">
+      <article class="tier">
+        <h2>Apply To Become A General Member</h2>
+        <p>Open to physicians who treat lymphoma and to radiation oncology residents.</p>
+        <h3>Registration Benefits</h3>
+        <ul class="ticks">
+          <li>Discussion forums led by international leaders in lymphoma radiation oncology</li>
+          <li>Access to ILROG guidelines and other major guidelines</li>
+          <li>A library of lymphoma abstracts and publications</li>
+          <li>Selected archived presentations</li>
+          <li>Invitations to selected ILROG meetings</li>
+        </ul>
+        <a class="btn btn-gold" href={site.joinUrl}>Apply for general membership</a>
+      </article>
+      <article class="tier council">
+        <h2>Apply to Become an ILROG Council Member</h2>
+                <p>If you are interested in being considered for the ILROG Council, please send a copy of your CV, a brief description of your interests and expertise, and a list of your publications in lymphoma radiation oncology to {site.contactName}.</p>
+        <p class="muted">After the Membership Committee has reviewed all submitted materials, we will update you with further information, including membership dues.</p>
+        <a class="btn btn-ink" href={`mailto:${site.email}?subject=ILROG%20Council%20application`}>Email your application</a>
+        <p class="addr">{site.email}</p>
+      </article>
+    </div>
+  </section>
+  <section class="section mist">
+    <div class="wrap login-row">
+      <p><strong>Already a member?</strong> Log in to reach the forums and member library.</p>
+      <a class="btn btn-ink" href={site.loginUrl}>Member login</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+  .tier { border-top: 4px solid var(--gold); padding-top: 1.5rem; }
+  .tier.council { border-color: var(--ink); }
+  .tier h3 { font-size: 1rem; margin-top: 1.75rem; }
+  .tier .btn { margin-top: 1.75rem; }
+  .addr { font-size: .9rem; color: var(--steel); margin-top: .5rem; }
+  .ticks { list-style: none; padding: 0; margin: 0; }
+  .ticks li { padding: .7rem 0 .7rem 1.6rem; border-bottom: 1px solid var(--line); position: relative; }
+  .ticks li::before { content: ""; position: absolute; left: 0; top: 1.35rem; width: .7rem; height: 3px; background: var(--gold); }
+  .login-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .login-row p { margin: 0; }
+  @media (max-width: 760px) { .tiers { grid-template-columns: 1fr; } }
+</style>

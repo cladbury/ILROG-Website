@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import posts from '../../data/posts.json';
+import { fmtDate } from '../../lib/util';
+---
+<Base title="Blog" current="blog" description="Updates from the ILROG Chairman and clinical reviews from ILROG members.">
+  <PageHead title="Blog" intro="Updates from ILROG leadership and short clinical reviews written by members." />
+  <section class="section">
+    <div class="wrap">
+      <ul class="news">
+        {posts.map((p) => (
+          <li>
+            <a href={`/blog/${p.slug}/`}>
+              <time datetime={p.date}>{fmtDate(p.date)}</time>
+              <span class="t">{p.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>
+<style>
+  .news { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); max-width: 900px; }
+  .news a { display: grid; grid-template-columns: 11rem minmax(0,1fr); gap: .25rem 1.5rem; padding: 1.4rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+  .news time { color: var(--steel); font-size: .95rem; grid-row: span 2; font-variant-numeric: tabular-nums; }
+  .news .t { font-weight: 600; font-size: 1.2rem; }
+  .news .by { color: var(--steel); font-size: .95rem; }
+  .news a:hover .t { text-decoration: underline; }
+  @media (max-width: 600px) { .news a { grid-template-columns: 1fr; } .news time { grid-row: auto; } }
+</style>

@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import SearchBox from '../components/SearchBox.astro';
+import Filter from '../components/Filter.astro';
+import pubs from '../data/publications.json';
+import { slugify } from '../lib/util';
+const groups = pubs.filter((g) => g.items.length).map((g) => {
+  // keep source order; split into sub-groups by subtype (e.g. DLBCL, PMBCL)
+  const subs: { tier: string | null; name: string | null; items: typeof g.items }[] = [];
+  for (const it of g.items) {
+    const tier = it.tier ?? null, key = it.subtype ?? null;
+    const last = subs[subs.length - 1];
+    if (last && last.name === key && last.tier === tier) last.items.push(it); else subs.push({ tier, name: key, items: [it] });
+  }
+  return { ...g, slug: slugify(g.name), subs };
+});
+const names: Record<string, string> = {};
+---
+<Base title="Publications" current="resources" description="ILROG reading list of landmark trials and key papers in lymphoma radiation oncology.">
+  <PageHead title="Publications" intro="Landmark trials and key papers in lymphoma radiation oncology, grouped by disease and topic." crumb={{ href: '/resources/', label: 'Resources' }} />
+  <section class="section">
+    <div class="wrap indexed">
+      <nav class="side-index" aria-label="Topics">
+        <ol>
+          {groups.map((g) => <li><a href={`#${g.slug}`}>{names[g.name] || g.name}<span>{g.items.length}</span></a></li>)}
+        </ol>
+      </nav>
+      <div id="rl">
+        <SearchBox id="rl-q" label="Search publications" placeholder="Search by trial name, disease or topic" />
+        {groups.map((g) => (
+          <section class="ref-group" id={g.slug} data-group>
+            <h2>{names[g.name] || g.name}</h2>
+            {g.subs.map((s) => (
+              <div data-group>
+                {s.tier && s.tier !== g.subs[g.subs.indexOf(s) - 1]?.tier && <h3 class="tier">{s.tier}</h3>}
+                {s.name && <h4 class="ref-sub">{s.name}</h4>}
+                <ul class="refs">
+                  {s.items.map((i) => (
+                    <li class="ref noyr" data-item data-text={`${g.name} ${s.name || ''} ${i.title} ${i.year || ''}`}>
+                      <span>{i.year && <span class="yrin">{i.year}</span>}<a class="t" href={i.url}>{i.title}</a></span>
+                      <span class="src">{i.url.includes('pubmed') ? 'PubMed' : 'Journal'}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
+        ))}
+        <p class="empty-note">No publications match that search. Try a trial name such as "RAPID" or a disease such as "MALT".</p>
+      </div>
+    </div>
+  </section>
+  <Filter input="rl-q" scope="rl" />
+</Base>
+
+<style>
+  .noyr { grid-template-columns: minmax(0,1fr) auto; }
+  .tier { font-size: 1rem; margin: 1.6rem 0 .1rem; color: var(--gold-ink); }
+  .yrin { font-weight: 600; color: var(--gold-ink); margin-right: .6rem; font-variant-numeric: tabular-nums; }
+  @media (max-width: 600px) { .noyr { grid-template-columns: 1fr; } .noyr .src { grid-column: 1; } }
+</style>

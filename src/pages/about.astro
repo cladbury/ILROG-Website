@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import site from '../data/site.json';
+import team from '../data/team.json';
+const objectives = [
+  'Optimize, advance and harmonize the integration of radiation therapy in the management of patients with lymphoma.',
+  'Inform the hematology, medical oncology and radiation oncology communities about the lymphoma scenarios where radiation therapy is advantageous.',
+  'Develop and disseminate evidence-based guidelines for radiotherapy fields, doses and techniques for all types of lymphoma.',
+  'Train radiation oncologists worldwide in modern lymphoma radiation therapy principles and techniques, in collaboration with national and regional scientific societies.',
+  'Provide a worldwide forum for radiation oncologists who treat lymphoma to discuss and share information and ideas.',
+  'Provide a source of information for patients with lymphoma on the advantages and risks of radiation therapy.',
+  'Initiate, support and conduct research that improves understanding of radiation therapy in lymphoma and its therapeutic ratio, alone or combined with other therapies.',
+];
+const steering = team.find((s) => s.name === 'Steering Committee')!.people.length;
+const council = team.find((s) => s.name === 'Council')!.people.length;
+---
+<Base title="About" current="about" description="History and objectives of the International Lymphoma Radiation Oncology Group.">
+  <PageHead title="History & Objectives" intro="The mission of ILROG is to improve outcomes for patients with hematologic malignancies through the appropriate integration of high-quality radiation therapy in the management of lymphoma." />
+
+  <section class="section">
+    <div class="wrap about-grid">
+      <div class="prose">
+        <h2>History</h2>
+        <p>ILROG was founded in 2010 by radiation oncologists from several countries who are recognized as international academic leaders in lymphoma. More than 750 radiation oncologists in 40 countries responded to the founders' call with support for the group's mission.</p>
+        <p>A Steering Committee of 24 expert lymphoma radiation oncologists from 14 countries, from Asia to North America, was formed to elect a Chairman and Vice Chair. The committee's first priority was to establish, harmonize and distribute new guidelines that address the major changes in principles, dose and technology in lymphoma radiotherapy.</p>
+        <p>Today the goal is to bring the many radiation oncologists interested in lymphoma into ILROG as members, and to involve them in its committees, research and special mission teams.</p>
+        <p><a class="btn btn-ink" href="/team/">Meet the team</a></p>
+      </div>
+      <aside class="facts">
+        <dl>
+          <div><dt>Founded</dt><dd>{site.founded}</dd></div>
+          <div><dt>Members</dt><dd>{site.members.toLocaleString('en-US')}</dd></div>
+          <div><dt>Countries</dt><dd>{site.countries}</dd></div>
+          <div><dt>Steering Committee</dt><dd>{steering}</dd></div>
+          <div><dt>Council</dt><dd>{council}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section mist">
+    <div class="wrap">
+      <h2>Objectives</h2>
+      <ol class="objectives">
+        {objectives.map((o) => <li>{o}</li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <figure class="figure">
+        <img src="/img/site/member-map.jpg" alt={`ILROG members by country, ${site.members} members in ${site.countries} countries`} width="1267" height="712" loading="lazy" />
+        <figcaption>ILROG members by country.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="/img/site/group-photo.jpg" alt="ILROG members at a group meeting" width="1000" height="383" loading="lazy" />
+        <figcaption>ILROG members.</figcaption>
+      </figure>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .about-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  .facts dl { margin: 0; border-top: 2px solid var(--ink); }
+  .facts div { display: flex; justify-content: space-between; align-items: baseline; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .facts dt { color: var(--steel); font-size: .95rem; }
+  .facts dd { margin: 0; font-weight: 700; font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+  .objectives { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 0 3rem; }
+  .objectives li { display: grid; grid-template-columns: 1.6rem 1fr; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+  .objectives li::before { content: ""; width: .7rem; height: 3px; background: var(--gold); margin-top: .75em; }
+  .figure { margin: 0 0 3rem; }
+  .figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); }
+  .figure figcaption { font-size: .875rem; color: var(--steel); margin-top: .6rem; }
+</style>

@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import trials from '../data/trials.json';
+import site from '../data/site.json';
+---
+<Base title="Research" current="research" description="ILROG consortium clinical trials in lymphoma and myeloma radiotherapy.">
+  <PageHead title="Research" intro="ILROG member institutions run prospective trials on radiation dose and technique." />
+  <section class="section">
+    <div class="wrap">
+      <h2 class="trials-h">ILROG Consortium Clinical Trials</h2>
+      {trials.map((t) => (
+        <article class="trial" id={t.id}>
+          <div class="trial-key">
+            <p class="dose">{t.dose}</p>
+            <p class="dis">{t.disease}</p>
+            <p class="status">{t.status}</p>
+          </div>
+          <div class="trial-body">
+            <h2>{t.title}</h2>
+            <p>{t.synopsis}</p>
+            <dl>
+              <div><dt>Principal Investigators</dt><dd>{t.pis}</dd></div>
+              <div><dt>{t.status === 'Recruiting' ? 'Institutions Actively Recruiting' : 'Participating Institutions'}</dt><dd>{t.sites.join(', ')}</dd></div>
+            </dl>
+            <p class="note">{t.statusNote}</p>
+            <p class="dl">
+              <a href={t.protocol}>Download the protocol (PDF)</a>
+              <a href={t.registry}>{t.nct} on ClinicalTrials.gov</a>
+              {t.results?.map((r) => <a href={r.url}>{r.label}</a>)}
+            </p>
+          </div>
+        </article>
+      ))}
+      <div class="protocols">
+        <p>To ask about opening one of these trials at your institution, or to propose a new ILROG study, contact <a href={`mailto:${site.email}`}>{site.contactName}</a>.</p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .trial { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .trial:first-child { border-top: 2px solid var(--ink); }
+  .dose { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: .5rem; }
+  .dis { color: var(--steel); font-weight: 500; }
+  .trial h2 { font-size: 1.35rem; max-width: 40ch; }
+  .q { font-size: 1.15rem; font-weight: 500; border-left: 3px solid var(--gold); padding-left: 1rem; }
+  .trial dl { margin: 1.5rem 0 0; display: grid; gap: .9rem; }
+  .trial dt { font-size: .85rem; font-weight: 600; color: var(--steel); }
+  .trial dd { margin: .15rem 0 0; max-width: var(--measure); }
+  @media (max-width: 760px) { .trial { grid-template-columns: 1fr; } }
+  .protocols { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; background: var(--mist); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 1rem; }
+  .protocols p { margin: 0; }
+  .trials-h { margin-bottom: 1.5rem; }
+  .dl { margin-top: 1.25rem; font-weight: 600; display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; }
+  .status { display: inline-block; font-size: .85rem; font-weight: 600; padding: .25rem .7rem; border-radius: 99px; background: var(--gold-wash); color: var(--gold-ink); margin-top: .6rem; }
+  .note { background: var(--mist); border-radius: var(--radius); padding: .8rem 1rem; margin-top: 1.25rem; font-size: .95rem; }
+</style>

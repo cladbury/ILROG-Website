@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import posts from '../../data/posts.json';
+import { fmtDate } from '../../lib/util';
+import Isodose from '../../components/Isodose.astro';
+export function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
+}
+const { post } = Astro.props;
+// lines that are short and end with a colon or are all caps read as headings in the old posts
+const isHead = (t: string) => t.length < 90 && (/:$/.test(t) || /^\d+-\s/.test(t) || t === t.toUpperCase());
+const body = post.body.filter((t: string) => t.toUpperCase() !== post.title.toUpperCase() && !/^CHAIRMAN.S CHECKUP/.test(t));
+---
+<Base title={post.title} current="blog" description={body[0]?.slice(0, 155)}>
+  <header class="page-head post-head">
+    <div class="contours"><Isodose seed={post.title.length * 17} /></div>
+    <div class="wrap">
+      <a class="crumb" href="/blog/">Blog</a>
+      <h1>{post.title}</h1>
+      <p><time datetime={post.date}>{fmtDate(post.date)}</time></p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="wrap">
+      <article class="prose">
+        {body.map((t: string) => isHead(t)
+          ? <h2>{t.replace(/^\d+-\s*/, '').replace(/:$/, '')}</h2>
+          : <p>{t}</p>)}
+        {post.refs.length > 0 && (
+          <>
+            <h2>References</h2>
+            <ol class="refs-list">{post.refs.map((r: string) => <li>{r}</li>)}</ol>
+          </>
+        )}
+      </article>
+      <p class="back"><a href="/blog/">All blog posts</a></p>
+    </div>
+  </section>
+</Base>
+<style>
+  .post-head h1 { max-width: 28ch; }
+  .refs-list { font-size: .925rem; color: var(--steel); }
+  .back { margin-top: 3rem; font-weight: 600; }
+</style>

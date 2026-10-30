@@ -1,0 +1,27 @@
+---
+// Live text filter. Input #{input} filters [data-item] inside #{scope};
+// [data-group] containers hide when none of their items match.
+interface Props { input: string; scope: string }
+const { input, scope } = Astro.props;
+---
+<script is:inline define:vars={{ input, scope }}>
+  (() => {
+    const field = document.getElementById(input);
+    const root = document.getElementById(scope);
+    if (!field || !root) return;
+    const items = [...root.querySelectorAll('[data-item]')];
+    const groups = [...root.querySelectorAll('[data-group]')];
+    const empty = root.querySelector('.empty-note');
+    items.forEach((el) => { el._t = (el.dataset.text || el.textContent).toLowerCase(); });
+    field.addEventListener('input', () => {
+      const terms = field.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      items.forEach((el) => {
+        const ok = terms.every((t) => el._t.includes(t));
+        el.hidden = !ok; if (ok) shown++;
+      });
+      groups.forEach((g) => { g.hidden = !g.querySelector('[data-item]:not([hidden])'); });
+      if (empty) empty.style.display = shown ? 'none' : 'block';
+    });
+  })();
+</script>

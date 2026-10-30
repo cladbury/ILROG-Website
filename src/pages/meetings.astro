@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import meetings from '../data/meetings.json';
+import site from '../data/site.json';
+const ilrogPdf = (f: string) => `https://www.ilrog.org/s/${f}`;
+const byYear = new Map<string, typeof meetings.past>();
+for (const m of meetings.past) {
+  const y = m.start.slice(0, 4);
+  byYear.set(y, [...(byYear.get(y) || []), m]);
+}
+---
+<Base title="Meetings" current="meetings" description="ILROG educational conferences and meetings, with programs and slides from past meetings.">
+  <PageHead title="Meetings" intro="ILROG runs continuing education conferences on radiotherapy for lymphoma and hematologic malignancies, and meets alongside major hematology congresses." />
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Upcoming Meetings</h2>
+      {meetings.upcoming.length ? meetings.upcoming.map((m) => (
+        <article class="up"><p class="when">{m.dates}, {m.city}</p><h3>{m.title}</h3></article>
+      )) : (
+        <div class="none">
+          <p><strong>No upcoming meetings are scheduled yet.</strong> Dates for the next ILROG conference will be posted here and sent to members by email.</p>
+          <p>Want to host or propose a meeting? Contact <a href={`mailto:${site.email}`}>{site.contactName}</a>.</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="section mist" id="archive">
+    <div class="wrap">
+      <h2>Past Meetings</h2>
+      <p class="muted">Slides from the 2023 London conference are linked under its program. Council and Steering Committee members can request other meeting materials from <a href={`mailto:${site.email}`}>{site.contactName}</a>.</p>
+      <div class="timeline">
+        {[...byYear.entries()].map(([year, list]) => (
+          <div class="year">
+            <h3 class="y">{year}</h3>
+            <div>
+              {list.map((m) => (
+                <article class="meeting" id={m.id}>
+                  <div class="m-main">
+                    <p class="when">{m.dates}, {m.city}</p>
+                    <h4>{m.title}</h4>
+                    {m.venue && <p class="muted venue">{m.venue}</p>}
+                    {m.summary && <p>{m.summary}</p>}
+                    {m.links && (
+                      <p class="links">{m.links.map((l) => <a href={l.url}>{l.label}</a>)}</p>
+                    )}
+                    {m.program && (
+                      <details class="program">
+                        <summary>Program and slides ({m.program.reduce((a, d) => a + d.talks.length, 0)} talks)</summary>
+                        {m.program.map((d) => (
+                          <div class="day">
+                            <h5>{d.day}</h5>
+                            <ol>
+                              {d.talks.map(([t, who, f]) => <li><a href={ilrogPdf(f)}>{t}</a> <span>{who}</span></li>)}
+                            </ol>
+                          </div>
+                        ))}
+                      </details>
+                    )}
+                    {m.agenda && (
+                      <details class="program">
+                        <summary>Agenda</summary>
+                        <div class="agenda">{m.agenda.map((src, i) => <a href={src}><img src={src} alt={`Agenda page ${i + 1}`} loading="lazy" width="1241" height="1754" /></a>)}</div>
+                      </details>
+                    )}
+                  </div>
+                  {m.image && <img class="m-img" src={m.image} alt="" loading="lazy" />}
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .none { border-left: 4px solid var(--gold); padding: 1.1rem 1.4rem; background: var(--mist); border-radius: 0 var(--radius) var(--radius) 0; max-width: 760px; }
+  .none p:last-child { margin: 0; }
+  .when { color: var(--gold-ink); font-weight: 600; font-size: .9rem; margin: 0 0 .3rem; }
+  .timeline { margin-top: 2.5rem; }
+  .year { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1.5rem; border-top: 2px solid var(--ink); padding-top: 1.25rem; margin-bottom: 2.5rem; }
+  .y { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .meeting { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 2rem; padding-bottom: 1.75rem; margin-bottom: 1.75rem; border-bottom: 1px solid var(--line); }
+  .meeting:last-child { border-bottom: 0; margin-bottom: 0; }
+  .meeting:not(:has(.m-img)) { grid-template-columns: 1fr; }
+  .meeting h4 { font-size: 1.2rem; margin-bottom: .4rem; }
+  .venue { font-size: .95rem; }
+  .links { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; font-weight: 600; font-size: .95rem; }
+  .m-img { border-radius: var(--radius); width: 100%; object-fit: cover; }
+  .program { margin-top: .5rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+  .program summary { cursor: pointer; padding: .8rem 1rem; font-weight: 600; }
+  .program[open] summary { border-bottom: 1px solid var(--line); }
+  .day { padding: .5rem 1rem 1rem; }
+  .day h5 { font-size: .95rem; margin: .75rem 0 .3rem; }
+  .day ol { margin: 0; padding-left: 1.4rem; }
+  .day li { margin: .35rem 0; }
+  .day li span { color: var(--steel); font-size: .9rem; margin-left: .3rem; }
+  .agenda { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; padding: 1rem; }
+  .agenda img { border: 1px solid var(--line); }
+  @media (max-width: 760px) {
+    .year { grid-template-columns: 1fr; gap: .5rem; }
+    .meeting { grid-template-columns: 1fr; }
+  }
+</style>

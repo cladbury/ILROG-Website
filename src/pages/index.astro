@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+import posts from '../data/posts.json';
+import { fmtDate } from '../lib/util';
+const latestPosts = posts.slice(0, 3);
+const resources = [
+  { title: 'Guidelines', href: '/guidelines/' },
+  { title: 'Publications', href: '/publications/' },
+  { title: 'Resources for Trainees', href: '/resources/#trainees' },
+  { title: 'Resident Elective', href: '/resources/#resident-elective' },
+  { title: 'IJROBP 2015 Special Edition', href: '/resources/#ijrobp-2015' },
+];
+---
+<Base current="home">
+  <section class="banner">
+    <img class="banner-img" src="/img/site/linac.jpg" alt="" width="1600" height="1067" />
+    <div class="wrap">
+      <h1>International Lymphoma Radiation Oncology Group</h1>
+    </div>
+  </section>
+
+  <section class="section" id="about-us">
+    <div class="wrap about">
+      <div>
+        <h2>About Us</h2>
+        <p class="lede">Welcome! The mission of the International Lymphoma Radiation Oncology Group (ILROG) is to improve the outcomes for patients with hematologic malignancies through the appropriate integration of high-quality radiation therapy in the management of lymphoma.</p>
+        <p>It is our hope that with this new website, it will be easier to engage with the lymphoma physician and patient communities and to disseminate existing and new evidence. Together, we can ensure that all lymphoma patients receive the evidence-based, multidisciplinary care they deserve.</p>
+        <div class="actions">
+          <a class="btn btn-ink" href="/about/">Learn more about us</a>
+          <a class="btn btn-outline" href="/team/">Meet our team</a>
+        </div>
+      </div>
+      <figure>
+        <img src="/img/site/group-photo.jpg" alt="ILROG members" width="1000" height="383" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section connect" id="connect">
+    <div class="wrap">
+      <h2>Connect With Us</h2>
+      <div class="connect-row">
+        <a href={site.twitter}>Twitter</a>
+        <a href="/membership/">Membership</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="our-resources">
+    <div class="wrap">
+      <h2>Resources</h2>
+      <ul class="res">
+        {resources.map((r) => <li><a href={r.href}>{r.title}</a></li>)}
+      </ul>
+      <p class="yt">For more resources, please check out the <a href={site.youtube}>ILROG YouTube channel</a>.</p>
+    </div>
+  </section>
+
+  <section class="section mist" id="blog-section">
+    <div class="wrap">
+      <h2>Latest Blog Posts</h2>
+      <ul class="posts">
+        {latestPosts.map((p) => (
+          <li>
+            <a href={`/blog/${p.slug}/`}>
+              <time datetime={p.date}>{fmtDate(p.date)}</time>
+              <span class="t">{p.title}</span>
+              <span class="more">Read more</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="view-all"><a class="btn btn-ink" href="/blog/">View more blog posts</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .banner { position: relative; background: var(--ink); color: var(--paper); overflow: hidden; }
+  .banner-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .38; filter: saturate(.6); }
+  .banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,35,45,.92) 0%, rgba(20,35,45,.55) 60%, rgba(20,35,45,.35) 100%); }
+  .banner .wrap { position: relative; z-index: 1; padding-top: clamp(5rem, 13vw, 10rem); padding-bottom: clamp(5rem, 13vw, 10rem); }
+  .banner h1 { font-size: clamp(2.3rem, 5.2vw, 4.1rem); max-width: 15ch; margin: 0; padding-bottom: .5em; border-bottom: 3px solid var(--gold); display: inline-block; }
+
+  .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+  .about figure { margin: 0; }
+  .about figure img { border-radius: var(--radius); width: 100%; }
+  .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.75rem; }
+  .btn-outline { border-color: var(--ink); color: var(--ink); }
+  .btn-outline:hover { background: var(--ink); color: var(--paper); }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; } }
+
+  .connect { background: var(--ink); color: var(--paper); padding: clamp(2.5rem, 5vw, 3.5rem) 0; }
+  .connect .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem 3rem; flex-wrap: wrap; }
+  .connect h2 { margin: 0; }
+  .connect-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+  .connect-row a { color: var(--paper); text-decoration: none; font-weight: 600; border: 1.5px solid rgba(255,255,255,.45); border-radius: var(--radius); padding: .75rem 1.4rem; }
+  .connect-row a:hover { border-color: var(--gold); color: var(--gold); }
+
+  .res { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
+  .res a {
+    display: flex; align-items: flex-end; min-height: 8.5rem; padding: 1.1rem 1.2rem; height: 100%;
+    background: var(--mist); border-top: 3px solid var(--gold); border-radius: 0 0 var(--radius) var(--radius);
+    color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.05rem; line-height: 1.3;
+  }
+  .res a:hover { background: var(--gold-wash); }
+  .yt { margin-top: 1.75rem; }
+  @media (max-width: 980px) { .res { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .res { grid-template-columns: 1fr 1fr; } .res a { min-height: 6rem; } }
+
+  .posts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  .posts a { display: flex; flex-direction: column; gap: .5rem; height: 100%; padding: 1.4rem; background: var(--paper); border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+  .posts time { color: var(--steel); font-size: .9rem; }
+  .posts .t { font-weight: 600; font-size: 1.15rem; line-height: 1.3; flex: 1; }
+  .posts .more { color: var(--gold-ink); font-weight: 600; font-size: .95rem; }
+  .posts a:hover .more { text-decoration: underline; }
+  .view-all { margin-top: 2rem; }
+  @media (max-width: 860px) { .posts { grid-template-columns: 1fr; } }
+</style>

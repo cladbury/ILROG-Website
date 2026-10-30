@@ -1,0 +1,14 @@
+---
+import Isodose from './Isodose.astro';
+interface Props { title: string; intro?: string; crumb?: { href: string; label: string } }
+const { title, intro, crumb } = Astro.props;
+---
+<header class="page-head">
+  <div class="contours"><Isodose seed={title.length * 31 + 5} /></div>
+  <div class="wrap">
+    {crumb && <a class="crumb" href={crumb.href}>{crumb.label}</a>}
+    <h1>{title}</h1>
+    {intro && <p>{intro}</p>}
+    <slot />
+  </div>
+</header>

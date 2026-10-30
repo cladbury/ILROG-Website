@@ -1,0 +1,266 @@
+{
+ "upcoming": [],
+ "past": [
+  {
+   "id": "toronto-2026",
+   "title": "ILROG/Princess Margaret Malignant Hematology Conference",
+   "start": "2026-03-26",
+   "end": "2026-03-28",
+   "dates": "March 26-28, 2026",
+   "city": "Toronto, Canada",
+   "venue": "Courtyard Toronto Downtown Hotel, 475 Yonge St, Toronto, ON M4Y 1X7",
+   "image": "/img/site/toronto-2026.jpg",
+   "summary": "A clinical and scientific forum co-hosted with Princess Margaret Cancer Centre on malignant hematology, stem cell transplantation, immune cell therapy and image-guided radiation therapy.",
+   "links": [
+    {
+     "label": "Meeting website",
+     "url": "https://events.myconferencesuite.com/PMHC2026/reg/landing"
+    }
+   ],
+   "contact": "Conference Services, conferences@uhn.ca"
+  },
+  {
+   "id": "abu-dhabi-2026",
+   "title": "6th ILROG Continuing Education Conference",
+   "start": "2026-01-23",
+   "end": "2026-01-24",
+   "dates": "January 23-24, 2026",
+   "city": "Abu Dhabi, UAE",
+   "venue": "Cleveland Clinic Abu Dhabi",
+   "agenda": [
+    "/img/site/abudhabi-agenda-1.jpg",
+    "/img/site/abudhabi-agenda-2.jpg",
+    "/img/site/abudhabi-agenda-3.jpg"
+   ],
+   "links": [
+    {
+     "label": "Conference website",
+     "url": "https://www.lymphomameeting.com/"
+    }
+   ]
+  },
+  {
+   "id": "astro-2025",
+   "title": "ASTRO/ILROG Joint Session: The Comeback of RT - Radiation Therapy is Back in the Frontline of Managing Hodgkin and Indolent Lymphomas",
+   "start": "2025-09-29",
+   "dates": "September 29, 2025",
+   "city": "San Francisco, USA",
+   "venue": "ASTRO Annual Meeting"
+  },
+  {
+   "id": "beijing-2024",
+   "title": "5th ILROG Continuing Education Conference: Radiotherapy in Modern Management of Lymphoma",
+   "start": "2024-05-24",
+   "end": "2024-05-27",
+   "dates": "May 24-27, 2024",
+   "city": "Beijing, China",
+   "image": "/img/site/beijing-2024.jpg",
+   "links": [
+    {
+     "label": "Program (PDF)",
+     "url": "https://www.ilrog.org/s/ILROG-5th-Educational-Conference-Program.pdf"
+    },
+    {
+     "label": "Conference website",
+     "url": "https://22145.sciconf.cn/en/web/index/"
+    }
+   ]
+  },
+  {
+   "id": "london-2023",
+   "title": "4th ILROG Educational Conference: Radiotherapy in Modern Management of Hematological Malignancies",
+   "start": "2023-09-09",
+   "end": "2023-09-10",
+   "dates": "September 9-10, 2023",
+   "city": "London, United Kingdom",
+   "links": [
+    {
+     "label": "Conference website",
+     "url": "https://hartleytaylor.co.uk/ilrog-home/"
+    }
+   ],
+   "program": [
+    {
+     "day": "Day 1",
+     "talks": [
+      [
+       "Introduction and purpose of the course",
+       "J Yahalom",
+       "Day-1-1-Introduction-and-purpose-of-the-course-J-Yahalom.pdf"
+      ],
+      [
+       "The optimal use of imaging in lymphoma in 2023",
+       "G Mikhaeel",
+       "Day-1-2-The-optimal-use-of-imaging-in-lymphoma-in-2023-G-Milhaeel.pdf"
+      ],
+      [
+       "Modern RT for lymphoma: principles of ISRT",
+       "L Specht",
+       "Day-1-3-Modern-RT-for-lymphoma-principles-of-ISRT-L-Specht.pdf"
+      ],
+      [
+       "Motion management",
+       "A Berthelsen",
+       "Day-1-4-Motion-management-A-Berthelsen.pdf"
+      ],
+      [
+       "Choice of therapy for early-stage Hodgkin lymphoma",
+       "D Hodgson",
+       "Day-1-5-Choice-of-therapy-for-early-stage-Hodgkin-lymphoma-D-Hodgson.pdf"
+      ],
+      [
+       "Modern techniques for mediastinal RT",
+       "C Pinnix",
+       "Day-1-6-Modern-techniques-for-mediastinal-RT-C-Pinnix.pdf"
+      ],
+      [
+       "Late effects of modern chemotherapy and RT",
+       "S Milgrom",
+       "Day-1-7-Late-effects-of-modern-chemotherapy-and-RT-S-Milgrom.pdf"
+      ],
+      [
+       "Role of consolidation RT in early and advanced stage DLBCL in the PET era",
+       "A Wirth",
+       "Day-1-8-Role-of-consolidation-RT-in-early-and-advanced-stage-DLBCL-in-PET-era-A-Wirth.pdf"
+      ],
+      [
+       "Choice of treatment for PMBCL",
+       "U Ricardi",
+       "Day-1-9-Choice-of-treatment-for-PMBCL-U-Ricardi.pdf"
+      ],
+      [
+       "RT for incomplete response or salvage treatment of DLBCL",
+       "A Ng",
+       "Day-1-10-RT-for-incomplete-response-or-salvage-treatment-of-DLBCL-A-Ng.pdf"
+      ],
+      [
+       "Indolent lymphomas and RT",
+       "J Yahalom",
+       "Day-1-11-Indolent-lymphomas-and-RT-J-Yahalom.pdf"
+      ],
+      [
+       "Radiotherapy for primary extranodal lymphomas",
+       "A Wirth",
+       "Day-1-12-Radiotherapy-for-primary-extra-nodal-lymphomas-A-Wirth.pdf"
+      ],
+      [
+       "Primary CNS lymphoma",
+       "B Imber",
+       "Day-1-13-Primary-CNS-lymphoma-B-Imber.pdf"
+      ],
+      [
+       "NK/T-cell lymphoma",
+       "S Qi",
+       "Day-1-14-NK-T-lymphoma-S-Qi.pdf"
+      ],
+      [
+       "MR linac and adaptive RT in lymphoma",
+       "A Ng",
+       "Day-1-15-MR-linac-and-adaptive-RT-in-lymphoma-A-Ng.pdf"
+      ]
+     ]
+    },
+    {
+     "day": "Day 2",
+     "talks": [
+      [
+       "Choice of systemic treatment and radiation therapy for CTCL",
+       "L Specht",
+       "Day-2-1-Choice-of-systemic-treatment-and-radiation-therapy-for-CTCL-L-Specht.pdf"
+      ],
+      [
+       "RT techniques and doses for CTCL",
+       "R Hoppe",
+       "Day-2-2-RT-techniques-and-doses-for-CTCL-R-Hoppe.pdf"
+      ],
+      [
+       "Non-CTCL cutaneous lymphomas",
+       "B Dabaja",
+       "Day-2-3-Non-CTCL-cutaneous-lymphomas-B-Dabaja.pdf"
+      ],
+      [
+       "Plasma cell tumours: choice of systemic therapy",
+       "R Benjamin",
+       "Day-2-4-Plasma-cell-tumours-choice-of-systemic-therapy-R-Benjamin.pdf"
+      ],
+      [
+       "Solitary plasmacytoma",
+       "R Tsang",
+       "Day-2-5-Solitary-plasmacytoma-R-Tsang.pdf"
+      ],
+      [
+       "Role of RT in myeloma",
+       "Y Tseng",
+       "Day-2-6-Role-of-RT-in-myeloma-Y-Tseng.pdf"
+      ],
+      [
+       "CAR-T, bispecifics and drugs in the pipeline",
+       "A Davies",
+       "Day-2-7-CAR-T-bi-specifics-and-drugs-in-the-pipeline-A-Davies.pdf"
+      ],
+      [
+       "RT with CAR-T: available data",
+       "J Plastaras",
+       "Day-2-8-RT-with-CAR-T-available-data-J-Plastaras.pdf"
+      ],
+      [
+       "RT with CAR-T: practical application",
+       "G Mikhaeel",
+       "Day-2-9-RT-with-CAR-T-practical-application-G-Mikhaeel.pdf"
+      ],
+      [
+       "RT with CAR-T: future directions",
+       "B Dabaja",
+       "Day-2-10-RT-with-CAR-T-future-directions-B-Dabaja.pdf"
+      ]
+     ]
+    }
+   ],
+   "venue": "One Great George Street, London"
+  },
+  {
+   "id": "ishl-12",
+   "title": "ISHL-12, International Symposium on Hodgkin Lymphoma",
+   "start": "2022-10-22",
+   "end": "2022-10-24",
+   "dates": "October 22-24, 2022",
+   "city": "Cologne, Germany",
+   "venue": "Gürzenich Hall"
+  },
+  {
+   "id": "ash-2021",
+   "title": "ASH Annual Meeting",
+   "start": "2021-12-11",
+   "end": "2021-12-14",
+   "dates": "December 11-14, 2021",
+   "city": "Atlanta, Georgia, USA",
+   "venue": "Georgia World Congress Center"
+  },
+  {
+   "id": "tokyo-2019",
+   "title": "ILROG Tokyo meeting",
+   "start": "2019-01-01",
+   "dates": "2019",
+   "city": "Tokyo, Japan",
+   "links": [
+    {
+     "label": "Meeting materials",
+     "url": "https://drive.google.com/drive/folders/1u3kyqlCAsXuH0K4JM08omTdyfSU_Z0sP?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "nyc-2015",
+   "title": "ILROG New York meeting",
+   "start": "2015-01-01",
+   "dates": "2015",
+   "city": "New York, USA",
+   "links": [
+    {
+     "label": "Meeting materials",
+     "url": "http://managedcme.net/resources/mskcc/ilrog15/talks"
+    }
+   ]
+  }
+ ]
+}

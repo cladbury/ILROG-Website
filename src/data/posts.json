@@ -1,0 +1,104 @@
+[
+ {
+  "slug": "chairmans-update-december-18-2020",
+  "oldSlug": "chairmans-update-december-18-2020",
+  "title": "Chairman's Update December 18, 2020",
+  "date": "2020-12-18",
+  "author": "Joachim Yahalom",
+  "body": [
+   "Welcome to the International Lymphoma Radiation Oncology Group’s (ILROG) revised website! Despite the challenges of the year, ILROG has continued to expand and grow. ILROG currently has approximately 1600 members, with 73 countries represented; our goal is to improve patient care, strengthen the role of radiation oncology in hematological malignancies, educate radiation and medical oncologists around the world, and conduct multi-center, multi-country collaborative research.",
+   "In the New Year, we plan to frequently update our blog to share guidelines for radiotherapy of lymphomas from world renowned radiation oncologists, address the treatment-related limitations due to current COVID-19 pandemic for patients and oncologists, and provide top notch educational materials. Visit the blog periodically to read updates from ILROG’s Steering Committee & Council members, and for news on upcoming educational and research functions!",
+   "Sincerely,",
+   "Joachim Yahalom",
+   "Chairman, ILROG"
+  ],
+  "refs": []
+ },
+ {
+  "slug": "update-follicular-lymphoma-by-sarah-milgrom-md-and-rahul-parikh-md",
+  "oldSlug": "update-follicular-lymphoma-by-sarah-milgrom-md-and-rahul-parikh-md",
+  "title": "Update: Follicular Lymphoma by Sarah Milgrom, MD and Rahul Parikh, MD",
+  "date": "2017-09-13",
+  "author": "Sarah Milgrom and Rahul Parikh",
+  "body": [
+   "Brief Overview:",
+   "Follicular lymphoma (FL) is the most common indolent non-Hodgkin lymphoma.  It arises from follicle center B-cells, contains centrocytes and centroblasts, and has at least a partially follicular pattern.  The majority of cases are advanced stage at diagnosis, with frequent nodal and bone marrow involvement.  Approximately 25% of patients have localized (stage I-II) disease at the time of presentation.  FL is exquisitely radiosensitive, with high rates of disease response observed after treatment with low doses of radiation therapy (RT).  In the subset of patients with localized disease, RT may be curative; in those with advanced stage disease, RT provides effective palliation.",
+   "For patients with stage I or contiguous stage II, grade 1-2 FL, involved site RT is the treatment of choice.  Data from multiple groups have shown local control rates of >90% following definitive RT.  However, in historical series, relapse with systemic disease outside of the radiation field was common, with 10-year relapse-free and overall survival rates of approximately 50% and 70%, respectively.  A plateau in the disease-free survival curve was observed beyond 10-15 years, suggesting that a proportion of patients were cured with RT (Guadagnolo et al. 2006; MacManus et al. 1996). An important limitation of these older published series is that at least some patients were treated before metabolic imaging was used for staging.  Therefore, patients may have had undiagnosed advanced-stage disease.  Furthermore, the RT fields were more extensive and salvage options more limited, so it may be difficult to apply the data to today’s experience and prognosis discussions.  To address these concerns, ILROG recently reported the outcomes of curative RT for localized FL in patients treated in the modern era and staged with PET-CT.  They found that 5-year freedom from progression (FFP) was 70.2% and overall survival was 95.8%.  5-year FFP was 74.3% for patients with stage I disease and 48.1% for stage II (Brady et al. 2017).  Thus, outcomes after RT in these PET‐CT-staged patients were better than in some earlier series, suggesting that the curative potential of RT for truly localized FL may have been underestimated previously.",
+   "The accepted radiation doses for the management of FL were established by 2 dose de-escalation studies.  First, in the trial published by Lowry et al, patients with indolent NHL (primarily FL) were randomized to receive the historical, standard dose of 40–45 Gy or the experimental, reduced dose of 24 Gy.  No difference was observed between the arms in disease response, local progression, disease free-survival, or overall-survival rates (Lowry et al. 2011).  Thus, 24 Gy in 12 fractions became the accepted dose for definitive RT.  The reported efficacy of even lower doses of RT prompted the FORT trial, which compared outcomes after treatment to a total dose of 24 Gy in 12 fractions vs. 4 Gy in 2 fractions.  In the patients treated with just 4 Gy, the overall response rate (ORR) was 81% (48% complete response [CR] and 32% partial response [PR]).  The CR rate was higher in patients treated with 24 Gy.  However, given the high ORR, ease of administration, and minimal toxicity associated with 4 Gy, the authors concluded that this very low dose is a useful alternative to 24 Gy in instances when local control is less of a priority (Hoskin et al. 2014).",
+   "Given the potential for early-stage FL patients to experience prolonged disease-free intervals and even cure after localized RT, both the National Comprehensive Cancer Network and European Society for Medical Oncology have published guidelines recommending primary RT in this setting.  Furthermore, a modeling study presented at ASCO 2017 demonstrated that the most cost-effective treatment of early-stage, low-grade FL is frontline RT, with R-CHOP used if needed for relapsed disease (Yang et al. 2017).  Despite these recommendations and findings, only a minority of patients with stage I disease are treated with upfront RT in the United States.  The LymphoCare study was designed to collect information on treatment regimens and outcomes for patients with newly diagnosed FL in the United States.  Of the stage I patients enrolled, only 23% received RT at diagnosis and an additional 8% had RT immediately after chemotherapy, suggesting a combined modality approach (Friedberg et al. 2009).  Thus, contrary to practice guidelines, clinicians omit RT frequently in the management of stage I FL.",
+   "The role of systemic therapy, given in combination with definitive RT, is an area of ongoing study.  Recently presented phase III data suggested that treatment with CVP +/- rituximab in combination with RT resulted in superior PFS than treatment with RT alone in stage I-II, low-grade FL (MacManus et al. 2016).  Final publication of these results is eagerly anticipated to further elucidate the role of combined modality therapy in the management of early-stage, low-grade FL patients.",
+   "Selected Papers:",
+   "1) RT is effective therapy for localized, low-grade FL:",
+   "Guadagnolo et al.  IJROBP 2006;64(3):928-34.  Long-term outcome and mortality trends in early-stage, grade 1-2 follicular lymphoma treated with radiation therapy",
+   "MacManus et al.  J Clin Oncol 1996; Apr;14(4):1282-90.  Is radiotherapy curative for stage I and II low grade follicular lymphoma? Results of a long-term follow-up study of patients treated at Stanford University.",
+   "Brady JL et al.  Presented at the International Conference on Malignant Lymphoma 2017.  Outcome of curative radiotherapy for localized follicular lymphoma in the era of 18F-FDG PET-CT staging: an international collaborative study on behalf of ILROG",
+   "2) Defining the optimal RT dose:",
+   "Lowry et al.  Radiother and Oncol 2011;100:86-92.  Reduced dose radiotherapy for local control in non-Hodgkin lymphoma: a randomised phase III trial",
+   "Hoskin et al. Lancet Oncol 2014;15:457-63.  4 Gy versus 24 Gy radiotherapy for patients with indolent lymphoma (FORT): a randomised phase 3 non-inferiority trial",
+   "3) Cost-effectiveness of RT:",
+   "Yang et al.  Presented at ASCO 2017.  Cost-effectiveness analysis of first-line treatments for early-stage low-grade follicular lymphoma",
+   "4) Patterns of care in the United States:",
+   "Friedberg et al. J Clin Oncol. 2009 Mar 10; 27(8): 1202–1208.  Follicular Lymphoma in the United States: First Report of the National LymphoCare Study",
+   "5) Role of systemic therapy:",
+   "MacManus et al.  Presented at ASTRO 2016.  Treatment with 6 cycles of CVP or R-CVP after involved field radiation therapy (IFRT) significantly improves progression-free survival compared to IFRT alone in stage I-II low-grade follicular lymphoma: results of an international randomized trial"
+  ],
+  "refs": []
+ },
+ {
+  "slug": "chairmans-checkup-sept-2016-by-joachim-yahalom-md",
+  "oldSlug": "chairmans-checkup-sept-2016-by-joachim-yahalom-md",
+  "title": "Chairman's Checkup Sept 2016 by Joachim Yahalom, MD",
+  "date": "2016-09-21",
+  "author": "Joachim Yahalom",
+  "body": [
+   "CHAIRMAN’S CHECKUP – SEPTEMBER 2016",
+   "Several important events have taken place over the summer, numerous projects are in progress, and new plans and ideas are on the design board waiting for your input and expansion.",
+   "1- Relocation of our virtual office to Los Angeles, California.",
+   "Ms. Jessi Shuttleworth, who played a major role in the incorporation of ILROG, organizing meetings, building our new website, communicating regularly with all of us, and practically running all of ILROG’s administration as the Director of ILROG, has moved from New York City to Los Angeles, California. It is not only for better weather, but primarily to augment her blossoming career as a screenwriter and filmmaker. She was accepted to the top graduate program in the US for film—the American Film Institute (AFI). We should all be very proud of her accomplishments.",
+   "Jessi will continue to be fully engaged and even increase her responsibilities for ILROG. The new, rapidly growing ILROG website and upcoming projects are a testimony to her talent and multi-tasking ability to master more than one field.",
+   "Jessi’s new email is shuttleworth@ilrog.com",
+   "I wish Jessi, on ILROG members’ behalf, a wonderful time and much success at AFI. We are very fortunate that she continues to work with us.",
+   "2- Upgraded and newly formatted ILROG website.   www.ilrog.com",
+   "The newly upgraded ILROG website is now user-friendly and contains a large amount of practical material, primarily produced by ILROG members. The website is an invaluable source of information and provides a communication forum that we will enhance.",
+   "3- ILROG Guidelines – Past and Future",
+   "We were very successful in accomplishing, discussing, composing, and publishing five major guidelines (HL, Nodal NHL, Extra-Nodal NHL, Skin, and Pediatric HL). It has changed and harmonized modern RT for lymphoma and proven to be highly popular and influential.  See the attached Red Journal editorial on the most downloaded papers in 2015. ILROG Guidelines have been incorporated in several national lymphoma guidelines, and the guidelines helped, together with multiple other ILROG educational activities, to make ILROG a household name that most radiation oncologists and many lymphoma oncologists are familiar with.",
+   "The published guidelines are not perfect. Some topics require clarification, practical examples, and updating. Therefore, we should discuss the next steps and timeline.",
+   "There are early discussions within the group on upcoming new topics for guidelines:",
+   "1. Leukemia (possibly including TBI) with emphasis on the management of Chloromas - Granulocytic Sarcomas",
+   "2. RT for salvage (addressing also the incorporation of the many new systemic drugs and biologicals), likely separated to HL and to NHL",
+   "3. RT for Plasma Cell Malignancies",
+   "We will discuss more details and logistics at the Steering Committee business meeting and on upcoming web forums (soon to be created) so Council Members can also participate and contribute, and are encouraged to do so.",
+   "4- Recent and Upcoming Educational Activities",
+   "ESTRO School of Oncology Course on Hematological Malignancies with the Initiative and participation of ILROG was held in Vienna earlier this month.",
+   "It was an enormous success with participation at full capacity of 55 attendees from 29 (!) countries.",
+   "Kudos to Prof. Lena Specht, who organized and chaired the course for the second time (last year it was in London). She will report on it and the feedback received in more detail in the near future. The course lectures will soon be available on the ILROG website.",
+   "The Melbourne meeting is shaping up to become a milestone in ILROG activity. Andrew Wirth will provide more exciting details.",
+   "5- ILROG Collaborative Research Projects, Ad Hoc Committees, and New Initiatives",
+   "​",
+   "These projects, committees, and initiatives will be discussed at ASTRO and updates on each will be available in the next blog."
+  ],
+  "refs": []
+ },
+ {
+  "slug": "dlbcl-a-historical-overview-by-sarah-milgrom-md-and-rahul-parikh-md",
+  "oldSlug": "dlbcl-a-historical-overview-by-sarah-milgrom-md-and-rahul-parikh-md",
+  "title": "DLBCL: A Historical Overview by Sarah Milgrom, MD and Rahul Parikh, MD",
+  "date": "2016-09-01",
+  "author": "Sarah Milgrom and Rahul Parikh",
+  "body": [
+   "Diffuse large B-cell lymphoma (DLCBL) is the most common histologic subtype of non-Hodgkin lymphoma.  Historically, the primary treatment of localized DLBCL was radiation therapy (RT).  Then, in the 1970’s-1980’s, the addition of chemotherapy was shown to improve survival, and CHOP (cyclophosphamide, doxorubicin, vincristine, and prednisone) became the standard therapy.  At that time, several trials were initiated to assess the role of RT in patients receiving chemotherapy.  The results were inconsistent between trials, likely due to variations in study populations and design.  One landmark study from the pre-rituximab era is SWOG-8736 (1,2), a phase III trial comparing 8 cycles of CHOP alone to 3 cycles of CHOP with involved field RT in low risk patients. Although early results showed a survival benefit for the combined modality arm, longer follow-up showed an excess distant failure rate, suggesting that 3 cycles of CHOP is insufficient to control systemic disease.  However, a subsequent analysis showed that the most favorable subgroup experienced excellent outcomes with combined modality therapy, supporting use of an abbreviated course of chemotherapy followed by RT in low risk patients.",
+   "In the early 2000’s, the addition of rituximab, an anti-CD20 monoclonal antibody, was shown to improve survival in DLBCL, and R-CHOP became the standard of care.  A retrospective analysis from MD Anderson (3) was one of the first studies to evaluate the role of RT in a population treated uniformly with rituximab and chemotherapy.  The authors demonstrated improved progression-free and overall survival in patients who received RT.  Other institutions have reported similar findings.  Additionally, studies using the National Cancer Database (NCDB) (4) and Surveillance, Epidemiology, and End Results (SEER) Program database5 have demonstrated improved survival associated with RT.  Nonetheless, these large database studies have demonstrated declining use of RT with time.",
+   "Recent research has focused on identifying the subgroups of patients that benefit from consolidative RT, after experiencing a complete response to rituximab and chemotherapy.  For example, the RICOVER noRTh study (6) demonstrated improved outcomes in patients who received consolidative RT to initially bulky sites of disease.  Another report by Held et al. (7) demonstrated improved outcomes associated with RT to skeletal sites.  These studies support the use of RT, following completion of rituximab and chemotherapy, to address initially bulky or osseous sites of disease.  The results of ongoing randomized trials from the modern era are eagerly anticipated to further guide selection of candidates for RT."
+  ],
+  "refs": [
+   "Miller et al. N Engl J Med 1998;339(1):21-6. Chemotherapy alone compared with chemotherapy plus radiotherapy for localized intermediate- and high-grade non-Hodgkin's lymphoma.",
+   "Stephens et al. J Clin Oncol 2016. Continued Risk of Relapse Independent of Treatment Modality in Limited-Stage Diffuse Large B-Cell Lymphoma: Final and Long-Term Analysis of Southwest Oncology Group Study S8736.",
+   "Phan et al. J Clin Oncol 2010;28(27):4170-6. Benefit of consolidative radiation therapy in patients with diffuse large B-cell lymphoma treated with R-CHOP chemotherapy.",
+   "Vargo et al. J Clin Oncol 2015;33(32):3710-7. Treatment Selection and Survival Outcomes in Early-Stage Diffuse Large B-Cell Lymphoma: Do We Still Need Consolidative Radiotherapy?",
+   "Haque et al. Radiother Oncol 2016.Changes in treatment patterns and impact of radiotherapy for early stage diffuse large B cell lymphoma after Rituximab: A population-based analysis.",
+   "Held et al. J Clin Oncol 2014;32(11):1112-8. Role of radiotherapy to bulky disease in elderly patients with aggressive B-cell lymphoma.",
+   "Held G et al. J Clin Oncol 2013;31(32):4115-22. Impact of rituximab and radiotherapy on outcome of patients with aggressive B-cell lymphoma and skeletal involvement. ",
+   "​"
+  ]
+ }
+]

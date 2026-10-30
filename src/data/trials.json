@@ -1,0 +1,82 @@
+[
+  {
+    "id": "gastric-indolent-20gy",
+    "disease": "Marginal zone or follicular lymphoma, stage I-II, stomach or duodenum",
+    "title": "Trial to assess the Efficacy of Low Radiation Dose of 20 Gy for the Treatment of Marginal Zone Lymphoma or Follicular Lymphoma Stage I-II localized in the Stomach or the Duodenum",
+    "dose": "20 Gy in 10 fractions",
+    "synopsis": "Current knowledge tells us that RT doses from 20 to 40 Gy reach a consistent tumor control in a variety of (extra-)nodal indolent lymphoma. In this trial the effectiveness of 20 Gy will be verified for gastric/duodenal indolent lymphoma in a prospective stratified design using the modern radiation technique ISRT. This trial addresses the research question, if 20 Gy ISRT is not relevantly inferior to the currently recommended standard dose of 30Gy. The primary objective is to demonstrate the efficacy and safety of the low-dose RT concept with 20 Gy (2 Gy x 10 fractions) in indolent lymphomas of the stomach and duodenum.",
+    "pis": "Dr Gabriele Reinartz and Dr Hans Eich (University of Münster)",
+    "sites": [
+      "University of Münster",
+      "Beijing Cancer Hospital",
+      "Essen University",
+      "Gießen Marburg University",
+      "Heidelberg University",
+      "Mönchengladbach",
+      "TU München",
+      "Tübingen University",
+      "Kiel University"
+    ],
+    "protocol": "https://www.ilrog.org/s/ILROG-and-GLA_Study-Protocol_ISRT-20Gy-Indolent-Lymphoma-Stomach-and-Duodenum_V01_23082020-1.pdf",
+    "status": "Recruiting",
+    "statusNote": "Listed as recruiting on ClinicalTrials.gov (record last updated August 2024).",
+    "registry": "https://clinicaltrials.gov/study/NCT04097067",
+    "nct": "NCT04097067"
+  },
+  {
+    "id": "dlbcl-dose-reduced",
+    "disease": "Diffuse large B-cell lymphoma",
+    "title": "Study of Dose-Reduced Consolidation Radiation Therapy in Patients with Diffuse Large B-cell Lymphoma",
+    "dose": "30 Gy reduced to 20 Gy",
+    "synopsis": "This phase II study will evaluate whether a reduction in the dose of consolidation RT in patients who achieve a negative post-chemotherapy PET-CT scan following 3 to 6 cycles of chemoimmunotherapy, will be associated with a low risk of in-field failure. The goal of this approach is to maintain excellent control rates while minimizing the risk of acute and late toxicity. The hypothesis is that after more effective systemic therapy (employing rituximab), and confirmation of optimal response to chemotherapy (negative post-chemotherapy PET-CT), the RT dose can be safely reduced from 30 Gy to 20 Gy while maintaining high rates of local control.",
+    "pis": "Dr Chris Kelsey (Duke)",
+    "sites": [
+      "Duke",
+      "MD Anderson Cancer Center",
+      "Yonsei Cancer Center",
+      "Juntendo University",
+      "SingHealth",
+      "University of Rochester",
+      "Mayo Clinic",
+      "Dana-Farber/Brigham and Women's"
+    ],
+    "protocol": "https://www.ilrog.org/s/Pro00100510_Protocol_v_04Aug2020.pdf",
+    "status": "Accrual complete",
+    "statusNote": "241 patients enrolled; accrual completed in 2023. Long-term results of the original Duke phase 2 study were published in 2025.",
+    "registry": "https://clinicaltrials.gov/study/NCT03681535",
+    "nct": "NCT03681535",
+    "results": [
+      {
+        "label": "Long-term update of the Duke phase 2 study (IJROBP 2025)",
+        "url": "https://doi.org/10.1016/j.ijrobp.2025.02.009"
+      }
+    ]
+  },
+  {
+    "id": "myeloma-2x2",
+    "disease": "Multiple myeloma, painful bone lesions",
+    "title": "Multi-Institutional Study of Low-Dose (2Gy x 2) Palliative Radiotherapy in the Treatment of Symptomatic Bone metastases from Multiple Myeloma",
+    "dose": "4 Gy in 2 fractions",
+    "synopsis": "Because multiple myeloma patients have multiple bone lesions and live for an extended period of time with bone lesions, many patients have more than one course of palliative RT for bone pain. Shorter courses of therapy are not only more convenient for patients and their families, but they also have less impact on timing of systemic therapies. The primary objective of this study is to determine whether treatment with 2Gy x 2 to a painful myeloma bone lesion achieves patient-reported pain reduction comparable to historical controls at 4 weeks.",
+    "pis": "Dr Leslie Ballas (University of Southern California; now at Cedars-Sinai)",
+    "sites": [
+      "University of Southern California",
+      "Dana-Farber/Brigham and Women's",
+      "Mount Sinai",
+      "University of Pennsylvania",
+      "Emory",
+      "Massachusetts General Hospital"
+    ],
+    "protocol": "https://www.ilrog.org/s/16M-18-2_Protocol-Version-12112020_trackeddocx.pdf",
+    "status": "Results presented",
+    "statusNote": "Results were presented at the 2026 ASTRO Annual Meeting: 63 evaluable patients at seven institutions, and 81% achieved pain control without additional radiation.",
+    "registry": "https://clinicaltrials.gov/study/NCT03858205",
+    "nct": "NCT03858205",
+    "results": [
+      {
+        "label": "ASTRO 2026 news release",
+        "url": "https://www.astro.org/news-and-publications/news-and-media-center/news-releases/2026/ultra-low-dose-radiation-therapy-relieves-bone-pain-from-multiple-myeloma"
+      }
+    ]
+  }
+]

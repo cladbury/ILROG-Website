@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import SearchBox from '../components/SearchBox.astro';
+import Filter from '../components/Filter.astro';
+import guidelines from '../data/guidelines.json';
+import { slugify } from '../lib/util';
+const total = guidelines.reduce((a, g) => a + g.items.length, 0);
+const groups = guidelines.map((g) => ({ ...g, slug: slugify(g.name), items: [...g.items].sort((a, b) => b.year - a.year) }));
+---
+<Base title="Guidelines" current="resources" description="ILROG radiation therapy guidelines for lymphoma and other hematologic malignancies, by disease site.">
+  <PageHead title="Guidelines" intro={`${total} ILROG consensus guidelines on target volumes, dose and technique, grouped by disease site. Each entry opens the published paper.`} />
+  <section class="section">
+    <div class="wrap indexed">
+      <nav class="side-index" aria-label="Disease sites">
+        <ol>
+          {groups.map((g) => <li><a href={`#${g.slug}`}>{g.name}<span>{g.items.length}</span></a></li>)}
+        </ol>
+      </nav>
+      <div id="gl">
+        <SearchBox id="gl-q" label="Search guidelines" placeholder="Search by title, disease or year" />
+        {groups.map((g) => (
+          <section class="ref-group" id={g.slug} data-group>
+            <h2>{g.name}</h2>
+            <ul class="refs">
+              {g.items.map((i) => (
+                <li class="ref" data-item data-text={`${g.name} ${i.title} ${i.year}`}>
+                  <span class="yr">{i.year}</span>
+                  <a class="t" href={i.url}>{i.title}</a>
+                  <span class="src">{i.source}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+        <p class="empty-note">No guidelines match that search. Try a disease name such as "Hodgkin" or a year.</p>
+      </div>
+    </div>
+  </section>
+  <Filter input="gl-q" scope="gl" />
+</Base>

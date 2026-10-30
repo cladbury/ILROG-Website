@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import site from '../data/site.json';
+---
+<Base title="Contact" description="Contact the ILROG office in New York.">
+  <PageHead title="Contact" intro="Questions about membership, meetings, guidelines or research go to the ILROG office." />
+  <section class="section">
+    <div class="wrap contact">
+      <div>
+        <h2>Email</h2>
+        <p>{site.contactName}<br /><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </div>
+      <div>
+        <h2>Phone</h2>
+        <p><a href={`tel:${site.phoneHref}`}>{site.phone}</a></p>
+      </div>
+      <div>
+        <h2>Office</h2>
+        <address>{site.address.map((l) => <>{l}<br /></>)}</address>
+      </div>
+    </div>
+  </section>
+  <section class="section mist">
+    <div class="wrap">
+      <h2>Ask an Expert!</h2>
+      <p>ILROG is interested in the challenging cases you are seeing. To discuss a case with ILROG faculty, email a short, de-identified summary to <a href={`mailto:${site.email}?subject=Ask%20an%20expert`}>{site.email}</a>. Do not include patient names, dates of birth or other identifying details.</p>
+    </div>
+  </section>
+</Base>
+<style>
+  .contact { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2rem; border-top: 2px solid var(--ink); padding-top: 1.5rem; }
+  .contact h2 { font-size: 1rem; color: var(--steel); }
+  .contact p, .contact address { font-size: 1.15rem; font-style: normal; }
+  @media (max-width: 760px) { .contact { grid-template-columns: 1fr; } }
+</style>

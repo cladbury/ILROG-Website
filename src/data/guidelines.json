@@ -1,0 +1,157 @@
+[
+ {
+  "name": "Technical Considerations",
+  "items": [
+   {
+    "year": 2020,
+    "title": "Involved site radiation therapy in adult lymphomas: An overview of ILROG guidelines",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32272184/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2020,
+    "title": "Making every single gray count: Involved site radiation therapy delineation guidelines for hematological malignancies",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31928641/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2019,
+    "title": "The optimal use of imaging in radiation therapy for lymphoma: guidelines from ILROG",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30763664/",
+    "source": "PubMed"
+   }
+  ]
+ },
+ {
+  "name": "RT for Lymphomas during COVID-19",
+  "items": [
+   {
+    "year": 2020,
+    "title": "ILROG emergency guidelines for RT of hematological malignancies during the COVID-19 pandemic",
+    "url": "https://ashpublications.org/blood/article/135/21/1829/454357/ILROG-emergency-guidelines-for-radiation-therapy",
+    "source": "Blood"
+   }
+  ]
+ },
+ {
+  "name": "Hodgkin Lymphoma",
+  "items": [
+   {
+    "year": 2014,
+    "title": "Modern RT for Hodgkin Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23790512/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2018,
+    "title": "The Role of RT in Patients with Relapsed or Refractory Hodgkin Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29722655/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2024,
+    "title": "NCCN Guidelines",
+    "url": "https://www.ilrog.org/s/Hodgkin_22024_Panel-Notification.pdf",
+    "source": "PDF"
+   },
+   {
+    "year": 2015,
+    "title": "Implementation of contemporary radiation therapy planning concepts for pediatric Hodgkin lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25413415/",
+    "source": "PubMed",
+    "added": true
+   }
+  ]
+ },
+ {
+  "name": "Non-Hodgkin Lymphoma",
+  "items": [
+   {
+    "year": 2014,
+    "title": "Modern RT for Nodal NHL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24725689/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2015,
+    "title": "Modern RT for Extranodal Lymphomas",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25863750/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2018,
+    "title": "Role of RT in Patients With Relapsed/Refractory DLBCL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29413279/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2021,
+    "title": "Modern RT for Extranodal Nasal-Type NK/T-cell Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33581262/",
+    "source": "PubMed",
+    "added": true
+   }
+  ]
+ },
+ {
+  "name": "Chloroma and Leukemia",
+  "items": [
+   {
+    "year": 2018,
+    "title": "Total Body Irradiation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29893272/",
+    "source": "PubMed"
+   },
+   {
+    "year": 2018,
+    "title": "Radiation in CNS Leukemia",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30102203/",
+    "source": "PubMed"
+   }
+  ]
+ },
+ {
+  "name": "Lymphoblastic Lymphoma",
+  "items": [
+   {
+    "year": 2018,
+    "title": "Lymphoblastic Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30238900/",
+    "source": "PubMed"
+   }
+  ]
+ },
+ {
+  "name": "Primary Cutaneous Lymphoma",
+  "items": [
+   {
+    "year": 2015,
+    "title": "Modern RT for Primary Cutaneous Lymphomas",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25863751/",
+    "source": "PubMed"
+   }
+  ]
+ },
+ {
+  "name": "Solitary Plasmacytoma and Multiple Myeloma",
+  "items": [
+   {
+    "year": 2018,
+    "title": "RT for Solitary Plasmacytoma and Multiple Myeloma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29976492/",
+    "source": "PubMed"
+   }
+  ]
+ },
+ {
+  "name": "Proton Therapy",
+  "items": [
+   {
+    "year": 2018,
+    "title": "Proton Therapy for Adults with Mediastinal Lymphoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30108066/",
+    "source": "PubMed"
+   }
+  ]
+ }
+]

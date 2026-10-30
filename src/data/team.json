@@ -1,0 +1,1234 @@
+[
+ {
+  "name": "Leadership",
+  "people": [
+   {
+    "name": "Joachim Yahalom",
+    "credentials": "MD",
+    "role": "Chairman",
+    "affiliation": [
+     "Professor of Radiation Oncology",
+     "Memorial Sloan Kettering Cancer Center",
+     "New York, NY, USA"
+    ],
+    "photo": "joachim-yahalom.jpg"
+   },
+   {
+    "name": "Lena Specht",
+    "credentials": "MD PhD",
+    "role": "Vice Chairman, Director of Guidelines",
+    "affiliation": [
+     "Professor of Oncology",
+     "Rigshospitalet, Copenhagen University Hospital",
+     "Copenhagen, Denmark"
+    ],
+    "photo": "lena-specht.jpg"
+   }
+  ]
+ },
+ {
+  "name": "Steering Committee",
+  "people": [
+   {
+    "name": "Berthe M. P. Aleman",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Department of Radiotherapy",
+     "The Netherlands Cancer Institute",
+     "Antoni van Leeuwenhoek Hospital",
+     "Amsterdam, The Netherlands"
+    ],
+    "photo": "berthe-m-p-aleman.jpg"
+   },
+   {
+    "name": "Anne Kiil Berthelsen",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Chief Physician",
+     "Rigshospitalet, Copenhagen University Hospital",
+     "PET & Cyclotron Unit and the Department of Radiotherapy",
+     "Copenhagen, Denmark"
+    ],
+    "photo": "anne-kiil-berthelsen.jpg"
+   },
+   {
+    "name": "Jessica Brady",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Guy's Cancer Centre, Guy's and St Thomas' Hospital",
+     "London, United Kingdom"
+    ],
+    "photo": null
+   },
+   {
+    "name": "Louis S. Constine",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor of Radiation Oncology and Pediatrics",
+     "Vice Chair, Dept. of Radiation Oncology",
+     "University of Rochester Medical Center",
+     "Rochester, New York, USA"
+    ],
+    "photo": "louis-s-constine.jpg"
+   },
+   {
+    "name": "Bouthaina Dabaja",
+    "credentials": "MD",
+    "role": "Director of Research",
+    "affiliation": [
+     "Professor and Section Chief Lymphoma",
+     "Department of Radiation Oncology",
+     "University of Texas MD Anderson Cancer Center",
+     "Houston, Texas, USA"
+    ],
+    "photo": "bouthaina-dabaja.jpg"
+   },
+   {
+    "name": "Karin Dieckmann",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor",
+     "Department of Radiation Oncology",
+     "Medical University of Vienna",
+     "General Hospital of Vienna",
+     "Vienna, Austria"
+    ],
+    "photo": "karin-dieckmann.jpg"
+   },
+   {
+    "name": "Hans Theodor Eich",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Head of the Department of Radiation Oncology",
+     "University of Munster",
+     "Munster, Germany"
+    ],
+    "photo": "hans-theodor-eich.jpg"
+   },
+   {
+    "name": "David Hodgson",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor",
+     "Department of Radiation Oncology",
+     "University of Toronto",
+     "Princess Margaret Cancer Centre",
+     "Toronto, Ontario, Canada"
+    ],
+    "photo": "david-hodgson.jpg"
+   },
+   {
+    "name": "Bradford Hoppe",
+    "credentials": "MD MPH",
+    "role": null,
+    "affiliation": [
+     "Associate Professor",
+     "Department of Radiation Oncology",
+     "Mayo Clinic Florida",
+     "Jacksonville, FL, USA"
+    ],
+    "photo": "bradford-hoppe.jpg"
+   },
+   {
+    "name": "Richard Hoppe",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "The Henry S. Kaplan-Harry Lebeson in Cancer Biology and Professor",
+     "Department of Radiation Oncology",
+     "Stanford University",
+     "Stanford, CA, USA"
+    ],
+    "photo": "richard-hoppe.jpg"
+   },
+   {
+    "name": "Tim Illidge",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Professor of Targeted Therapy and Oncology",
+     "School of Cancer and Imaging Sciences",
+     "University of Manchester",
+     "Manchester Academic Health Science Centre",
+     "Manchester Cancer Research Centre",
+     "The Christie NHS Foundation Trust",
+     "Manchester, England, UK"
+    ],
+    "photo": "tim-illidge.jpg"
+   },
+   {
+    "name": "Brandon Imber",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Attending",
+     "Department of Radiation Oncology",
+     "Memorial Sloan Kettering Cancer Center",
+     "New York, NY, USA"
+    ],
+    "photo": "brandon-imber.jpg"
+   },
+   {
+    "name": "Youlia Kirova",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Radiation Oncologist",
+     "Department of Radiation Oncology",
+     "Institut Curie",
+     "Paris, France"
+    ],
+    "photo": "youlia-kirova.jpg"
+   },
+   {
+    "name": "Siddhartha Laskar",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Attending, Department of Radiation Oncology",
+     "Tata Memorial Center",
+     "Mumbai, India"
+    ],
+    "photo": "siddhartha-laskar.jpg"
+   },
+   {
+    "name": "Ye-Xiong Li",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "President, Chinese Society of Radiation Oncology",
+     "Editor-in-Chief, Chinese Journal of Radiation Oncology",
+     "Professor and Chairman",
+     "Department of Radiation Oncology",
+     "Cancer Hospital and Institute",
+     "Chinese Academy of Medical Sciences and Peking Union Medical College",
+     "Beijing, China"
+    ],
+    "photo": "ye-xiong-li.jpg"
+   },
+   {
+    "name": "George Mikhaeel",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, Radiation Oncology",
+     "Consultant Clinical Oncologist",
+     "Head of Clinical Oncology & Radiotherapy",
+     "Guy's & St. Thomas' NHS Foundation Trust",
+     "London, England, UK"
+    ],
+    "photo": "george-mikhaeel.jpg"
+   },
+   {
+    "name": "Andrea Ng",
+    "credentials": "MD MPH",
+    "role": null,
+    "affiliation": [
+     "Associate Professor of Radiation Oncology",
+     "Brigham and Women's Hospital",
+     "Dana-Farber Cancer Institute",
+     "Harvard Medical School",
+     "Boston, MA, USA"
+    ],
+    "photo": "andrea-ng.jpg"
+   },
+   {
+    "name": "Masahiko Oguchi",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Hospital Deputy Director",
+     "Department Director, Radiation Oncology",
+     "Department Director, Radiation Administration",
+     "Cancer Institute Hospital, The Japanese Foundation for Cancer Research",
+     "Tokyo, Japan"
+    ],
+    "photo": "masahiko-oguchi.jpg"
+   },
+   {
+    "name": "Chelsea Pinnix",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor, Department of Radiation Oncology",
+     "University of Texas MD Anderson Cancer Center",
+     "Houston, TX, USA"
+    ],
+    "photo": "chelsea-pinnix.jpg"
+   },
+   {
+    "name": "John P. Plastaras",
+    "credentials": "MD PhD",
+    "role": "Director of Education",
+    "affiliation": [
+     "Associate Professor",
+     "Chief of GI/Lymphoma Service",
+     "Department of Radiation Oncology",
+     "University of Pennsylvania",
+     "Philadelphia, PA, USA"
+    ],
+    "photo": "john-p-plastaras.jpg"
+   },
+   {
+    "name": "Rahul Parikh",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor of Radiation Oncology",
+     "Rutgers Cancer Institute of New Jersey",
+     "Robert Wood Johnson Medical School",
+     "New Brunswick, NJ, USA"
+    ],
+    "photo": "rahul-parikh.jpg"
+   },
+   {
+    "name": "Shunan Qi",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Attending, Radiation Oncology",
+     "Cancer Hospital and Institute, National Cancer Center",
+     "Peking Union Medical College (PUMC)",
+     "Chinese Academy of Medical Sciences (CAMS)",
+     "Beijing, P. R. China"
+    ],
+    "photo": "shunan-qi.jpg"
+   },
+   {
+    "name": "Umberto Ricardi",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Full Professor of Radiation Oncology",
+     "Chairman Radiation Oncology Department",
+     "University of Turin",
+     "Torino, Italy"
+    ],
+    "photo": "umberto-ricardi.jpg"
+   },
+   {
+    "name": "Chang-Ok Suh",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Professor",
+     "Department of Radiation Oncology",
+     "Yonsei Cancer Center",
+     "Yonsei University Health System",
+     "Seoul, Korea"
+    ],
+    "photo": "chang-ok-suh.jpg"
+   },
+   {
+    "name": "Stephanie Terezakis",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Residency Program Director",
+     "Department of Radiation Oncology and Molecular Radiation Sciences",
+     "Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins",
+     "Baltimore, MD, USA"
+    ],
+    "photo": "stephanie-terezakis.jpg"
+   },
+   {
+    "name": "Richard W. Tsang",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Princess Margaret Cancer Centre",
+     "University Health Network",
+     "Toronto, Ontario, Canada"
+    ],
+    "photo": "richard-w-tsang.jpg"
+   },
+   {
+    "name": "Lynn D. Wilson",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor",
+     "Vice Chairman and Clinical Director",
+     "Department of Therapeutic Radiology",
+     "Yale University School of Medicine",
+     "New Haven, CT, USA"
+    ],
+    "photo": "lynn-d-wilson.jpg"
+   },
+   {
+    "name": "Andrew Wirth",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor",
+     "Department of Radiation Oncology and Cancer Imaging",
+     "Peter MacCallum Cancer Center",
+     "East Melbourne, Victoria, Australia"
+    ],
+    "photo": "andrew-wirth.jpg"
+   },
+   {
+    "name": "Joanna C. Yang",
+    "credentials": "MD MPH",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor, Department of Radiation Oncology",
+     "University of California San Francisco",
+     "San Francisco, CA, USA"
+    ],
+    "photo": "joanna-c-yang.jpg"
+   }
+  ]
+ },
+ {
+  "name": "Council",
+  "people": [
+   {
+    "name": "Ranjana H. Advani",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Saul A Rosenberg Professor of Lymphoma",
+     "Stanford Cancer Institute",
+     "Stanford, CA, USA"
+    ],
+    "photo": "ranjana-h-advani.jpg"
+   },
+   {
+    "name": "Rimpa Basu Achari",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Tata Medical Center, Kolkata"
+    ],
+    "photo": null
+   },
+   {
+    "name": "Marianne Aznar",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Medical Physicist, Clinical Trial Service Unit",
+     "University of Oxford",
+     "Associate Professor, University of Copenhagen",
+     "Copenhagen, Denmark"
+    ],
+    "photo": "marianne-aznar.jpg"
+   },
+   {
+    "name": "Richard Bakst",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Icahn School of Medicine at Mount Sinai",
+     "New York, NY, USA"
+    ],
+    "photo": "richard-bakst.jpg"
+   },
+   {
+    "name": "Leslie Ballas",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Clinical Professor",
+     "Department of Radiation Oncology",
+     "USC Norris Comprehensive Cancer Center and Hospital",
+     "Los Angeles, CA, USA"
+    ],
+    "photo": "leslie-ballas.jpg"
+   },
+   {
+    "name": "Alex Balogh",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor, Department of Radiation Oncology",
+     "Tom Baker Cancer Center",
+     "University of Calgary",
+     "Calgary, AB, Canada"
+    ],
+    "photo": "alex-balogh.jpg"
+   },
+   {
+    "name": "James Bates",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "Winship Cancer Institute",
+     "Emory University"
+    ],
+    "photo": "james-bates.jpg"
+   },
+   {
+    "name": "Christian Baues",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Vice Head",
+     "Department of Radiation Oncology and CyberKnife Center",
+     "University Hospital of Cologne, Germany",
+     "Reference Center Radiation Oncology, German Hodgkin Study Group"
+    ],
+    "photo": "christian-baues.jpg"
+   },
+   {
+    "name": "Maryse Bernard",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Adjunct Professor, Department of Radiation Oncology",
+     "Hospital Maisonneuve-Rosemont",
+     "University of Montreal",
+     "Montreal, QC, Canada"
+    ],
+    "photo": "maryse-bernard.jpg"
+   },
+   {
+    "name": "Belinda Campbell",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Consultant Radiation Oncologist",
+     "Peter MacCallum Cancer Centre",
+     "Melbourne, Australia"
+    ],
+    "photo": "belinda-campbell.jpg"
+   },
+   {
+    "name": "Dana Casey",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "University of North Carolina School of Medicine",
+     "Chapel Hill, NC, USA"
+    ],
+    "photo": "dana-casey.jpg"
+   },
+   {
+    "name": "Laura Cella",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Medical Physicist and Research Scientist",
+     "National Research Council of Italy",
+     "Institute of Biostructure and Bioimaging",
+     "Tommaso De Amicis",
+     "Napoli, Italy"
+    ],
+    "photo": "laura-cella.jpg"
+   },
+   {
+    "name": "Kaitlin Christopherson",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Orlando Health UF Health Cancer Center"
+    ],
+    "photo": "kaitlin-christopherson.jpg"
+   },
+   {
+    "name": "David J. Cutter",
+    "credentials": "MD DPhil",
+    "role": null,
+    "affiliation": [
+     "Consultant Clinical Oncologist, Oxford Cancer Centre",
+     "Senior Clinical Research Fellow, University of Oxford"
+    ],
+    "photo": "david-j-cutter.jpg"
+   },
+   {
+    "name": "Savita V. Dandapani",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "City of Hope, Duarte, CA 91010"
+    ],
+    "photo": "savita-v-dandapani.jpg"
+   },
+   {
+    "name": "Katerina Dedeckova",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Proton Therapy Dept., Proton Therapy Center",
+     "Institute of Radiation Oncology",
+     "1st Faculty of Medicine Charles University and Hospital Na Bulovce",
+     "Prague, Czech Republic"
+    ],
+    "photo": "katerina-dedeckova.jpg"
+   },
+   {
+    "name": "Mohammed El Shazly",
+    "credentials": "MD MSc PhD",
+    "role": null,
+    "affiliation": [
+     "Consultant of Clinical Oncology, Hemato-oncology and Bone marrow transplantation",
+     "Fellow of MD Anderson Cancer center, Texas, USA",
+     "Fellow of Dana-Farber Cancer institute, Harvard University, Mass, USA.",
+     "Lecturer of Clinical Oncology, Alexandria School Of Medicine"
+    ],
+    "photo": "mohammed-el-shazly.jpg"
+   },
+   {
+    "name": "Khaled Elsayad",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Consultant Radiation Oncologist",
+     "University Hospital Münster",
+     "Münster, Germany"
+    ],
+    "photo": "khaled-elsayad.jpg"
+   },
+   {
+    "name": "Charles A. Enke",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, Department of Radiation Oncology",
+     "Nebraska Medical Center",
+     "Omaha, Nebraska, USA"
+    ],
+    "photo": "charles-a-enke.jpg"
+   },
+   {
+    "name": "Penny Fang",
+    "credentials": "MD MBA",
+    "role": null,
+    "affiliation": [
+     "Assistant ProfessorMD Anderson Cancer Center",
+     "Houston, TX, USA"
+    ],
+    "photo": "penny-fang.jpg"
+   },
+   {
+    "name": "Nicholas Figura",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Member",
+     "Department of Radiation Oncology",
+     "Moffitt Cancer Center",
+     "Tampa, FL"
+    ],
+    "photo": "nicholas-figura.jpg"
+   },
+   {
+    "name": "Ingrid Glimelius",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Consultant and Associate Professor at the Oncology Clinic",
+     "Uppsala Akademiska Sjukhus",
+     "Uppsala Universitet",
+     "Uppsala, Sweden"
+    ],
+    "photo": "ingrid-glimelius.jpg"
+   },
+   {
+    "name": "Jayant S. Goda",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Clinician Scientist and Associate Professor",
+     "Radiation Oncology,Tata Memorial Centre",
+     "Mumbai , India"
+    ],
+    "photo": "jayant-s-goda.jpg"
+   },
+   {
+    "name": "Jillian Gunther",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor, Department of Radiation Oncology",
+     "University of Texas MD Anderson Cancer Center",
+     "Houston, TX, USA"
+    ],
+    "photo": "jillian-gunther.jpg"
+   },
+   {
+    "name": "Chul S. Ha",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "CTRC Foundation Distinguished Chair",
+     "Professor and Chair, Dept. of Rad. Onc.",
+     "The University of Texas Health and Science Center at San Antonio and",
+     "Cancer Therapy and Research Center",
+     "San Antonio, TX, USA"
+    ],
+    "photo": "chul-s-ha.jpg"
+   },
+   {
+    "name": "Rick L. M. Haas",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Attending",
+     "Department of Radiotherapy",
+     "The Netherlands Cancer Institute",
+     "Antoni van Leeuwenhoek Hospital",
+     "Amsterdam, The Netherlands"
+    ],
+    "photo": "rick-l-m-haas.jpg"
+   },
+   {
+    "name": "Carla Hajj",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Attending",
+     "Department of Radiation Oncology",
+     "Memorial Sloan Kettering Cancer Center",
+     "New York, NY, USA"
+    ],
+    "photo": "carla-hajj.jpg"
+   },
+   {
+    "name": "Peter Hoskin",
+    "credentials": "MD FRCP FRCR FACR",
+    "role": null,
+    "affiliation": [
+     "Consultant Clinical Oncologist, Mount Vernon Cancer Centre, Northwood, UK",
+     "Professor in Clinical Oncology, University of Manchester, Manchester, UK"
+    ],
+    "photo": "peter-hoskin.jpg"
+   },
+   {
+    "name": "Susan Hiniker",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Stanford Cancer Institute"
+    ],
+    "photo": null
+   },
+   {
+    "name": "Christopher R. Kelsey",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor of Radiation Oncology",
+     "Duke University School of Medicine",
+     "Durham, NC, USA"
+    ],
+    "photo": "christopher-r-kelsey.jpg"
+   },
+   {
+    "name": "Mohammad K. Khan",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor",
+     "Department of Radiation Oncology",
+     "Winship Cancer Institute of Emory University",
+     "Atlanta, GA, USA"
+    ],
+    "photo": "mohammad-k-khan.jpg"
+   },
+   {
+    "name": "Joseph D. Khoury",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor",
+     "Department of Pathology and Microbiology",
+     "University of Nebraska Medical Center",
+     "United States"
+    ],
+    "photo": "joseph-d-khoury.jpg"
+   },
+   {
+    "name": "Kyung Hwan Kim",
+    "credentials": "MD PHD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology, Yonsei Cancer Center, Heavy Ion Therapy Research Institute, Yonsei University College of Medicine"
+    ],
+    "photo": "kyung-hwan-kim.jpg"
+   },
+   {
+    "name": "Jan Kriz",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Head of the Department of Radiation Oncology",
+     "Clemenshopital Münster",
+     "Munster, Germany"
+    ],
+    "photo": "jan-kriz.jpg"
+   },
+   {
+    "name": "A. D. G. Krol",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Leiden University Medical Center",
+     "Leiden, The Netherlands"
+    ],
+    "photo": "a-d-g-krol.jpg"
+   },
+   {
+    "name": "Michael J. LaRiviere",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Instructor",
+     "Department of Radiation Oncology",
+     "University of Pennsylvania"
+    ],
+    "photo": "michael-j-lariviere.jpg"
+   },
+   {
+    "name": "Shing Fung Lee",
+    "credentials": "FRCR(UK) MSc",
+    "role": null,
+    "affiliation": [
+     "Clinical Oncologist",
+     "Department of Clinical Oncology, Tuen Mun Hospital, New Territory West Cluster, Hospital Authority",
+     "Hong Kong, China"
+    ],
+    "photo": "shing-fung-lee.jpg"
+   },
+   {
+    "name": "Mario Levis",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Department of Radiation Oncology",
+     "University of Torino",
+     "Torino, Italy"
+    ],
+    "photo": "mario-levis.jpg"
+   },
+   {
+    "name": "Andrea Lo",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Department of Radiation Therapy",
+     "British Columbia (BC) Cancer Agency Vancouver Centre",
+     "British Columbia, Canada"
+    ],
+    "photo": "andrea-lo.jpg"
+   },
+   {
+    "name": "Michael Mac Manus",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Radiation Oncologist",
+     "Associate Director (Research and Education)",
+     "Department of Radiation Oncology",
+     "Peter MacCallum Cancer Centre",
+     "Victorian Comprehensive Cancer Centre"
+    ],
+    "photo": "michael-mac-manus.jpg"
+   },
+   {
+    "name": "Maja Maralado",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Department of Oncology, Section of Radiotherapy",
+     "Rigshospitalet, Copenhagen University Hospital",
+     "Copenhagen, Denmark"
+    ],
+    "photo": "maja-maralado.jpg"
+   },
+   {
+    "name": "Simone Marnitz",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Head, Dept. of Radiation Oncology",
+     "Radiotherapy Review Center (GHSG)",
+     "CyberKnife Center",
+     "Cologne, Germany"
+    ],
+    "photo": "simone-marnitz.jpg"
+   },
+   {
+    "name": "Sarah Milgrom",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor, Department of Radiation Oncology",
+     "University of Texas MD Anderson Cancer Center",
+     "Houston, TX, USA"
+    ],
+    "photo": "sarah-milgrom.jpg"
+   },
+   {
+    "name": "Robert C. Miller",
+    "credentials": "MD MBA FASTRO",
+    "role": null,
+    "affiliation": [
+     "Professor of Radiation Oncology",
+     "Mayo Clinic",
+     "Jacksonville, FL, USA"
+    ],
+    "photo": "robert-c-miller.jpg"
+   },
+   {
+    "name": "George Ntentas",
+    "credentials": "DPhil",
+    "role": null,
+    "affiliation": [
+     "NIHR Clinical Lecturer & Senior Radiotherapy Physicist, Guy’s and St Thomas’ NHS Foundation Trust",
+     "Medical Physics Research Fellow, University of Oxford",
+     "Honorary Lecturer, King’s College London"
+    ],
+    "photo": "george-ntentas.jpg"
+   },
+   {
+    "name": "Chirayu Patel",
+    "credentials": "MD MPH",
+    "role": null,
+    "affiliation": [
+     "Clark Center for Radiation Oncology",
+     "Massachusetts General Hospital",
+     "Boston, MA"
+    ],
+    "photo": "chirayu-patel.jpg"
+   },
+   {
+    "name": "Daniel Molin",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Associate professor, Consultant",
+     "Experimental and Clinical Oncology, Department of Immunology, Genetics and Pathology, Uppsala University",
+     "Section of oncology, vo BOT, Uppsala University Hospital"
+    ],
+    "photo": "daniel-molin.jpg"
+   },
+   {
+    "name": "Ima Paydar",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Department of Radiation Oncology",
+     "University of Pennsylvania"
+    ],
+    "photo": "ima-paydar.jpg"
+   },
+   {
+    "name": "Peter Petersen",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Copenhagen University Hospital"
+    ],
+    "photo": null
+   },
+   {
+    "name": "Tom Pickles",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, University of British Columbia",
+     "Dept. of Radiotherapy & Developmental Radiotherapeutics",
+     "Radiation Oncology, BC Cancer Agency",
+     "Vancouver, BC, Canada"
+    ],
+    "photo": "tom-pickles.jpg"
+   },
+   {
+    "name": "Rachel Rabinovitch",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor of Radiation Oncology",
+     "University of Colorado Hospital",
+     "Aurora, CO, USA"
+    ],
+    "photo": "rachel-rabinovitch.jpg"
+   },
+   {
+    "name": "Gabriele Reinartz",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Physician",
+     "Department of Radiation Oncology",
+     "University Hospital Münster",
+     "Münster, Germany"
+    ],
+    "photo": "gabriele-reinartz.jpg"
+   },
+   {
+    "name": "Kenneth Roberts",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor of Therapeutic Radiology",
+     "Associate Chief and Medical Director",
+     "Department of Radiation Oncology",
+     "Shoreline Medical Center and Yale-New Haven Hospital",
+     "New Haven, CT, USA"
+    ],
+    "photo": "kenneth-roberts.jpg"
+   },
+   {
+    "name": "Timothy Robinson",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor of Therapeutic Radiology",
+     "Smilow Cancer Hospital at Yale University",
+     "New Haven, CT, USA"
+    ],
+    "photo": "timothy-robinson.jpg"
+   },
+   {
+    "name": "Danielle Rodin",
+    "credentials": "MD MPH FRCPC",
+    "role": null,
+    "affiliation": [
+     "Radiation Medicine Program, Princess Margaret Cancer Centre",
+     "Department of Radiation Oncology, University of Toronto"
+    ],
+    "photo": "danielle-rodin.jpg"
+   },
+   {
+    "name": "Daniel Roos",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Radiation Oncologist",
+     "Royal Adelaide Hospital",
+     "Professor, University of Adelaide",
+     "Adelaide, South Australia"
+    ],
+    "photo": "daniel-roos.jpg"
+   },
+   {
+    "name": "Christopher Schultz",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, Department of Radiation Oncology",
+     "Medical College of Wisconsin",
+     "Milwaukee, WI, USA"
+    ],
+    "photo": "christopher-schultz.jpg"
+   },
+   {
+    "name": "Naoto Shikama",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Professor, Department of Radiation Oncology",
+     "Saitama Medical University International Medical Center",
+     "Saitama, Japan"
+    ],
+    "photo": "naoto-shikama.jpg"
+   },
+   {
+    "name": "Randa Tao",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "University of Utah",
+     "Salt Lake City, Utah, USA"
+    ],
+    "photo": "randa-tao.jpg"
+   },
+   {
+    "name": "Kathryn Tringale",
+    "credentials": "MD MAS",
+    "role": null,
+    "affiliation": [
+     "Chief Resident 2022-2023",
+     "Department of Radiation Oncology",
+     "Memorial Sloan Kettering Cancer Center"
+    ],
+    "photo": "kathryn-tringale.jpg"
+   },
+   {
+    "name": "Yolanda D. Tseng",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "University of Washington, Seattle Cancer Care Alliance",
+     "Seattle, WA, USA"
+    ],
+    "photo": "yolanda-d-tseng.jpg"
+   },
+   {
+    "name": "John Austin Vargo",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Department of Radiation Oncology",
+     "University of Washington, Seattle Cancer Care Alliance",
+     "Seattle, WA, USA"
+    ],
+    "photo": "john-austin-vargo.jpg"
+   },
+   {
+    "name": "Meng Xu Welliver",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor, Radiation Oncology",
+     "Mayo Clinic",
+     "Rochester, MN"
+    ],
+    "photo": "meng-xu-welliver.jpg"
+   },
+   {
+    "name": "Jeffrey Y. C. Wong",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Chair and Professor",
+     "Department of Radiation Oncology",
+     "City of Hope",
+     "Duarte, CA, USA"
+    ],
+    "photo": "jeffrey-y-c-wong.jpg"
+   },
+   {
+    "name": "Kheng-Wei Yeoh",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Consultant, Department of Radiation Oncology",
+     "National Cancer Centre, Sing",
+     "Health",
+     "Assistant Professor, Duke-NUS Medical School",
+     "Bukit Merah, Singapore"
+    ],
+    "photo": "kheng-wei-yeoh.jpg"
+   },
+   {
+    "name": "Yong Yang",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Attending, Radiation Oncology",
+     "Cancer Hospital and Institute, National Cancer Center",
+     "Peking Union Medical College (PUMC)",
+     "Chinese Academy of Medical Sciences (CAMS)",
+     "Beijing, P. R. China"
+    ],
+    "photo": "yong-yang.jpg"
+   },
+   {
+    "name": "Hong In Yoon",
+    "credentials": "MD PhD",
+    "role": null,
+    "affiliation": [
+     "Associate Professor",
+     "Department of Radiation Oncology",
+     "Yonsei Cancer Center, Yonsei University College of Medicine"
+    ],
+    "photo": "hong-in-yoon.jpg"
+   },
+   {
+    "name": "Michael J. Yunes",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Assistant Division Chief",
+     "Radiation Oncology Operations",
+     "Baystate Health, D'Amour Center for Cancer Care",
+     "Springfield, MA, USA"
+    ],
+    "photo": "michael-j-yunes.jpg"
+   },
+   {
+    "name": "Su-Yu Zhu",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor and Department Director",
+     "Department of Abdominal/Lymphoma Radiation Oncology",
+     "Hunan Cancer Hospital and Xianya School of Medicine, Central South University",
+     "ChangSha City, China"
+    ],
+    "photo": "su-yu-zhu.jpg"
+   }
+  ]
+ },
+ {
+  "name": "Honorary Members",
+  "people": [
+   {
+    "name": "Andreas Engert",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, Internal Medicine and Hematology Oncology",
+     "University Hospital of Cologne",
+     "Chairman, German Hodgkin Study Group (GHSG)",
+     "Cologne, Germany"
+    ],
+    "photo": "andreas-engert.jpg"
+   },
+   {
+    "name": "Saul A. Rosenberg",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor Emeritus, Medicine and Radiation Oncology",
+     "Stanford University School of Medicine",
+     "Stanford, CA, USA"
+    ],
+    "photo": "saul-a-rosenberg.jpg"
+   },
+   {
+    "name": "Theodore Girinsky",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor Emeritus, Radiation Oncology",
+     "Institut Gustave Roussy",
+     "Villejuif, South Paris, France"
+    ],
+    "photo": "theodore-girinsky.jpg"
+   },
+   {
+    "name": "Samuel Hellman",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Professor, Radiation and Cellular Oncology",
+     "University of Chicago Pritzker School of Medicine",
+     "Chicago, IL, USA"
+    ],
+    "photo": "samuel-hellman.jpg"
+   }
+  ]
+ }
+]
