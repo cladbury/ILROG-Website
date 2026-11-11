@@ -81,6 +81,9 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 .top-link[aria-current="page"], .sub-toggle[aria-current="true"] { border-color: var(--gold); }
 .nx-label { font-weight: 700; }
 .nx-label span { color: var(--next-orange-ink); }
+/* ILROG-NEXT sits at the right end of the menu, set off by a thin divider; its menu opens leftward */
+.is-next { padding-left: 1.4rem; border-left: 1px solid var(--line); }
+.is-next .sub { left: auto; right: -1rem; }
 .sub-toggle svg { transition: transform .15s ease; color: var(--steel); }
 .has-sub { position: relative; }
 .sub {
@@ -130,6 +133,7 @@ p { margin: 0 0 1em; max-width: var(--measure); }
   .has-sub:hover .sub-toggle svg { transform: none; }
   .has-sub.open .sub-toggle svg { transform: rotate(180deg); }
   .sub a { padding: .55rem 1rem; font-size: 1rem; }
+  .is-next { padding-left: 0; border-left: 0; }
   .nav .login { margin-top: 1rem; text-align: center; }
 }
 

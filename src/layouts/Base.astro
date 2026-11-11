@@ -7,14 +7,9 @@ const fullTitle = title ? `${title} | ILROG` : `ILROG | ${site.name}`;
 import meetings from '../data/meetings.json';
 const show = site.show;
 // Top menu. Items with `children` open as dropdowns; `key` marks the current section.
+// ILROG-NEXT sits last so it lands on the right, next to Member login.
 import nx from '../data/ilrog-next.json';
 const nav = [
-  { label: 'ILROG-NEXT', key: 'next', next: true, children: [
-    { href: '/ilrog-next/', label: 'Overview' },
-    { href: '/ilrog-next/working-groups/', label: 'Working Groups' },
-    { href: '/ilrog-next/committees/', label: 'Organizational Committees' },
-    { href: '/ilrog-next/conference/', label: '2027 Conference' },
-  ] },
   { label: 'About', key: 'about', children: [
     { href: '/about/', label: 'History & Objectives' },
     { href: '/team/', label: 'Team' },
@@ -37,6 +32,12 @@ const nav = [
     { href: '/membership/', label: 'Membership' },
     { href: '/contact/', label: 'Contact' },
     { href: site.twitter, label: 'Twitter' },
+  ] },
+  { label: 'ILROG-NEXT', key: 'next', next: true, children: [
+    { href: '/ilrog-next/', label: 'Overview' },
+    { href: '/ilrog-next/working-groups/', label: 'Working Groups' },
+    { href: '/ilrog-next/committees/', label: 'Organizational Committees' },
+    { href: '/ilrog-next/conference/', label: '2027 Conference' },
   ] },
 ];
 const next = meetings.upcoming[0];
