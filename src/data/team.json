@@ -341,31 +341,6 @@
     "photo": "stephanie-terezakis.jpg"
    },
    {
-    "name": "Richard W. Tsang",
-    "credentials": "MD",
-    "role": null,
-    "affiliation": [
-     "Radiation Oncologist",
-     "Princess Margaret Cancer Centre",
-     "University Health Network",
-     "Toronto, Ontario, Canada"
-    ],
-    "photo": "richard-w-tsang.jpg"
-   },
-   {
-    "name": "Lynn D. Wilson",
-    "credentials": "MD",
-    "role": null,
-    "affiliation": [
-     "Professor",
-     "Vice Chairman and Clinical Director",
-     "Department of Therapeutic Radiology",
-     "Yale University School of Medicine",
-     "New Haven, CT, USA"
-    ],
-    "photo": "lynn-d-wilson.jpg"
-   },
-   {
     "name": "Andrew Wirth",
     "credentials": "MD",
     "role": null,
@@ -394,6 +369,15 @@
   "name": "Council",
   "people": [
    {
+    "name": "Rimpa Basu Achari",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Tata Medical Center, Kolkata"
+    ],
+    "photo": null
+   },
+   {
     "name": "Ranjana H. Advani",
     "credentials": "MD",
     "role": null,
@@ -403,15 +387,6 @@
      "Stanford, CA, USA"
     ],
     "photo": "ranjana-h-advani.jpg"
-   },
-   {
-    "name": "Rimpa Basu Achari",
-    "credentials": "",
-    "role": null,
-    "affiliation": [
-     "Tata Medical Center, Kolkata"
-    ],
-    "photo": null
    },
    {
     "name": "Marianne Aznar",
@@ -449,16 +424,12 @@
     "photo": "leslie-ballas.jpg"
    },
    {
-    "name": "Alex Balogh",
-    "credentials": "MD",
+    "name": "Claire Baniel",
+    "credentials": "",
     "role": null,
-    "affiliation": [
-     "Associate Professor, Department of Radiation Oncology",
-     "Tom Baker Cancer Center",
-     "University of Calgary",
-     "Calgary, AB, Canada"
-    ],
-    "photo": "alex-balogh.jpg"
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "James Bates",
@@ -495,6 +466,17 @@
      "Montreal, QC, Canada"
     ],
     "photo": "maryse-bernard.jpg"
+   },
+   {
+    "name": "Michael Binkley",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Stanford University",
+     "Stanford, CA, USA"
+    ],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Belinda Campbell",
@@ -563,6 +545,17 @@
     "photo": "savita-v-dandapani.jpg"
    },
    {
+    "name": "Letizia Deantonio",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Oncology Institute of Southern Switzerland",
+     "Switzerland"
+    ],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
     "name": "Katerina Dedeckova",
     "credentials": "MD",
     "role": null,
@@ -576,16 +569,26 @@
     "photo": "katerina-dedeckova.jpg"
    },
    {
-    "name": "Mohammed El Shazly",
-    "credentials": "MD MSc PhD",
+    "name": "André Durham",
+    "credentials": "",
     "role": null,
     "affiliation": [
-     "Consultant of Clinical Oncology, Hemato-oncology and Bone marrow transplantation",
-     "Fellow of MD Anderson Cancer center, Texas, USA",
-     "Fellow of Dana-Farber Cancer institute, Harvard University, Mass, USA.",
-     "Lecturer of Clinical Oncology, Alexandria School Of Medicine"
+     "HUG, University Hospital of Geneva",
+     "Geneva, Switzerland"
     ],
-    "photo": "mohammed-el-shazly.jpg"
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
+    "name": "Maryam Ebadi",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "University of Washington",
+     "Seattle, WA, USA"
+    ],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Khaled Elsayad",
@@ -704,6 +707,16 @@
     "photo": "carla-hajj.jpg"
    },
    {
+    "name": "Susan Hiniker",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor",
+     "Stanford Cancer Institute"
+    ],
+    "photo": null
+   },
+   {
     "name": "Peter Hoskin",
     "credentials": "MD FRCP FRCR FACR",
     "role": null,
@@ -714,14 +727,31 @@
     "photo": "peter-hoskin.jpg"
    },
    {
-    "name": "Susan Hiniker",
+    "name": "Harper Hubbeling",
+    "credentials": "",
+    "role": null,
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
+    "name": "Sameer Jhavar",
     "credentials": "",
     "role": null,
     "affiliation": [
-     "Assistant Professor",
-     "Stanford Cancer Institute"
+     "Baylor Scott & White",
+     "Texas, USA"
     ],
-    "photo": null
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
+    "name": "Gavin Jones",
+    "credentials": "",
+    "role": null,
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Christopher R. Kelsey",
@@ -733,6 +763,14 @@
      "Durham, NC, USA"
     ],
     "photo": "christopher-r-kelsey.jpg"
+   },
+   {
+    "name": "Ehab Khalil",
+    "credentials": "",
+    "role": null,
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Mohammad K. Khan",
@@ -791,6 +829,18 @@
     "photo": "a-d-g-krol.jpg"
    },
    {
+    "name": "Colton Ladbury",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Assistant Professor of Radiation Oncology",
+     "City of Hope",
+     "Duarte, CA, USA"
+    ],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
     "name": "Michael J. LaRiviere",
     "credentials": "MD",
     "role": null,
@@ -836,6 +886,17 @@
     "photo": "andrea-lo.jpg"
    },
    {
+    "name": "Pierre Loap",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Institut Curie",
+     "Paris, France"
+    ],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
     "name": "Michael Mac Manus",
     "credentials": "MD",
     "role": null,
@@ -849,17 +910,6 @@
     "photo": "michael-mac-manus.jpg"
    },
    {
-    "name": "Maja Maralado",
-    "credentials": "MD PhD",
-    "role": null,
-    "affiliation": [
-     "Department of Oncology, Section of Radiotherapy",
-     "Rigshospitalet, Copenhagen University Hospital",
-     "Copenhagen, Denmark"
-    ],
-    "photo": "maja-maralado.jpg"
-   },
-   {
     "name": "Simone Marnitz",
     "credentials": "MD",
     "role": null,
@@ -870,6 +920,25 @@
      "Cologne, Germany"
     ],
     "photo": "simone-marnitz.jpg"
+   },
+   {
+    "name": "Valentine Martin",
+    "credentials": "",
+    "role": null,
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
+    "name": "Geovanne Mauro",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "University of São Paulo",
+     "São Paulo, Brazil"
+    ],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Sarah Milgrom",
@@ -894,6 +963,17 @@
     "photo": "robert-c-miller.jpg"
    },
    {
+    "name": "Daniel Molin",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Associate professor, Consultant",
+     "Experimental and Clinical Oncology, Department of Immunology, Genetics and Pathology, Uppsala University",
+     "Section of oncology, vo BOT, Uppsala University Hospital"
+    ],
+    "photo": "daniel-molin.jpg"
+   },
+   {
     "name": "George Ntentas",
     "credentials": "DPhil",
     "role": null,
@@ -916,17 +996,6 @@
     "photo": "chirayu-patel.jpg"
    },
    {
-    "name": "Daniel Molin",
-    "credentials": "",
-    "role": null,
-    "affiliation": [
-     "Associate professor, Consultant",
-     "Experimental and Clinical Oncology, Department of Immunology, Genetics and Pathology, Uppsala University",
-     "Section of oncology, vo BOT, Uppsala University Hospital"
-    ],
-    "photo": "daniel-molin.jpg"
-   },
-   {
     "name": "Ima Paydar",
     "credentials": "MD",
     "role": null,
@@ -944,18 +1013,6 @@
      "Copenhagen University Hospital"
     ],
     "photo": null
-   },
-   {
-    "name": "Tom Pickles",
-    "credentials": "MD",
-    "role": null,
-    "affiliation": [
-     "Professor, University of British Columbia",
-     "Dept. of Radiotherapy & Developmental Radiotherapeutics",
-     "Radiation Oncology, BC Cancer Agency",
-     "Vancouver, BC, Canada"
-    ],
-    "photo": "tom-pickles.jpg"
    },
    {
     "name": "Rachel Rabinovitch",
@@ -1027,6 +1084,25 @@
     "photo": "daniel-roos.jpg"
    },
    {
+    "name": "Jason Ross",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "Stanford University",
+     "Stanford, CA, USA"
+    ],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
+    "name": "Omran Saifi",
+    "credentials": "",
+    "role": null,
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
+   },
+   {
     "name": "Christopher Schultz",
     "credentials": "MD",
     "role": null,
@@ -1038,6 +1114,18 @@
     "photo": "christopher-schultz.jpg"
    },
    {
+    "name": "Mohammed El Shazly",
+    "credentials": "MD MSc PhD",
+    "role": null,
+    "affiliation": [
+     "Consultant of Clinical Oncology, Hemato-oncology and Bone marrow transplantation",
+     "Fellow of MD Anderson Cancer center, Texas, USA",
+     "Fellow of Dana-Farber Cancer institute, Harvard University, Mass, USA.",
+     "Lecturer of Clinical Oncology, Alexandria School Of Medicine"
+    ],
+    "photo": "mohammed-el-shazly.jpg"
+   },
+   {
     "name": "Naoto Shikama",
     "credentials": "MD PhD",
     "role": null,
@@ -1047,6 +1135,17 @@
      "Saitama, Japan"
     ],
     "photo": "naoto-shikama.jpg"
+   },
+   {
+    "name": "Austin Sim",
+    "credentials": "",
+    "role": null,
+    "affiliation": [
+     "The Ohio State University Comprehensive Cancer Center",
+     "Columbus, OH, USA"
+    ],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Randa Tao",
@@ -1119,17 +1218,12 @@
     "photo": "jeffrey-y-c-wong.jpg"
    },
    {
-    "name": "Kheng-Wei Yeoh",
-    "credentials": "MD",
+    "name": "Susan Wu",
+    "credentials": "",
     "role": null,
-    "affiliation": [
-     "Senior Consultant, Department of Radiation Oncology",
-     "National Cancer Centre, Sing",
-     "Health",
-     "Assistant Professor, Duke-NUS Medical School",
-     "Bukit Merah, Singapore"
-    ],
-    "photo": "kheng-wei-yeoh.jpg"
+    "affiliation": [],
+    "photo": null,
+    "added": "2026-11"
    },
    {
     "name": "Yong Yang",
@@ -1143,6 +1237,19 @@
      "Beijing, P. R. China"
     ],
     "photo": "yong-yang.jpg"
+   },
+   {
+    "name": "Kheng-Wei Yeoh",
+    "credentials": "MD",
+    "role": null,
+    "affiliation": [
+     "Senior Consultant, Department of Radiation Oncology",
+     "National Cancer Centre, Sing",
+     "Health",
+     "Assistant Professor, Duke-NUS Medical School",
+     "Bukit Merah, Singapore"
+    ],
+    "photo": "kheng-wei-yeoh.jpg"
    },
    {
     "name": "Hong In Yoon",

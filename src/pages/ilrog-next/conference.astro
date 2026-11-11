@@ -1,0 +1,45 @@
+---
+import NextShell from '../../components/NextShell.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import nx from '../../data/ilrog-next.json';
+import site from '../../data/site.json';
+const c = nx.conference;
+---
+<NextShell title="ILROG-NEXT Conference 2027" heading={c.title} active="conference" intro={`${c.dates}, ${c.venue}, ${c.city}. ${c.tagline}`}>
+  <section class="section">
+    <div class="wrap">
+      <img class="banner" src={c.banner} alt={`ILROG-NEXT 2027: ${c.dates}, ${c.venue}, Boston. ${c.access}.`} width="1100" height="376" />
+      <div class="facts">
+        <div><span class="k">Dates</span><span class="v">{c.dates}</span></div>
+        <div><span class="k">Location</span><span class="v">{c.venue}</span><span class="s">{c.city}</span></div>
+        <div><span class="k">Attendance</span><span class="v">{c.access}</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section mist">
+    <div class="wrap hosts">
+      <div>
+        <h2>Hosts</h2>
+        <p class="muted">The 2027 conference is the milestone the ILROG-NEXT working groups are building toward.</p>
+      </div>
+      <div class="hg">{c.hosts.map((h) => <PersonCard name={h} size="lg" email />)}</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p>Attendance is by invitation. For questions about the conference, contact <a href={`mailto:${site.email}?subject=ILROG-NEXT%202027`}>{site.contactName}</a>.</p>
+    </div>
+  </section>
+</NextShell>
+<style>
+  .banner { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); }
+  .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; border-top: 2px solid var(--ink); padding-top: 1.25rem; }
+  .facts div { display: flex; flex-direction: column; gap: .2rem; }
+  .k { font-size: .85rem; font-weight: 600; color: var(--next-orange-ink); }
+  .v { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; }
+  .s { color: var(--steel); }
+  @media (max-width: 700px) { .facts { grid-template-columns: 1fr; } }
+  .hosts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 2rem 4rem; align-items: start; }
+  .hg { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 800px) { .hosts, .hg { grid-template-columns: 1fr; } }
+</style>

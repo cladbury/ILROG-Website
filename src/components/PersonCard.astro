@@ -1,0 +1,32 @@
+---
+import { person } from '../lib/people';
+import { initials } from '../lib/util';
+import nx from '../data/ilrog-next.json';
+interface Props { name: string; role?: string; size?: 'lg' | 'sm'; email?: boolean }
+const { name, role, size = 'sm', email = false } = Astro.props;
+const mail = email ? (nx.emails as Record<string, string>)[name] : undefined;
+const p = person(name);
+---
+<div class:list={['pc', size]}>
+  {p.photo
+    ? <img src={`/img/team/${p.photo}`} alt="" width="72" height="72" loading="lazy" />
+    : <span class="ini" aria-hidden="true">{initials(name)}</span>}
+  <div>
+    {role && <p class="role">{role}</p>}
+    <p class="nm">{name}</p>
+    {p.affiliation && <p class="af">{p.affiliation}</p>}
+    {mail && <p class="em"><a href={`mailto:${mail}`}>{mail}</a></p>}
+  </div>
+</div>
+<style>
+  .pc { display: flex; gap: .9rem; align-items: center; }
+  .pc img, .ini { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex: none; background: var(--mist); }
+  .lg img, .lg .ini { width: 76px; height: 76px; }
+  .ini { display: grid; place-items: center; font-weight: 600; color: var(--steel); }
+  .role { font-size: .78rem; font-weight: 600; color: var(--next-orange-ink); margin: 0 0 .1rem; }
+  .nm { font-weight: 600; margin: 0; line-height: 1.25; }
+  .lg .nm { font-size: 1.15rem; }
+  .em { font-size: .85rem; margin: .2rem 0 0; overflow-wrap: anywhere; }
+  .em a { color: var(--next-teal-ink); }
+  .af { font-size: .85rem; color: var(--steel); margin: .15rem 0 0; line-height: 1.35; }
+</style>

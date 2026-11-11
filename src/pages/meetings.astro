@@ -13,11 +13,25 @@ for (const m of meetings.past) {
 <Base title="Meetings" current="meetings" description="ILROG educational conferences and meetings, with programs and slides from past meetings.">
   <PageHead title="Meetings" intro="ILROG runs continuing education conferences on radiotherapy for lymphoma and hematologic malignancies, and meets alongside major hematology congresses." />
 
-  <section class="section">
+  <section class="section" id="upcoming">
     <div class="wrap">
       <h2>Upcoming Meetings</h2>
       {meetings.upcoming.length ? meetings.upcoming.map((m) => (
-        <article class="up"><p class="when">{m.dates}, {m.city}</p><h3>{m.title}</h3></article>
+        <article class="up" id={m.id}>
+          {m.banner && <img class="up-banner" src={m.banner} alt={`${m.title}: ${m.dates}, ${m.venue}, ${m.city}. ${m.access}.`} width="1100" height="376" />}
+          <div class="up-body">
+            <div>
+              <p class="when">{m.dates}</p>
+              <h3>{m.title}</h3>
+              {m.tagline && <p class="tagline">{m.tagline}</p>}
+            </div>
+            <dl>
+              <div><dt>Location</dt><dd>{m.venue}<br />{m.city}</dd></div>
+              <div><dt>Attendance</dt><dd>{m.access}</dd></div>
+            </dl>
+          </div>
+          <p class="muted">{m.id === 'ilrog-next-2027' && <><a href="/ilrog-next/conference/">More about the ILROG-NEXT Conference</a>. </>}Interested in learning more? Contact <a href={`mailto:${site.email}`}>{site.contactName}</a>.</p>
+        </article>
       )) : (
         <div class="none">
           <p><strong>No upcoming meetings are scheduled yet.</strong> Dates for the next ILROG conference will be posted here and sent to members by email.</p>
@@ -80,6 +94,15 @@ for (const m of meetings.past) {
 <style>
   .none { border-left: 4px solid var(--gold); padding: 1.1rem 1.4rem; background: var(--mist); border-radius: 0 var(--radius) var(--radius) 0; max-width: 760px; }
   .none p:last-child { margin: 0; }
+  .up { max-width: 1000px; }
+  .up-banner { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); margin-bottom: 1.75rem; }
+  .up-body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem 3rem; align-items: start; border-top: 2px solid var(--ink); padding-top: 1.25rem; margin-bottom: 1rem; }
+  .up h3 { font-size: 1.8rem; margin-bottom: .3rem; }
+  .tagline { color: var(--steel); margin: 0; }
+  .up dl { margin: 0; display: grid; gap: .9rem; min-width: 240px; }
+  .up dt { font-size: .85rem; font-weight: 600; color: var(--steel); }
+  .up dd { margin: .1rem 0 0; font-weight: 500; }
+  @media (max-width: 700px) { .up-body { grid-template-columns: 1fr; } }
   .when { color: var(--gold-ink); font-weight: 600; font-size: .9rem; margin: 0 0 .3rem; }
   .timeline { margin-top: 2.5rem; }
   .year { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1.5rem; border-top: 2px solid var(--ink); padding-top: 1.25rem; margin-bottom: 2.5rem; }

@@ -1,0 +1,53 @@
+---
+import NextShell from '../../components/NextShell.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import nx from '../../data/ilrog-next.json';
+---
+<NextShell title="ILROG-NEXT Organizational Committees" heading="Organizational committees" active="committees"
+  intro="Organization-wide committees run how ILROG-NEXT operates: mentorship, membership and early-career engagement, education, data science, advocacy, communications and partnerships.">
+  <section class="section">
+    <div class="wrap">
+      {nx.committees.map((c, i) => (
+        <article class="cm" id={c.slug}>
+          <h2>{c.name}</h2>
+          <div class="cm-body">
+            {c.coleads.length > 0 && (
+              <div>
+                <h3>{c.coleads.length === 1 ? 'Lead' : 'Co-leaders'}</h3>
+                <div class="grid">{c.coleads.map((n) => <PersonCard name={n} email />)}</div>
+              </div>
+            )}
+            {c.regions && (
+              <div>
+                <h3>Regional leads</h3>
+                <dl class="regions">
+                  {c.regions.map((r) => <div><dt>{r.region}</dt><dd>{r.people.join(', ')}</dd></div>)}
+                </dl>
+              </div>
+            )}
+            {c.members && c.members.length > 0 && (
+              <div>
+                <h3>Members</h3>
+                <div class="grid">{c.members.map((n) => <PersonCard name={n} />)}</div>
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</NextShell>
+<style>
+  .cm { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 1.5rem 3rem; padding: 2.25rem 0; border-top: 1px solid var(--line); }
+  .cm:first-child { border-top: 2px solid var(--ink); }
+  .cm h2 { font-size: 1.3rem; }
+  .cm h2::before { content: ""; display: block; width: .6rem; height: .6rem; background: var(--next-orange); margin-bottom: .7rem; }
+  .cm:nth-child(even) h2::before { background: var(--next-teal); }
+  .cm-body { display: grid; gap: 1.75rem; }
+  .cm h3 { font-size: .85rem; color: var(--steel); margin-bottom: .9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem 1.5rem; }
+  .regions { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .9rem 1.5rem; }
+  .regions dt { font-size: .85rem; font-weight: 600; color: var(--next-teal-ink); }
+  .regions dd { margin: .15rem 0 0; }
+  @media (max-width: 800px) { .cm { grid-template-columns: 1fr; } }
+</style>

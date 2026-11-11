@@ -7,8 +7,9 @@ import pubs from '../../data/publications.json';
 import site from '../../data/site.json';
 const glCount = guidelines.reduce((a, g) => a + g.items.length, 0);
 const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
+const show = site.show;
 ---
-<Base title="Resources" current="resources" description="ILROG guidelines, publications, resources for trainees, the resident elective and the IJROBP 2015 special edition.">
+<Base title="Resources" current="resources" description="ILROG guidelines and publications.">
   <PageHead title="Resources" />
 
   <section class="section">
@@ -21,18 +22,24 @@ const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
         <h2>Publications</h2>
         <p>{pubCount} key papers in lymphoma radiation oncology, grouped by disease and topic.</p>
       </a>
+      {show.trainees && (
       <a class="edu-item" href="#trainees">
         <h2>Resources for Trainees</h2>
         <p>The ILROG Trainee Reading List and Lymphoma Mini-Atlas.</p>
       </a>
+      )}
+      {show.residentElective && (
       <a class="edu-item" href="#resident-elective">
         <h2>Resident Elective</h2>
         <p>A one-month away rotation at ILROG member sites in the United States.</p>
       </a>
+      )}
+      {show.ijrobp && (
       <a class="edu-item" href="#ijrobp-2015">
         <h2>IJROBP 2015 Special Edition</h2>
         <p>Radiation Therapy in the Modern Management of the Lymphomas.</p>
       </a>
+      )}
       <a class="edu-item" href={site.youtube}>
         <h2>YouTube</h2>
         <p>For more resources, see the ILROG YouTube channel.</p>
@@ -40,6 +47,7 @@ const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
     </div>
   </section>
 
+  {show.trainees && (
   <section class="section mist" id="trainees">
     <div class="wrap">
       <h2>Resources for Trainees</h2>
@@ -49,7 +57,9 @@ const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
       </ul>
     </div>
   </section>
+  )}
 
+  {show.residentElective && (
   <section class="section" id="resident-elective">
     <div class="wrap two">
       <div>
@@ -68,7 +78,9 @@ const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
       </div>
     </div>
   </section>
+  )}
 
+  {show.ijrobp && (
   <section class="section mist" id="ijrobp-2015">
     <div class="wrap special">
       <img src="/img/site/ijrobp-cover.jpg" alt="Cover of the IJROBP 2015 special edition on lymphoma" width="768" height="1016" loading="lazy" />
@@ -82,6 +94,7 @@ const pubCount = pubs.reduce((a, s) => a + s.items.length, 0);
       </div>
     </div>
   </section>
+  )}
 </Base>
 
 <style>

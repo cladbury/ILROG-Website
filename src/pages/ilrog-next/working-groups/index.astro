@@ -1,0 +1,38 @@
+---
+import NextShell from '../../../components/NextShell.astro';
+import nx from '../../../data/ilrog-next.json';
+---
+<NextShell title="ILROG-NEXT Working Groups" heading="Working groups" active="groups"
+  intro="Topic-focused working groups advance priority questions in lymphoma and hematologic radiation oncology. Each group is paired with senior mentors, led by co-leaders and built out by its members.">
+  <section class="section">
+    <div class="wrap">
+      <ul class="groups">
+        {nx.workingGroups.map((g, i) => (
+          <li>
+            <a href={`/ilrog-next/working-groups/${g.slug}/`} class:list={[i % 2 ? 'teal' : 'orange']}>
+              <h2>{g.name}</h2>
+              <dl>
+                <div><dt>{g.mentors.length === 1 ? 'Senior mentor' : 'Senior mentors'}</dt><dd>{g.mentors.join(', ')}</dd></div>
+                <div><dt>{g.coleads.length === 1 ? 'Co-leader' : 'Co-leaders'}</dt><dd>{g.coleads.join(', ')}</dd></div>
+                {g.members.length > 0 && <div><dt>Members</dt><dd>{g.members.length}</dd></div>}
+              </dl>
+              <span class="go">View working group</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</NextShell>
+<style>
+  .groups { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.25rem; }
+  .groups a { display: flex; flex-direction: column; height: 100%; padding: 1.5rem; border: 1px solid var(--line); border-top: 4px solid var(--next-orange); border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+  .groups a.teal { border-top-color: var(--next-teal); }
+  .groups a:hover { border-color: var(--ink); }
+  .groups h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+  .groups dl { margin: 0 0 1.25rem; display: grid; gap: .6rem; flex: 1; }
+  .groups dt { font-size: .8rem; font-weight: 600; color: var(--steel); }
+  .groups dd { margin: .1rem 0 0; }
+  .go { font-weight: 600; color: var(--next-orange-ink); }
+  .groups a:hover .go { text-decoration: underline; }
+</style>

@@ -13,8 +13,24 @@ Source for the redesigned ilrog.org. Static site built with Astro. Pages are gen
 | Trials | `src/data/trials.json` |
 | News posts | `src/data/posts.json` |
 | Contact details, member counts, login links | `src/data/site.json` |
+| ILROG-NEXT (mission, leadership, working groups, committees, conference) | `src/data/ilrog-next.json` |
 
 To add an upcoming meeting, add an entry to the `upcoming` list in `meetings.json` with the same fields as a past meeting. The home page and meetings page pick it up automatically.
+
+## ILROG-NEXT
+
+The ILROG-NEXT section (`/ilrog-next/`) is generated from `src/data/ilrog-next.json`. Each entry in `workingGroups` gets its own page at `/ilrog-next/working-groups/<slug>/`. Adding a working group is one new entry in that list. Photos and institutions are pulled automatically from the ILROG team roster when a name matches; people not on the roster show their initials.
+
+## Hiding sections
+
+`src/data/site.json` has a `show` block that switches parts of the site on or off:
+
+- `trainees`, `residentElective`, `ijrobp`: the matching sections on the Resources page, plus their links in the menu, footer and home page.
+- `blog`: the Blog menu item and the home page's Latest Blog Posts. The blog pages themselves live in `src/pages/_blog/` (Astro skips folders that start with `_`). To bring the blog back, set `"blog": true` and rename the folder to `src/pages/blog/`.
+
+## Menu
+
+The top menu is defined at the top of `src/layouts/Base.astro`. Items with `children` open as dropdowns (on hover with a mouse, on tap or click otherwise, and with the keyboard). On phones the menu collapses into a "Menu" button with expandable groups. When `src/data/meetings.json` lists an upcoming meeting, a gold announcement bar links to it above the header.
 
 ## Running it
 

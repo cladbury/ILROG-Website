@@ -1,0 +1,426 @@
+{
+ "tagline": "A transformation initiative of the International Lymphoma Radiation Oncology Group, bringing together leaders across the world to shape the next generation of guidance, evidence, and collaboration.",
+ "mission": [
+  "Create clear pathways for ILROG to engage early and mid-career faculty",
+  "Convene contemporary topic-focused working groups to advance priority questions",
+  "Foster cross-committee collaboration so ideas and evidence move between groups",
+  "Offer opportunities for mentorship, leadership and growth",
+  "Create a professional community of hematologic-focused radiation oncologists",
+  "Critically revisit how academic and clinical information is generated and disseminated for maximal reach"
+ ],
+ "steering": [
+  "Joachim Yahalom",
+  "Bouthaina Dabaja",
+  "David Hodgson",
+  "Andrea Ng",
+  "George Mikhaeel"
+ ],
+ "coleaders": [
+  {
+   "name": "Brandon Imber",
+   "institution": "Memorial Sloan Kettering Cancer Center"
+  },
+  {
+   "name": "Jillian Gunther",
+   "institution": "MD Anderson Cancer Center"
+  }
+ ],
+ "timeline": [
+  {
+   "when": "Late 2025",
+   "title": "Vision defined",
+   "text": "Initial ILROG leadership discussions on broader engagement of early and mid-career faculty."
+  },
+  {
+   "when": "March 2026",
+   "title": "Initial brainstorming",
+   "text": "Feedback and engagement during the Princess Margaret ILROG conference in Toronto."
+  },
+  {
+   "when": "April-June 2026",
+   "title": "Committee structure drafted",
+   "text": "Designed to be inclusive and to create leadership opportunities for as many members as possible."
+  },
+  {
+   "when": "July 2026",
+   "title": "Working group kickoff",
+   "text": "Leaders convened to align, build their committees and begin the work."
+  },
+  {
+   "when": "June 2027",
+   "title": "ILROG-NEXT Conference",
+   "text": "Massachusetts General Hospital, Boston."
+  }
+ ],
+ "mentorRole": [
+  {
+   "title": "Define the key open questions",
+   "text": "Help frame the most important, contemporary questions each group should tackle."
+  },
+  {
+   "title": "Identify opportunities for members",
+   "text": "Spot projects, collaborations and visibility opportunities for committee members."
+  },
+  {
+   "title": "Promote ILROG and ILROG-NEXT",
+   "text": "Champion the initiative, both informally and through formal channels."
+  },
+  {
+   "title": "Career advancement and mentorship",
+   "text": "Offer career advice and mentorship to support members' professional growth."
+  }
+ ],
+ "outputs": [
+  {
+   "title": "Consensus and guidelines",
+   "text": "Practice recommendations or position statements."
+  },
+  {
+   "title": "Publications",
+   "text": "Reviews, white papers or collaborative manuscripts."
+  },
+  {
+   "title": "Education and resources",
+   "text": "Webinars, teaching materials or trainee resources."
+  },
+  {
+   "title": "Research and collaboration",
+   "text": "Study concepts, data sharing or multi-center proposals."
+  },
+  {
+   "title": "Partnerships",
+   "text": "Connections with societies, foundations or industry."
+  },
+  {
+   "title": "Conference sessions",
+   "text": "Presentations of working group results."
+  }
+ ],
+ "conference": {
+  "title": "The ILROG-NEXT Conference",
+  "dates": "June 3-5, 2027",
+  "venue": "Massachusetts General Hospital",
+  "city": "Boston, Massachusetts",
+  "hosts": [
+   "Chirayu Patel",
+   "Andrea Ng"
+  ],
+  "access": "Invite only",
+  "banner": "/img/site/ilrog-next-2027.jpg",
+  "tagline": "Connecting Science. Collaborating for Impact."
+ },
+ "workingGroups": [
+  {
+   "slug": "aggressive-lymphoma",
+   "name": "Aggressive Lymphoma",
+   "mentors": [
+    "George Mikhaeel",
+    "Andrea Ng"
+   ],
+   "coleads": [
+    "Brandon Imber",
+    "Michael Oertel"
+   ],
+   "members": [
+    "Omran Saifi",
+    "Danielle Rodin",
+    "Gavin Jones"
+   ]
+  },
+  {
+   "slug": "indolent-lymphoma",
+   "name": "Indolent Lymphoma",
+   "mentors": [
+    "Andrea Ng",
+    "Andrew Wirth"
+   ],
+   "coleads": [
+    "Andrea Lo",
+    "Jessica Brady",
+    "Susan Wu"
+   ],
+   "members": [
+    "Carla Hajj",
+    "Mario Levis"
+   ]
+  },
+  {
+   "slug": "leukemia-tbi",
+   "name": "Leukemia / TBI",
+   "mentors": [
+    "Bouthaina Dabaja",
+    "Jeffrey Wong",
+    "David Hodgson"
+   ],
+   "coleads": [
+    "Savita Dandapani",
+    "Colton Ladbury"
+   ],
+   "members": [
+    "Michael Oertel",
+    "Mary Ebadi",
+    "Sarah Milgrom"
+   ]
+  },
+  {
+   "slug": "plasmacytoma-myeloma",
+   "name": "Plasmacytoma / Myeloma",
+   "mentors": [
+    "Joachim Yahalom"
+   ],
+   "coleads": [
+    "Alexi Dreyfuss",
+    "Belinda Campbell"
+   ],
+   "members": [
+    "Savita Dandapani",
+    "Michael Oertel",
+    "Susan Wu",
+    "Gavin Jones",
+    "Yolanda Tseng"
+   ]
+  },
+  {
+   "slug": "cutaneous-t-cell",
+   "name": "Cutaneous / T-cell",
+   "mentors": [
+    "Lena Specht",
+    "Richard Hoppe"
+   ],
+   "coleads": [
+    "Belinda Campbell",
+    "Khaled Elsayad"
+   ],
+   "members": [
+    "Claire Baniel",
+    "Savita Dandapani",
+    "Michael Oertel",
+    "Alexi Dreyfuss",
+    "Gavin Jones"
+   ]
+  },
+  {
+   "slug": "hodgkin-lymphoma",
+   "name": "Hodgkin Lymphoma",
+   "mentors": [
+    "Hans Eich",
+    "Joachim Yahalom",
+    "Bradford Hoppe"
+   ],
+   "coleads": [
+    "Michael Oertel",
+    "Mike Binkley"
+   ],
+   "members": [
+    "Claire Baniel",
+    "Will Breen",
+    "Alexi Dreyfuss",
+    "Randa Tao"
+   ]
+  },
+  {
+   "slug": "cns-hematologic-malignancies",
+   "name": "CNS Hematologic Malignancies",
+   "mentors": [
+    "Brandon Imber"
+   ],
+   "coleads": [
+    "Kathryn Tringale",
+    "Gustav Cederquist"
+   ],
+   "members": [
+    "Will Breen",
+    "Tim Robinson"
+   ]
+  },
+  {
+   "slug": "cellular-therapy-bispecifics",
+   "name": "Cellular Therapy / Bispecifics",
+   "mentors": [
+    "George Mikhaeel",
+    "David Hodgson"
+   ],
+   "coleads": [
+    "Nick Figura",
+    "Harper Hubbeling"
+   ],
+   "members": [
+    "Austin Sim",
+    "Omran Saifi",
+    "Will Breen"
+   ]
+  },
+  {
+   "slug": "proton-particle-therapy",
+   "name": "Proton & Particle Therapy",
+   "mentors": [
+    "Bouthaina Dabaja"
+   ],
+   "coleads": [
+    "Chirayu Patel",
+    "Rahul Parikh"
+   ],
+   "members": [
+    "James Bates"
+   ]
+  },
+  {
+   "slug": "correlative-translational-science",
+   "name": "Correlative & Translational Science",
+   "mentors": [
+    "Tim Illidge",
+    "Carl DeSelm"
+   ],
+   "coleads": [
+    "Ari Wijetunga"
+   ],
+   "members": []
+  }
+ ],
+ "committees": [
+  {
+   "slug": "mentorship",
+   "name": "Mentorship",
+   "coleads": [],
+   "members": [
+    "Randa Tao",
+    "Matthew Chan",
+    "Savita Dandapani"
+   ]
+  },
+  {
+   "slug": "membership",
+   "name": "Membership / Early Career & Trainee Engagement",
+   "coleads": [
+    "Jillian Gunther",
+    "Brandon Imber"
+   ],
+   "regions": [
+    {
+     "region": "Canada",
+     "people": [
+      "Maryse Bernard"
+     ]
+    },
+    {
+     "region": "South America",
+     "people": [
+      "Geovanne Mauro"
+     ]
+    },
+    {
+     "region": "United States",
+     "people": [
+      "Nick Figura",
+      "Austin Sim"
+     ]
+    },
+    {
+     "region": "Asia",
+     "people": [
+      "Shunan Qi"
+     ]
+    },
+    {
+     "region": "Europe",
+     "people": [
+      "Michael Oertel",
+      "Mario Levis",
+      "Lucia Biscari Garcia"
+     ]
+    },
+    {
+     "region": "Middle East",
+     "people": [
+      "Carla Hajj"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "social-media",
+   "name": "Social Media",
+   "coleads": [
+    "Geovanne Mauro"
+   ],
+   "members": []
+  },
+  {
+   "slug": "education",
+   "name": "Education",
+   "coleads": [
+    "Jillian Gunther"
+   ],
+   "members": [
+    "Khaled Elsayad",
+    "Yolanda Tseng",
+    "Randa Tao",
+    "Austin Sim",
+    "Matthew Chan",
+    "Colton Ladbury",
+    "Michael Oertel",
+    "Maryse Bernard",
+    "Harper Hubbeling"
+   ]
+  },
+  {
+   "slug": "ai-data-science",
+   "name": "Artificial Intelligence and Data Science",
+   "coleads": [
+    "Nick Figura",
+    "Penny Fang"
+   ],
+   "members": [
+    "Colton Ladbury"
+   ]
+  },
+  {
+   "slug": "advocacy",
+   "name": "Advocacy",
+   "coleads": [
+    "Claire Baniel"
+   ],
+   "members": [
+    "Maryse Bernard"
+   ]
+  },
+  {
+   "slug": "collaborations-foundations",
+   "name": "Collaborations & Foundations",
+   "coleads": [
+    "Austin Sim"
+   ],
+   "members": []
+  }
+ ],
+ "emails": {
+  "George Mikhaeel": "george.mikhaeel@gstt.nhs.uk",
+  "Andrea Ng": "andrea_ng@dfci.harvard.edu",
+  "Brandon Imber": "imberb@mskcc.org",
+  "Michael Oertel": "michael.oertel@ukmuenster.de",
+  "Andrew Wirth": "andrew.wirth@petermac.org",
+  "Andrea Lo": "andrea.lo@bccancer.bc.ca",
+  "Jessica Brady": "jessica.brady@gstt.nhs.uk",
+  "Susan Wu": "sywu1@mdanderson.org",
+  "Bouthaina Dabaja": "bdabaja@mdanderson.org",
+  "Jeffrey Wong": "jwong@coh.org",
+  "David Hodgson": "david.hodgson@rmp.uhn.ca",
+  "Savita Dandapani": "sdandapani@coh.org",
+  "Colton Ladbury": "cladbury@coh.org",
+  "Joachim Yahalom": "yahalomj@mskcc.org",
+  "Belinda Campbell": "belinda.campbell@petermac.org",
+  "Lena Specht": "lena.specht@regionh.dk",
+  "Richard Hoppe": "rhoppe@stanford.edu",
+  "Hans Eich": "hans.eich@ukmuenster.de",
+  "Bradford Hoppe": "hoppe.bradford@mayo.edu",
+  "Mike Binkley": "msb996@stanford.edu",
+  "Gustav Cederquist": "cederqug@mskcc.org",
+  "Nick Figura": "nicholas.figura@moffitt.org",
+  "Chirayu Patel": "cpatel@mgh.harvard.edu",
+  "Rahul Parikh": "parikhrr@cinj.rutgers.edu",
+  "Tim Illidge": "tim.illidge@manchester.ac.uk",
+  "Jillian Gunther": "jgunther@mdanderson.org",
+  "Penny Fang": "pfang@mdanderson.org",
+  "Austin Sim": "austin.sim@osumc.edu"
+ }
+}

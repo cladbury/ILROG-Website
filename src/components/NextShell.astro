@@ -1,0 +1,44 @@
+---
+// Shared header and section tabs for the ILROG-NEXT pages.
+import Base from '../layouts/Base.astro';
+import NextMark from './NextMark.astro';
+interface Props { title: string; heading?: string; intro?: string; active: string; description?: string; crumb?: { href: string; label: string } }
+const { title, heading, intro, active, description, crumb } = Astro.props;
+const tabs = [
+  { key: 'overview', href: '/ilrog-next/', label: 'Overview' },
+  { key: 'groups', href: '/ilrog-next/working-groups/', label: 'Working Groups' },
+  { key: 'committees', href: '/ilrog-next/committees/', label: 'Organizational Committees' },
+  { key: 'conference', href: '/ilrog-next/conference/', label: '2027 Conference' },
+];
+---
+<Base title={title} current="next" description={description}>
+  <header class="nx-head">
+    <div class="wrap">
+      <a class="nx-home" href="/ilrog-next/"><NextMark size="md" /></a>
+      {crumb && <a class="nx-crumb" href={crumb.href}>{crumb.label}</a>}
+      {heading && <h1>{heading}</h1>}
+      {intro && <p class="nx-intro">{intro}</p>}
+      <slot name="head" />
+    </div>
+    <nav class="nx-tabs" aria-label="ILROG-NEXT">
+      <div class="wrap">
+        {tabs.map((t) => <a href={t.href} aria-current={active === t.key ? 'page' : undefined}>{t.label}</a>)}
+      </div>
+    </nav>
+  </header>
+  <slot />
+</Base>
+<style>
+  .nx-head { background: var(--next-paper); border-bottom: 1px solid var(--line); }
+  .nx-head > .wrap { padding-top: clamp(2.5rem, 6vw, 4rem); padding-bottom: 2rem; }
+  .nx-home { text-decoration: none; display: inline-block; margin-bottom: 1.5rem; }
+  .nx-crumb { display: block; font-size: .9rem; color: var(--steel); margin-bottom: .5rem; }
+  .nx-head h1 { max-width: 24ch; margin-bottom: .4em; }
+  .nx-head h1::after { content: ""; display: block; width: 2.6rem; height: 3px; background: var(--next-orange); margin-top: .9rem; }
+  .nx-intro { font-size: 1.15rem; color: var(--steel); max-width: 62ch; margin: 0; }
+  .nx-tabs { border-top: 1px solid var(--line); background: var(--paper); }
+  .nx-tabs .wrap { display: flex; gap: 1.75rem; overflow-x: auto; }
+  .nx-tabs a { flex: none; padding: .95rem 0 .8rem; color: var(--ink); text-decoration: none; font-weight: 500; font-size: .95rem; border-bottom: 3px solid transparent; }
+  .nx-tabs a:hover { border-color: var(--line); }
+  .nx-tabs a[aria-current="page"] { border-color: var(--next-orange); font-weight: 600; }
+</style>

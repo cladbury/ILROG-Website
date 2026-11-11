@@ -1,0 +1,20 @@
+---
+// ILROG-NEXT wordmark, after the kickoff deck: "ILROG" + double chevron + "NEXT".
+interface Props { size?: 'sm' | 'md' | 'lg'; tone?: 'dark' | 'light' }
+const { size = 'md', tone = 'dark' } = Astro.props;
+---
+<span class:list={['next-mark', size, tone]} aria-label="ILROG-NEXT">
+  <span class="i" aria-hidden="true">ILROG</span>
+  <svg aria-hidden="true" viewBox="0 0 46 32" class="chev"><path d="M6 6 22 16 6 26" fill="none" stroke="#D97A3F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><path d="M22 6 38 16 22 26" fill="none" stroke="#3F8B95" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".9" /></svg>
+  <span class="n" aria-hidden="true">NEXT</span>
+</span>
+<style>
+  .next-mark { display: inline-flex; align-items: center; gap: .18em; font-weight: 700; letter-spacing: -0.01em; line-height: 1; white-space: nowrap; }
+  .dark .i { color: var(--ink); }
+  .light .i { color: var(--paper); }
+  .n { color: var(--next-orange); }
+  .chev { width: 1.05em; height: .74em; }
+  .sm { font-size: 1rem; }
+  .md { font-size: 1.6rem; }
+  .lg { font-size: clamp(2.6rem, 6vw, 4.4rem); }
+</style>

@@ -4,15 +4,42 @@ import site from '../data/site.json';
 interface Props { title?: string; description?: string; current?: string }
 const { title, description = site.mission, current = '' } = Astro.props;
 const fullTitle = title ? `${title} | ILROG` : `ILROG | ${site.name}`;
+import meetings from '../data/meetings.json';
+const show = site.show;
+// Top menu. Items with `children` open as dropdowns; `key` marks the current section.
+import nx from '../data/ilrog-next.json';
 const nav = [
-  { href: '/about/', label: 'About', key: 'about' },
-  { href: '/meetings/', label: 'Meetings', key: 'meetings' },
+  { label: 'ILROG-NEXT', key: 'next', next: true, children: [
+    { href: '/ilrog-next/', label: 'Overview' },
+    { href: '/ilrog-next/working-groups/', label: 'Working Groups' },
+    { href: '/ilrog-next/committees/', label: 'Organizational Committees' },
+    { href: '/ilrog-next/conference/', label: '2027 Conference' },
+  ] },
+  { label: 'About', key: 'about', children: [
+    { href: '/about/', label: 'History & Objectives' },
+    { href: '/team/', label: 'Team' },
+  ] },
+  { label: 'Meetings', key: 'meetings', children: [
+    { href: '/meetings/#upcoming', label: 'Upcoming Meetings' },
+    { href: '/meetings/#archive', label: 'Past Meetings' },
+  ] },
   { href: '/research/', label: 'Research', key: 'research' },
-  { href: '/resources/', label: 'Resources', key: 'resources' },
-  { href: '/blog/', label: 'Blog', key: 'blog' },
-  { href: '/membership/', label: 'Membership', key: 'membership' },
-  { href: '/contact/', label: 'Contact', key: 'contact' },
+  { label: 'Resources', key: 'resources', children: [
+    { href: '/guidelines/', label: 'Guidelines' },
+    { href: '/publications/', label: 'Publications' },
+    ...(show.trainees ? [{ href: '/resources/#trainees', label: 'Resources for Trainees' }] : []),
+    ...(show.residentElective ? [{ href: '/resources/#resident-elective', label: 'Resident Elective' }] : []),
+    ...(show.ijrobp ? [{ href: '/resources/#ijrobp-2015', label: 'IJROBP 2015 Special Edition' }] : []),
+    { href: site.youtube, label: 'YouTube' },
+  ] },
+  ...(show.blog ? [{ href: '/blog/', label: 'Blog', key: 'blog' }] : []),
+  { label: 'Get Connected', key: 'connect', children: [
+    { href: '/membership/', label: 'Membership' },
+    { href: '/contact/', label: 'Contact' },
+    { href: site.twitter, label: 'Twitter' },
+  ] },
 ];
+const next = meetings.upcoming[0];
 const year = new Date().getFullYear();
 const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
 ---
@@ -48,6 +75,11 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  {next && (
+    <a class="announce" href={next.id === 'ilrog-next-2027' ? '/ilrog-next/conference/' : `/meetings/#${next.id}`}>
+      <span><strong>Upcoming:</strong> {next.dates}, {next.title}, {next.city.replace(', USA', '')}</span>
+    </a>
+  )}
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/" aria-label="ILROG home"><img src="/img/site/logo.png" alt="ILROG, International Lymphoma Radiation Oncology Group" width="148" height="51" /></a>
@@ -56,7 +88,21 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
         Menu
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
-        {nav.map((n) => <a href={n.href} aria-current={current === n.key ? 'page' : undefined}>{n.label}</a>)}
+        <ul class="nav-list">
+          {nav.map((n, i) => n.children ? (
+            <li class:list={['has-sub', { 'is-next': n.next }]}>
+              <button class="sub-toggle" type="button" aria-expanded="false" aria-controls={`sub-${i}`} aria-current={current === n.key ? 'true' : undefined}>
+                {n.next ? <span class="nx-label">ILROG<span>-NEXT</span></span> : n.label}
+                <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" /></svg>
+              </button>
+              <ul class="sub" id={`sub-${i}`}>
+                {n.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+              </ul>
+            </li>
+          ) : (
+            <li><a class="top-link" href={n.href} aria-current={current === n.key ? 'page' : undefined}>{n.label}</a></li>
+          ))}
+        </ul>
         <a class="login" href={site.loginUrl}>Member login</a>
       </nav>
     </div>
@@ -83,8 +129,8 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
           <ul>
             <li><a href="/guidelines/">Guidelines</a></li>
             <li><a href="/publications/">Publications</a></li>
-            <li><a href="/resources/#trainees">Resources for Trainees</a></li>
-            <li><a href="/resources/#resident-elective">Resident Elective</a></li>
+            {show.trainees && <li><a href="/resources/#trainees">Resources for Trainees</a></li>}
+            {show.residentElective && <li><a href="/resources/#resident-elective">Resident Elective</a></li>}
             <li><a href="/meetings/#archive">Past Meetings</a></li>
           </ul>
         </div>
@@ -112,6 +158,28 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
     btn?.addEventListener('click', () => {
       const open = nav!.classList.toggle('open');
       btn.setAttribute('aria-expanded', String(open));
+    });
+    // Dropdowns: open on hover (desktop, via CSS) or on click/tap/keyboard (here).
+    const items = [...document.querySelectorAll<HTMLElement>('.has-sub')];
+    const close = (except?: HTMLElement) => items.forEach((li) => {
+      if (li === except) return;
+      li.classList.remove('open');
+      li.querySelector('.sub-toggle')?.setAttribute('aria-expanded', 'false');
+    });
+    items.forEach((li) => {
+      const t = li.querySelector<HTMLButtonElement>('.sub-toggle')!;
+      t.addEventListener('click', () => {
+        const open = !li.classList.contains('open');
+        close(li);
+        li.classList.toggle('open', open);
+        t.setAttribute('aria-expanded', String(open));
+      });
+      li.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') { close(); t.focus(); }
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!(e.target as Element).closest('.has-sub')) close();
     });
   </script>
 </body>

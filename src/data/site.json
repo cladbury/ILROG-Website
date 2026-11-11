@@ -6,14 +6,24 @@
   "founded": 2010,
   "members": 1523,
   "countries": 73,
-  "address": ["1275 York Avenue", "New York, NY 10065", "USA"],
-  "contactName": "Beatrice Fregonese",
+  "address": [
+    "1275 York Avenue",
+    "New York, NY 10065",
+    "USA"
+  ],
+  "contactName": "Beatrice Desai",
   "email": "fregoneseb@ilrog.com",
-  "phone": "860.205.6188",
-  "phoneHref": "+18602056188",
+  "phone": "+1 (646) 608-2639",
+  "phoneHref": "+16466082639",
   "memberspaceSubdomain": "ilrog",
   "loginUrl": "https://ilrog.memberspace.com/member/sign_in",
   "joinUrl": "https://ilrog.memberspace.com/member/plans/d92ce7e669",
   "twitter": "https://twitter.com/ILROGTeam/",
-  "youtube": "https://www.youtube.com/channel/UCkbnWiu19N-XiKdaX0wVJCQ"
+  "youtube": "https://www.youtube.com/channel/UCkbnWiu19N-XiKdaX0wVJCQ",
+  "show": {
+    "blog": false,
+    "trainees": false,
+    "residentElective": false,
+    "ijrobp": false
+  }
 }

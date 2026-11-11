@@ -1,5 +1,18 @@
 {
- "upcoming": [],
+ "upcoming": [
+  {
+   "id": "ilrog-next-2027",
+   "title": "ILROG-NEXT 2027",
+   "tagline": "Connecting Science. Collaborating for Impact.",
+   "start": "2027-06-03",
+   "end": "2027-06-05",
+   "dates": "June 3-5, 2027",
+   "city": "Boston, MA, USA",
+   "venue": "Massachusetts General Hospital",
+   "access": "Invite only",
+   "banner": "/img/site/ilrog-next-2027.jpg"
+  }
+ ],
  "past": [
   {
    "id": "toronto-2026",
