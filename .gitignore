@@ -6,3 +6,6 @@ dist/
 *.pptx
 *.key
 *.csv
+
+# source documents (not for the public repo)
+Current Research/

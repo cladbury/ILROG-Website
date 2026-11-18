@@ -1,29 +1,5 @@
 [
   {
-    "id": "gastric-indolent-20gy",
-    "disease": "Marginal zone or follicular lymphoma, stage I-II, stomach or duodenum",
-    "title": "Trial to assess the Efficacy of Low Radiation Dose of 20 Gy for the Treatment of Marginal Zone Lymphoma or Follicular Lymphoma Stage I-II localized in the Stomach or the Duodenum",
-    "dose": "20 Gy in 10 fractions",
-    "synopsis": "Current knowledge tells us that RT doses from 20 to 40 Gy reach a consistent tumor control in a variety of (extra-)nodal indolent lymphoma. In this trial the effectiveness of 20 Gy will be verified for gastric/duodenal indolent lymphoma in a prospective stratified design using the modern radiation technique ISRT. This trial addresses the research question, if 20 Gy ISRT is not relevantly inferior to the currently recommended standard dose of 30Gy. The primary objective is to demonstrate the efficacy and safety of the low-dose RT concept with 20 Gy (2 Gy x 10 fractions) in indolent lymphomas of the stomach and duodenum.",
-    "pis": "Dr Gabriele Reinartz and Dr Hans Eich (University of Münster)",
-    "sites": [
-      "University of Münster",
-      "Beijing Cancer Hospital",
-      "Essen University",
-      "Gießen Marburg University",
-      "Heidelberg University",
-      "Mönchengladbach",
-      "TU München",
-      "Tübingen University",
-      "Kiel University"
-    ],
-    "protocol": "https://www.ilrog.org/s/ILROG-and-GLA_Study-Protocol_ISRT-20Gy-Indolent-Lymphoma-Stomach-and-Duodenum_V01_23082020-1.pdf",
-    "status": "Recruiting",
-    "statusNote": "Listed as recruiting on ClinicalTrials.gov (record last updated August 2024).",
-    "registry": "https://clinicaltrials.gov/study/NCT04097067",
-    "nct": "NCT04097067"
-  },
-  {
     "id": "dlbcl-dose-reduced",
     "disease": "Diffuse large B-cell lymphoma",
     "title": "Study of Dose-Reduced Consolidation Radiation Therapy in Patients with Diffuse Large B-cell Lymphoma",
@@ -50,7 +26,8 @@
         "label": "Long-term update of the Duke phase 2 study (IJROBP 2025)",
         "url": "https://doi.org/10.1016/j.ijrobp.2025.02.009"
       }
-    ]
+    ],
+    "completed": true
   },
   {
     "id": "myeloma-2x2",
@@ -77,6 +54,7 @@
         "label": "ASTRO 2026 news release",
         "url": "https://www.astro.org/news-and-publications/news-and-media-center/news-releases/2026/ultra-low-dose-radiation-therapy-relieves-bone-pain-from-multiple-myeloma"
       }
-    ]
+    ],
+    "completed": true
   }
 ]

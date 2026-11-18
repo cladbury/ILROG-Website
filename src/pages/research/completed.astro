@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import ResearchItem from '../../components/ResearchItem.astro';
+import trials from '../../data/trials.json';
+import studies from '../../data/studies.json';
+const done = trials.filter((t: any) => t.completed);
+---
+<Base title="Completed Research" current="research" description="Completed ILROG clinical trials and collaborative studies, with links to results.">
+  <PageHead title="Completed Research" intro="Recently completed ILROG trials and collaborative studies, with links to the published results." crumb={{ href: '/research/', label: 'Ongoing Research' }} />
+  <section class="section">
+    <div class="wrap">
+      <h2 class="sec-h">Clinical Trials</h2>
+      <div class="list">{done.map((t) => <ResearchItem item={t} trial />)}</div>
+      <h2 class="sec-h">Collaborative Studies</h2>
+      <div class="list">{studies.completed.map((t) => <ResearchItem item={t} />)}</div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .sec-h { margin-bottom: 1.5rem; }
+  .sec-h + .list { border-top: 2px solid var(--ink); }
+  .list + .sec-h { margin-top: 4rem; }
+</style>

@@ -1,0 +1,122 @@
+{
+  "open": [
+    {
+      "id": "tbi-tmli-practice-survey",
+      "kind": "International survey",
+      "disease": "Conditioning radiotherapy before hematopoietic cell transplant",
+      "status": "Survey open",
+      "title": "Patterns of Practice in Total Body Irradiation and Intensity-Modulated Marrow Irradiation (IMRT-TBI, TMI and TMLI)",
+      "synopsis": "Intensity-modulated delivery has made it possible to spare organs beyond the lungs during total body irradiation, and at some point a heavily sculpted plan is no longer TBI but total marrow (TMI) or total marrow and lymphoid irradiation (TMLI). There is no agreed definition of where that line falls. This survey of radiation oncology programs asks which conditioning techniques each institution offers for myeloablative and non-myeloablative regimens, the dose and fractionation schedules used, the delivery platform, and how centers choose between conventional and intensity-modulated TBI. Programs that perform IMRT-TBI are asked which organs they routinely spare, the constraints they apply and the target coverage they accept. A final section asks where respondents would draw the boundary between TBI and TMI/TMLI. The survey takes about 10 to 15 minutes and asks for one response per institution, reflecting institutional practice.",
+      "pis": "Dr Colton Ladbury (City of Hope)",
+      "note": "One response per institution is requested. Please answer for your institution's practice rather than personal preference.",
+      "links": [
+        {
+          "label": "Take the survey",
+          "url": "https://redcap.coh.org/surveys/?s=HPE3AEC8XXH3EAL8"
+        }
+      ]
+    },
+    {
+      "id": "scns-heme-registry",
+      "kind": "Retrospective registry",
+      "disease": "Secondary CNS lymphoma and myeloma",
+      "status": "Enrolling centers",
+      "title": "Usage of Radiotherapy for Secondary Central Nervous System Hematologic Malignancies: A Registry of the International Lymphoma Radiation Oncology Group",
+      "synopsis": "Up to 5% of patients with diffuse large B-cell lymphoma develop CNS involvement, and current radiotherapy recommendations in this setting are drawn largely from the primary CNS lymphoma literature. This registry collects patients who received CNS-directed radiotherapy for synchronous or metachronous CNS involvement by follicular, marginal zone, mantle cell, diffuse large B-cell, transformed, high-grade B-cell or peripheral T-cell lymphoma, or multiple myeloma. Parenchymal, vitreoretinal, leptomeningeal and dural disease are included; bony disease extending into the CNS is not. The primary objective is CNS progression-free survival. Secondary objectives describe the indications for radiotherapy, dose and fractionation, target volume (focal, whole brain or craniospinal), timing relative to CAR T-cell therapy and transplant, and toxicity. A companion question from Duke compares focal radiotherapy with whole-brain radiotherapy. The target is approximately 200 patients.",
+      "pis": "Dr Kathryn Tringale (UC San Diego) and Dr Brandon Imber (Memorial Sloan Kettering)",
+      "team": "Gustav Cederquist, Joanna Yang, Harper Hubbeling, Nicholas Figura, Austin Sim, Christopher Kelsey and Eugene Vaios (associate investigators); Jiwan Kohli (statistician)",
+      "note": "Protocol version 2, November 2025. Centers interested in contributing patients can contact Dr Tringale through ILROG."
+    },
+    {
+      "id": "pcnsl-isrt",
+      "kind": "Retrospective, multicenter",
+      "disease": "Primary CNS lymphoma",
+      "status": "Seeking centers",
+      "title": "Involved-Site Radiotherapy for Consolidation or Salvage Treatment in Primary Central Nervous System Lymphoma",
+      "synopsis": "High-dose methotrexate is the backbone of treatment for primary CNS lymphoma, but fewer than half of patients achieve remission. Whole-brain radiotherapy is effective but causes neurocognitive impairment, so many centers now use focal, involved-site radiotherapy as consolidation, salvage or bridging. A RedCap database built by the German Society for Radiation Oncology (DEGRO) and the German Lymphoma Alliance is already collecting these patients in Germany, and this study opens it to ILROG centers. Eligible patients have aggressive lymphoma with primary CNS involvement treated with localized (non-whole-brain) radiotherapy between 2010 and 2024. Participating sites need joint involvement of their radiation oncology and hematology departments. The primary endpoints are duration of locoregional control, separating in-field from out-of-field CNS recurrence, and toxicity graded by CTCAE version 5.0. A move to prospective data collection will be discussed later.",
+      "pis": "Dr Niklas Benedikt Pepper, Dr Michael Oertel and Prof Hans Theodor Eich (University Hospital of Münster)",
+      "note": "Proposal dated March 2026. Contact ILROG to join."
+    },
+    {
+      "id": "pet-ct-rt-risk",
+      "kind": "Model development and validation",
+      "disease": "Hodgkin lymphoma with mediastinal disease",
+      "status": "Seeking contributors",
+      "title": "Estimating Risk of Radiation Toxicity for Lymphoma Patients Using Pre-Chemotherapy PET-CT Scans",
+      "synopsis": "Radiotherapy risk is usually estimated only after chemotherapy, once a planning CT and treatment plan exist. This study aims to estimate the dose to the heart, lungs and breasts from the pre-chemotherapy PET-CT, so that the expected risk of late effects can be weighed when the overall treatment approach is first decided. A pilot study of 169 patients with mediastinal Hodgkin lymphoma from 9 UK and European centers produced a regression model predicting mean heart dose from disease location and extent on PET-CT, delivery technique and breathing mode. The expanded study will collect data from more centers to refine and validate the model and extend it to cardiac substructures, lung and breast. Each case needs measurements from the pre-chemotherapy PET-CT, the radiotherapy fields and technique, and organ-at-risk doses from the treatment plan; a study atlas and data collection spreadsheet are provided.",
+      "pis": "Dr Rebecca Shakir, Dr Lorna Roden and Dr David Cutter (Oxford Population Health, University of Oxford)",
+      "note": "Funded by Cancer Research UK. Presented at the ILROG research meeting, October 2024."
+    },
+    {
+      "id": "cart-bsab-review",
+      "kind": "Retrospective, multicenter",
+      "disease": "Hematologic malignancies treated with CAR T-cells or bispecific antibodies",
+      "status": "Data collection",
+      "title": "Multicenter Review of Radiation During Peri-Treatment With Chimeric Antigen Receptor T-Cell Therapy and/or Bispecific Antibodies for Hematologic Malignancies",
+      "synopsis": "This study builds on the ILROG bridging radiotherapy study below. It reviews patients who underwent apheresis for commercial CAR T-cell therapy, or who received bispecific antibodies, between 2018 and 2023, with and without radiotherapy. The aims are to describe how radiotherapy is combined with these therapies across centers, and to compare cytokine release syndrome, neurotoxicity, response and survival in patients treated with and without radiotherapy. Penn leads the analysis using limited data sets and de-identified imaging from each center.",
+      "pis": "Dr John Plastaras (University of Pennsylvania)",
+      "note": "Data are shared under collaborative research agreements with the University of Pennsylvania."
+    },
+    {
+      "id": "orbital-4gy",
+      "kind": "Retrospective, multicenter",
+      "disease": "Indolent orbital adnexal lymphoma",
+      "status": "Accrual ongoing",
+      "title": "Orbital Adnexal Indolent Lymphoma: A Retrospective Study of the International Lymphoma Radiation Oncology Group (4 Gy Extension Study)",
+      "synopsis": "This study collects patients with marginal zone, follicular, small lymphocytic or low-grade lymphoma of the orbital adnexa treated with 4 Gy in 1 or 2 fractions to at least one orbit, with palliative or definitive intent, between 1980 and 2021.",
+      "pis": "Dr Andrew Wirth (Peter MacCallum Cancer Centre), Dr Chelsea Pinnix (MD Anderson), Dr Brandon Imber (Memorial Sloan Kettering) and Dr Michael Binkley (Stanford)",
+      "team": "Lilly Shen (associate investigator); Mathias Bressel (statistician)",
+      "note": "As of March 2024, 172 patients had been entered from 17 centers, with 3 more centers pending."
+    }
+  ],
+  "completed": [
+    {
+      "id": "bridging-rt-cart",
+      "kind": "Published 2025",
+      "disease": "Relapsed/refractory B-cell lymphoma",
+      "title": "Bridging Radiotherapy Prior to Chimeric Antigen Receptor T-Cells for B-Cell Lymphomas: An ILROG Multicenter Study",
+      "synopsis": "172 patients from 10 institutions received bridging radiotherapy before CAR T-cell therapy between 2018 and 2020. Grade 3 or higher radiotherapy toxicity occurred in 2%. Two-year progression-free and overall survival were 38% and 53%. On multivariable analysis, comprehensive bridging radiotherapy (treating all sites of disease) was associated with longer progression-free survival (HR 0.38) and overall survival (HR 0.48).",
+      "pis": "Dr Nikhil Yegya-Raman and Dr John Plastaras (University of Pennsylvania)",
+      "link": {
+        "label": "Blood Advances, 2025",
+        "url": "https://doi.org/10.1182/bloodadvances.2025015855"
+      }
+    },
+    {
+      "id": "cutaneous-bcl",
+      "kind": "Published 2026",
+      "disease": "Indolent primary cutaneous B-cell lymphoma",
+      "title": "Radiotherapy for Indolent Primary Cutaneous B-Cell Lymphoma: An International Multicenter ILROG Analysis",
+      "synopsis": "535 patients from 22 centers with limited cutaneous marginal zone or follicle center lymphoma. Response rates did not differ significantly between doses of 4 Gy or less and higher doses, but 5-year local control was lower with 4 Gy or less (73% vs 96%). Low-dose treatment had a favorable toxicity profile, and dose did not affect overall survival.",
+      "pis": "Dr Michael Oertel and Prof Hans Theodor Eich (University Hospital of Münster)",
+      "link": {
+        "label": "Blood, 2026",
+        "url": "https://doi.org/10.1182/blood.2025032050"
+      }
+    },
+    {
+      "id": "bilateral-orbital",
+      "kind": "Published 2025",
+      "disease": "Bilateral indolent orbital adnexal lymphoma",
+      "title": "An International Lymphoma Radiation Oncology Group Study of Radiation Therapy for Bilateral Indolent Orbital Adnexal Lymphomas",
+      "synopsis": "184 patients from 16 centers with synchronous or metachronous bilateral disease were treated with radiotherapy to both orbits; 92% had marginal zone lymphoma. Long-term outcomes support treating bilateral orbital adnexal lymphoma as a localized process with curative-intent radiotherapy.",
+      "pis": "Dr Andrew Wirth (Peter MacCallum Cancer Centre)",
+      "link": {
+        "label": "IJROBP, 2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=International+Lymphoma+Radiation+Oncology+Group+Study+of+Radiation+Therapy+for+Bilateral+Indolent+Orbital+Adnexal+Lymphomas"
+      }
+    },
+    {
+      "id": "myc-altered-lbcl",
+      "kind": "Published 2025",
+      "disease": "Relapsed/refractory large B-cell lymphoma",
+      "title": "Impact of Myc-Altered Pathology on Radiation Therapy Efficacy Among Patients With Relapsed/Refractory Large B-Cell Lymphoma: A Collaborative Study by ILROG",
+      "synopsis": "211 patients with known double- or triple-hit status received radiotherapy for relapsed or refractory disease. Double-hit pathology did not change the rate of response to radiotherapy, but it was associated with more local recurrences, which suggests these tumors may be more radioresistant.",
+      "pis": "Dr Yolanda Tseng (University of Washington) and Dr John Plastaras (University of Pennsylvania)",
+      "link": {
+        "label": "IJROBP, 2025",
+        "url": "https://doi.org/10.1016/j.ijrobp.2024.11.072"
+      }
+    }
+  ]
+}

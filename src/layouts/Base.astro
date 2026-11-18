@@ -18,7 +18,10 @@ const nav = [
     { href: '/meetings/#upcoming', label: 'Upcoming Meetings' },
     { href: '/meetings/#archive', label: 'Past Meetings' },
   ] },
-  { href: '/research/', label: 'Research', key: 'research' },
+  { label: 'Research', key: 'research', children: [
+    { href: '/research/', label: 'Ongoing Research' },
+    { href: '/research/completed/', label: 'Completed Research' },
+  ] },
   { label: 'Resources', key: 'resources', children: [
     { href: '/guidelines/', label: 'Guidelines' },
     { href: '/publications/', label: 'Publications' },
