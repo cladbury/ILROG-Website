@@ -1,0 +1,40 @@
+# Builds the staging branch and publishes it to the separate staging repository
+# (https://cladbury.github.io/ILROG-Website-staging/), so changes can be reviewed
+# before they are merged into main and go live.
+name: Deploy staging site
+
+on:
+  push:
+    branches: [staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: staging
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx astro build
+        env:
+          STAGING: '1'
+      # The production domain file must never be published from staging.
+      - run: rm -f dist/CNAME && touch dist/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.STAGING_DEPLOY_TOKEN }}
+          external_repository: cladbury/ILROG-Website-staging
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          force_orphan: true
+          commit_message: Staging build from ${{ github.sha }}
