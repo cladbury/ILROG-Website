@@ -16,7 +16,7 @@
       "Mayo Clinic",
       "Dana-Farber/Brigham and Women's"
     ],
-    "protocol": "https://www.ilrog.org/s/Pro00100510_Protocol_v_04Aug2020.pdf",
+    "protocol": "/files/Pro00100510_Protocol_v_04Aug2020.pdf",
     "status": "Accrual complete",
     "statusNote": "241 patients enrolled; accrual completed in 2023. Long-term results of the original Duke phase 2 study were published in 2025.",
     "registry": "https://clinicaltrials.gov/study/NCT03681535",
@@ -44,7 +44,7 @@
       "Emory",
       "Massachusetts General Hospital"
     ],
-    "protocol": "https://www.ilrog.org/s/16M-18-2_Protocol-Version-12112020_trackeddocx.pdf",
+    "protocol": "/files/16M-18-2_Protocol-Version-12112020_trackeddocx.pdf",
     "status": "Results presented",
     "statusNote": "Results were presented at the 2026 ASTRO Annual Meeting: 63 evaluable patients at seven institutions, and 81% achieved pain control without additional radiation.",
     "registry": "https://clinicaltrials.gov/study/NCT03858205",

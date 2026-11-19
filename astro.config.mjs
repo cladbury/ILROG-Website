@@ -32,7 +32,32 @@ function relativeLinks() {
   };
 }
 
+// Old Squarespace addresses, so existing links and search results land on the right page.
+const redirects = {
+  '/home': '/',
+  '/history-objectives': '/about/',
+  '/upcoming-meetings': '/meetings/',
+  '/upcoming-meetings-1-1': '/meetings/',
+  '/past-meetings': '/meetings/',
+  '/2023-ilrog-conference': '/meetings/',
+  '/educational-symposia-1': '/meetings/',
+  '/ijrobp-2015-special-edition': '/publications/',
+  '/published-ilrog-collaborative-studies': '/research/completed/',
+  '/protocols': '/research/',
+  '/resident-elective': '/resources/',
+  '/resources-for-trainees': '/resources/',
+  '/members': '/membership/',
+  '/ask-an-expert': '/contact/',
+  '/blog': '/',
+  '/blog-directory': '/',
+  '/blog-directory/chairmans-update-december-18-2020': '/',
+  '/blog-directory/update-follicular-lymphoma-by-sarah-milgrom-md-and-rahul-parikh-md': '/',
+  '/blog-directory/chairmans-checkup-sept-2016-by-joachim-yahalom-md': '/',
+  '/blog-directory/dlbcl-a-historical-overview-by-sarah-milgrom-md-and-rahul-parikh-md': '/',
+};
+
 export default defineConfig({
+  redirects,
   site: 'https://www.ilrog.org',
   trailingSlash: 'always',
   build: { format: process.env.PREVIEW ? 'file' : 'directory', assets: 'assets' },

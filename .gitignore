@@ -9,3 +9,4 @@ dist/
 
 # source documents (not for the public repo)
 Current Research/
+!public/files/*.zip

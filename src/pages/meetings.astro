@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import meetings from '../data/meetings.json';
 import site from '../data/site.json';
-const ilrogPdf = (f: string) => `https://www.ilrog.org/s/${f}`;
+const ilrogPdf = (f: string) => `/files/${f}`;
 const byYear = new Map<string, typeof meetings.past>();
 for (const m of meetings.past) {
   const y = m.start.slice(0, 4);
