@@ -80,6 +80,28 @@ const staging = !!process.env.STAGING;
       })(document);
     </script>
   )}
+  {!preview && (
+    <script is:inline define:vars={{ accountUrl: site.accountUrl, loginUrl: site.loginUrl }}>
+      // Swap "Member login" for "My account", and hide Join buttons, while a member is logged in.
+      (function () {
+        function apply(loggedIn) {
+          document.querySelectorAll('[data-ms="login"]').forEach(function (a) {
+            if (!a.dataset.label) a.dataset.label = a.textContent;
+            a.textContent = loggedIn ? 'My account' : a.dataset.label;
+            a.href = loggedIn ? accountUrl : loginUrl;
+          });
+          document.querySelectorAll('[data-ms="join"]').forEach(function (el) { el.hidden = loggedIn; });
+        }
+        function check() {
+          try { var i = window.MemberSpace && window.MemberSpace.getMemberInfo && window.MemberSpace.getMemberInfo(); if (i) apply(!!i.isLoggedIn); } catch (e) {}
+        }
+        document.addEventListener('MemberSpace.member.info', function () { apply(true); });
+        document.addEventListener('MemberSpace.member.logout', function () { apply(false); });
+        document.addEventListener('MemberSpace.ready', check);
+        document.addEventListener('DOMContentLoaded', function () { if (window.MemberSpace && window.MemberSpace.ready === true) check(); });
+      })();
+    </script>
+  )}
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -112,7 +134,7 @@ const staging = !!process.env.STAGING;
             <li><a class="top-link" href={n.href} aria-current={current === n.key ? 'page' : undefined}>{n.label}</a></li>
           ))}
         </ul>
-        <a class="login" href={site.loginUrl}>Member login</a>
+        <a class="login" href={site.loginUrl} data-ms="login">Member login</a>
       </nav>
     </div>
   </header>
@@ -156,7 +178,7 @@ const staging = !!process.env.STAGING;
       </div>
       <div class="foot-base">
         <span>© {year} International Lymphoma Radiation Oncology Group</span>
-        <a href={site.loginUrl}>Member login</a>
+        <a href={site.loginUrl} data-ms="login">Member login</a>
       </div>
     </div>
   </footer>
