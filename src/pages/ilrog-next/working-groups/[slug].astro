@@ -2,6 +2,8 @@
 import NextShell from '../../../components/NextShell.astro';
 import PersonCard from '../../../components/PersonCard.astro';
 import nx from '../../../data/ilrog-next.json';
+import studies from '../../../data/studies.json';
+import ResearchItem from '../../../components/ResearchItem.astro';
 export function getStaticPaths() {
   return nx.workingGroups.map((g, i) => ({ params: { slug: g.slug }, props: { g, i } }));
 }
@@ -11,6 +13,7 @@ const prev = all[(i - 1 + all.length) % all.length];
 const next = all[(i + 1) % all.length];
 // other groups that share a person with this one
 const people = new Set([...g.mentors, ...g.coleads, ...g.members]);
+const projects = [...studies.open, ...studies.completed].filter((t: any) => t.workingGroup === g.slug);
 const related = all.filter((o) => o.slug !== g.slug && [...o.mentors, ...o.coleads, ...o.members].some((p) => people.has(p)));
 ---
 <NextShell title={`${g.name} | ILROG-NEXT`} heading={g.name} active="groups" crumb={{ href: '/ilrog-next/working-groups/', label: 'Working groups' }}
@@ -35,6 +38,15 @@ const related = all.filter((o) => o.slug !== g.slug && [...o.mentors, ...o.colea
   </section>
 
 
+  {projects.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <h2 class="proj-h">Projects</h2>
+        <div class="proj">{projects.map((t) => <ResearchItem item={t} />)}</div>
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="wrap">
       {related.length > 0 && (
@@ -56,6 +68,8 @@ const related = all.filter((o) => o.slug !== g.slug && [...o.mentors, ...o.colea
   .col h2 { font-size: 1.1rem; padding-bottom: .7rem; border-bottom: 2px solid var(--ink); margin-bottom: 1.25rem; }
   .stack { display: grid; gap: 1.1rem; }
   @media (max-width: 900px) { .people-grid { grid-template-columns: 1fr; } }
+  .proj-h { font-size: 1.1rem; padding-bottom: .7rem; margin-bottom: 0; }
+  .proj { border-top: 2px solid var(--ink); }
   .related { margin-bottom: 3rem; }
   .related h2 { font-size: 1.35rem; }
   .related ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem; }

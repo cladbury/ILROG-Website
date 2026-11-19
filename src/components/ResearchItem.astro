@@ -1,8 +1,10 @@
 ---
 // One study or trial on the Research pages. `trial` items carry dose, sites, protocol and registry;
 // collaborative studies carry kind, team, note and links.
+import nx from '../data/ilrog-next.json';
 interface Props { item: any; trial?: boolean }
 const { item: t, trial = false } = Astro.props;
+const wg = t.workingGroup ? nx.workingGroups.find((g) => g.slug === t.workingGroup) : undefined;
 const links = [
   ...(t.protocol ? [{ label: 'Download the protocol (PDF)', url: t.protocol }] : []),
   ...(t.registry ? [{ label: `${t.nct} on ClinicalTrials.gov`, url: t.registry }] : []),
@@ -23,6 +25,7 @@ const links = [
     <dl>
       <div><dt>Principal Investigators</dt><dd>{t.pis}</dd></div>
       {t.team && <div><dt>Study Team</dt><dd>{t.team}</dd></div>}
+      {wg && <div><dt>ILROG-NEXT Working Group</dt><dd><a href={`/ilrog-next/working-groups/${wg.slug}/`}>{wg.name}</a></dd></div>}
       {t.sites && <div><dt>{t.status === 'Recruiting' ? 'Institutions Actively Recruiting' : 'Participating Institutions'}</dt><dd>{t.sites.join(', ')}</dd></div>}
     </dl>
     {(t.statusNote || t.note) && <p class="note">{t.statusNote || t.note}</p>}

@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import ResearchItem from '../../components/ResearchItem.astro';
+import studies from '../../data/studies.json';
+import nx from '../../data/ilrog-next.json';
+// Studies tagged with an ILROG-NEXT working group, in working-group order.
+const order = nx.workingGroups.map((g) => g.slug);
+const pick = (list: any[]) => list.filter((t) => t.workingGroup).sort((a, b) => order.indexOf(a.workingGroup) - order.indexOf(b.workingGroup));
+const ongoing = pick(studies.open);
+const completed = pick(studies.completed);
+---
+<Base title="ILROG-NEXT Research" current="research" description="Research projects led by the ILROG-NEXT working groups.">
+  <PageHead title="ILROG-NEXT Research" intro="Projects led by the ILROG-NEXT early-career working groups." crumb={{ href: '/ilrog-next/', label: 'ILROG-NEXT' }} />
+  <section class="section">
+    <div class="wrap">
+      {ongoing.length > 0 && <h2 class="sec-h">Ongoing projects</h2>}
+      {ongoing.length > 0 && <div class="list">{ongoing.map((t) => <ResearchItem item={t} />)}</div>}
+      {completed.length > 0 && <h2 class="sec-h">Completed projects</h2>}
+      {completed.length > 0 && <div class="list">{completed.map((t) => <ResearchItem item={t} />)}</div>}
+      <p class="more">To propose a project, contact the co-leaders of the relevant <a href="/ilrog-next/working-groups/">working group</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .sec-h { margin-bottom: 1.5rem; }
+  .list { border-top: 2px solid var(--ink); }
+  .list + .sec-h { margin-top: 4rem; }
+  .more { margin-top: 2rem; color: var(--steel); }
+</style>

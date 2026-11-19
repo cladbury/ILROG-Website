@@ -14,7 +14,8 @@
           "label": "Take the survey",
           "url": "https://redcap.coh.org/surveys/?s=HPE3AEC8XXH3EAL8"
         }
-      ]
+      ],
+      "workingGroup": "leukemia-tbi"
     },
     {
       "id": "scns-heme-registry",
