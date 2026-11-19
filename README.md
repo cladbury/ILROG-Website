@@ -63,6 +63,29 @@ MemberSpace login will not work at the test address. It only runs on ilrog.org.
 4. At the domain registrar, change the DNS records: a CNAME record for `www` pointing to `<account>.github.io`, and A records for the bare `ilrog.org` pointing to GitHub's Pages addresses (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153).
 5. Keep Squarespace live until the new site loads correctly on ilrog.org, then cancel it.
 
+### Staging site (test copy for review)
+
+Two branches, two sites:
+
+- `main` is production. Every push to `main` publishes this repository's Pages site (ilrog.org after launch).
+- `staging` is the test copy. Every push to `staging` builds the site and publishes it to a second repository, `cladbury/ILROG-Website-staging`, at `https://cladbury.github.io/ILROG-Website-staging/`. That copy has a dark "Test site" bar across the top and is always hidden from search engines.
+
+One-time setup:
+
+1. On GitHub, create an empty public repository named `ILROG-Website-staging` (no README).
+2. Create a fine-grained personal access token (GitHub > Settings > Developer settings > Personal access tokens > Fine-grained tokens). Limit it to the `ILROG-Website-staging` repository, with Contents set to "Read and write". Copy the token.
+3. In this repository, go to Settings > Secrets and variables > Actions > New repository secret. Name it `STAGING_DEPLOY_TOKEN` and paste the token.
+4. In GitHub Desktop, choose Branch > New branch, name it `staging`, and publish it. The first staging build runs (see the Actions tab).
+5. In the `ILROG-Website-staging` repository, go to Settings > Pages and set Source to "Deploy from a branch", branch `gh-pages`, folder `/ (root)`.
+
+Day-to-day:
+
+1. In GitHub Desktop, switch to `staging`, make changes, commit and push. The test site updates in a minute or two.
+2. Send leadership the staging address.
+3. Once approved, switch to `main`, choose Branch > Merge into current branch > `staging`, and push. The live site updates.
+
+The token expires on the date chosen when it was created. When it does, staging builds fail until a new token is saved under the same secret name.
+
 ## Before launch
 
 - Files hosted on Squarespace (`ilrog.org/s/...`: meeting slides, trial protocols, the trainee reading list, the mini-atlas, the rotation goals document, the NCCN PDF) are still linked to the old site. Download them and move them into `public/files/` before Squarespace is cancelled, or those links will break.

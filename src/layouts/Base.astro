@@ -46,6 +46,8 @@ const nav = [
 const next = meetings.upcoming[0];
 const year = new Date().getFullYear();
 const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
+// Set by the staging workflow: marks the test copy and keeps it out of search engines.
+const staging = !!process.env.STAGING;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +56,7 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
-  {!site.launched && <meta name="robots" content="noindex, nofollow" />}
+  {(!site.launched || staging) && <meta name="robots" content="noindex, nofollow" />}
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/img/site/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="64x64" href="/img/site/favicon.png" />
@@ -79,6 +81,7 @@ const preview = !!import.meta.env.PREVIEW || !!process.env.PREVIEW;
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  {staging && <div class="staging-bar">Test site. Changes shown here are not yet live on ilrog.org.</div>}
   {next && (
     <a class="announce" href={next.id === 'ilrog-next-2027' ? '/ilrog-next/conference/' : `/meetings/#${next.id}`}>
       <span><strong>Upcoming:</strong> {next.dates}, {next.title}, {next.city.replace(', USA', '')}</span>

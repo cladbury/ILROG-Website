@@ -105,6 +105,9 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 .nav .login:hover { background: var(--ink); color: var(--paper); }
 .menu-btn { display: none; }
 
+/* test-site marker (staging builds only) */
+.staging-bar { background: var(--ink); color: var(--paper); text-align: center; font-size: .8125rem; font-weight: 600; padding: .4rem var(--gutter); }
+
 /* announcement bar (shown when an upcoming meeting is listed) */
 .announce { display: block; background: var(--gold); color: var(--ink); text-align: center; text-decoration: none; font-size: .875rem; padding: .5rem var(--gutter); }
 .announce:hover { color: var(--ink); text-decoration: underline; }
